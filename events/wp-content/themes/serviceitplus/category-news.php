@@ -1,5 +1,10 @@
 <?php get_header(); ?>
 <?php wp_head(); ?>
+<style>
+.banner-div{
+    background:url(<?php echo get_home_url(); ?>/wp-content/uploads/2019/01/Webp.net-resizeimage.jpg);
+}
+</style>
 <div class="banner-div">
     <h1>News</h1>
 </div>

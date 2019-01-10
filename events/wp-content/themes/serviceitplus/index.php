@@ -6,7 +6,7 @@
 }
 </style>
 <div class="banner-div">
-    <h1 data-aos="zoom" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="1200">News, Updates and Events</h1>
+    <h1>News, Updates and Events</h1>
 </div>
 <div class="post-container">
 <?php
@@ -36,7 +36,7 @@ if ( $q->have_posts() ) {
             <div class="post-title"><?php the_title(); ?></div>
             <div class="post-date"><i class="far fa-clock"></i> Published at <?php echo get_the_date('F j, Y');?> at <?php echo get_the_date('h:i A');?></div>
             <div class="post-excerpt"><?php the_excerpt(); ?></div>
-            <div class="post-button"><a href="<?php the_permalink() ?>"><button class="btn-danger">Read more</button></a></div>
+            <div class="post-button"><a href="<?php the_permalink() ?>"><button class="btn-danger button">Read more</button></a></div>
         </div>
         <div class="mobile-btn">
             <a href="<?php the_permalink() ?>"><i class="fas fa-chevron-right"></i></a>
