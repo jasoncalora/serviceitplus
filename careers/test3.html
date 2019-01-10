@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+   var myVar;
+ $( "#myDiv" ).click(function() {
+  	myFunction(this);
+});
+
+ function myFunction(div) {
+ $("#loader").toggle();
+ $(div).toggle();
+
+ }
+
+   
+});
+</script>
+</head>
+<body>
+<a id="myDiv" href="https://Website.com">Click me</a>
+<div id="loader" style="display:none;background:green;padding:150px">This is a loader</div>
+
+
+</body>
+</html>
