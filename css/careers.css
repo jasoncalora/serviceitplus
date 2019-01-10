@@ -1,0 +1,933 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size:0.01rem;
+/*    background:black;*/
+}
+body, html {
+    height: 100%;
+/*    overflow-x: hidden;*/
+}
+.block{
+/*    border:1px solid black;*/
+    width:100%;
+    padding-bottom:1rem;
+    padding-top:1rem;
+}
+.banner{
+    height:100%;
+    max-height: 768px;
+    background:url(../images/careers/bg.jpg);
+    background-size: cover;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    color:white;
+    font-weight:700;
+}
+.text-container{
+    text-shadow:0.1rem 0.1rem #686868;
+}
+p#bannertitle{
+    font-size:3rem;
+    height:3rem;
+/*    font-style: italic;*/
+    text-align: center;
+}
+p#bannerTagline{
+    margin-top:4rem;
+    font-size:2rem;
+    height:2rem;
+    text-align:center;
+    text-shadow:0.1rem 0.1rem #686868;
+}
+/*------------------------------  FIRST BLOCK  ----------------------------*/
+.block.first{
+/*    height:500px;*/
+/*    background-color:#f2f2f2;*/
+    background-color:white;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+}
+.block .title{
+    font-size:2.5rem;
+    padding-top:1.5rem;
+    font-weight:700;
+    width:100%;
+    text-align:center;
+}
+.block .title font{
+    color:#f16a21;
+}
+.block.first .description{
+    padding-top:0.5rem;
+    font-size:1.2rem;
+    line-height:2rem;
+    width:90%;
+    text-align:center;
+}
+.block.first .tagline{
+    width:85%;
+    line-height:3rem;
+    font-size:1.2rem;
+    text-align:center;
+    padding-top:0.5rem;
+    padding-bottom:2rem;
+}
+/*-------------------------------  SECOND BLOCK  -------------------------------*/
+.block.second{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+/*    height:70%;*/
+/*    max-height: 450px;*/
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width:100%;
+    border:1px solid black;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    display:none;
+}
+.owl-container{
+    width:100%;
+}
+.owl-carousel{
+/*    border:1px solid red;*/
+/*    width:70%;*/
+    height:200px;
+}
+.owl-stage-outer{
+/*    width:70%;*/
+}
+.item{
+/*    border:1px solid black;*/
+}
+.item a{
+    font-size:7rem;
+    text-decoration:none;
+/*    border:1px solid red;*/
+/*    font-weight:600;*/
+}
+.blacktext{
+    color:black;
+}
+.graytext{
+    color:#bcbcbc;
+}
+
+/*--------------------------------  THIRD BLOCK  -----------------------------*/
+.block.third{
+/*    height:500px;*/
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    padding-bottom:4rem;
+    padding-top:1rem;
+    background-color:#f4f4f4;
+}
+.blue{
+    color:#2e307b;
+}
+.orange{
+    color:#f26921;
+}
+.gray{
+    color:#999999;
+}
+.teams{
+    margin-top:1rem;
+    border:1px solid #dddddd;
+/*    box-shadow:2px 2px #9b9b9b;*/
+    background-color:white;
+    border-radius:3%;
+    width:25%;
+/*    height:800px;*/
+    margin-left:1rem;
+    margin-right:1rem;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    padding-bottom:1rem;
+}
+.teams .icon{
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    width:100%;
+    height:220px;
+/*    border:1px solid black;*/
+}
+.teams .title{
+/*    border:1px solid black;*/
+    padding-top:1rem;
+    width:100%;
+    margin-top:0px;
+    font-size:1.5rem;
+    text-align:center;
+}
+.teams .positions li{
+/*    border:1px solid black;*/
+/*    border:1px solid black;*/
+    font-size:1rem;
+}
+.fa-li{
+    color:#f16a21;
+    font-size:1rem;
+}
+.fa-ul li:hover{
+    color:#f16a21;
+    cursor:pointer;
+    font-weight:600;
+}
+/*------------------------------- FOURTH BLOCK  -------------------------------*/
+.block.fourth{
+    background-color:white;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+/*    border:1px solid black;*/
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+}
+.block.fourth .description{
+/*    border:1px solid black;*/
+    padding-top:0.5rem;
+    font-size:1.2rem;
+    width:75%;
+    text-align:center;
+}
+.block.test{
+    width:100%;
+    height:800px;
+    background: url(../images/careers/corevalues.jpg);
+    background-size: cover;
+}
+.block.fourth .apply-now-text{
+/*    border:1px solid black;*/
+    padding-top:1rem;
+    font-size:1.4rem;
+    width:75%;
+    text-align:center;
+    padding-bottom:2rem;
+}
+.block.fourth .apply-now-text font{
+    font-weight:500;
+}
+.block.fourth .apply-now-text font:hover{
+    color:#f16a21;
+    cursor:pointer;
+}
+.modal-title{
+/*    border:1px solid black;*/
+    width:100%;
+    text-align:center;
+    font-size:2rem;
+    font-weight:600;
+}
+.job-desc{
+/*    border:1px solid black;*/
+    width:100%;
+    font-size:1rem;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+}
+.job-desc-inner{
+/*    border:1px solid black;*/
+    text-align:justify;
+    width:95%;
+}
+.appli-form-wrapper{
+/*    border:1px solid black;*/
+    width:100%;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+}
+.appli-form-cont{
+/*    border:1px solid black;*/
+    width:80%;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+/*
+    padding-top:1rem;
+    padding-bottom:1rem;
+*/
+}
+.form-title{
+    font-size:2rem;
+    padding-bottom:1rem;
+    font-weight:600;
+/*    color:#f16a21;*/
+}
+form{
+/*    border:1px solid black;*/
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+input{
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+#txtPosition{
+    margin-top:0rem;
+    margin-bottom:0rem;
+    font-size:1rem;
+    width:60%;
+    border-top: none transparent;
+    border-left: none transparent;
+    border-right: none transparent;
+}
+#txtPosition:focus{
+    outline-width: 0;
+    border-bottom: 1px solid #8c8c8c;
+}
+#firstName{
+    font-size:1rem;
+    width:50%;
+    border-top: none transparent;
+    border-left: none transparent;
+    border-right: none transparent;
+}
+#firstName:focus{
+    outline-width: 0;
+    border-bottom: 1px solid #8c8c8c;
+}
+#lastName{
+    font-size:1rem;
+    width:45%;
+    margin-left:5%;
+    border-top: none transparent;
+    border-left: none transparent;
+    border-right: none transparent;
+}
+#lastName:focus{
+    outline-width: 0;
+    border-bottom: 1px solid #8c8c8c;
+}
+#emailAdd{
+    font-size:1rem;
+    width:55%;
+/*    margin-left:5%;*/
+    border-top: none transparent;
+    border-left: none transparent;
+    border-right: none transparent;
+}
+#emailAdd:focus{
+    outline-width: 0;
+    border-bottom: 1px solid #8c8c8c;
+}
+#contactNo{
+    font-size:1rem;
+    width:40%;
+    margin-left:5%;
+    margin-top:2rem;
+    border-top: none transparent;
+    border-left: none transparent;
+    border-right: none transparent;
+}
+#contactNo:focus{
+    outline-width: 0;
+    border-bottom: 1px solid #8c8c8c;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+/*----------------------------  file upload  -------------------------*/
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile + label {
+/*    max-width: 80%;*/
+    font-size: 0.8rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+.no-js .inputfile + label {
+    display: none;
+}
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+.inputfile + label svg {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+.box label{
+    margin-top:1rem;
+}
+/* style 1 */
+.inputfile-1 + label {
+    color: #727272;
+    background-color: white;
+}
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+/*    background-color: #722040;*/
+/*   -webkit-filter: brightness(95%); /* Safari 6.0 - 9.0 
+    filter: brightness(95%);*/
+}
+.success{
+    position:fixed;
+    bottom:-1%;
+    right:1%;
+    width:30%;
+    font-size:0.9rem;
+}
+.btn:hover{
+    cursor:pointer;
+}
+#page-loader{
+    width:100%;
+    height:100%;
+    z-index:99999;
+    position:fixed;
+    display:none;
+    background-color:rgba( 0, 0, 0, 0.812 );
+}
+.loader-cont{
+    width:100%;
+    height:100%;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+}
+
+@media (min-width: 320px) and (max-width:767px){
+    .banner{
+        height:350px;
+    } 
+    .banner-div-container{
+        font-size:2rem;
+    }
+    .text-container{
+    text-shadow:0.1rem 0.1rem #686868;
+    }
+    .block.second{
+        display:none;
+    }
+    p#bannertitle{
+        font-size:2rem;
+        height:2rem;
+    }
+    p#bannerTagline{
+        margin-top:2rem;
+        font-size:1rem;
+        height:1rem;
+        text-align:center;
+        text-shadow:0.1rem 0.1rem #686868;
+    }
+    .block .title{
+        font-size:1.8rem;
+        padding-top:0rem;
+    }
+    .block.first .description{
+        padding-top:0.5rem;
+        font-size:1.2rem;
+        line-height:1.5rem;
+        text-align:justify;
+    }
+    .block.first .tagline{
+        width:85%;
+        line-height:1.5rem;
+        font-size:1.2rem;
+        text-align:justify;
+        padding-top:0.5rem;
+        padding-bottom:2rem;
+    }
+    .teams{
+        margin-top:1rem;
+        border-radius:3%;
+        width:80%;
+    }
+    .teams .icon{
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+        width:100%;
+        height:200px;
+    /*    border:1px solid black;*/
+    }
+    .teams .title{
+    /*    border:1px solid black;*/
+        padding-top:0.5rem;
+        width:100%;
+        margin-top:0px;
+        font-size:1.5rem;
+        text-align:center;
+    }
+    .teams .positions li{
+    /*    border:1px solid black;*/
+    /*    border:1px solid black;*/
+        font-size:1rem;
+    }
+    .fa-li{
+        color:#f16a21;
+        font-size:1rem;
+    }
+    .fa-ul li:hover{
+        color:#f16a21;
+        cursor:pointer;
+        font-weight:600;
+    }
+    .block.second.small{
+        display:block;
+    }
+}
+@media (min-width: 600px) and (max-width:999px){
+    .banner{
+        height:400px;
+    }
+    p#bannertitle{
+    font-size:2.5rem;
+    height:2.5rem;
+    /*    font-style: italic;*/
+    text-align: center;
+    }
+    /*------------------------------  FIRST BLOCK  ----------------------------*/
+    .block .title{
+        padding-top:0.5rem;
+        font-size:30px;
+    }
+    .block.first .description{
+        padding-top:10px;
+        font-size:16px;
+        line-height:25px;
+        width:95%;
+        text-align:center;
+    }
+    .block.first .tagline{
+        font-size:16px;
+    }
+/*-------------------------------  SECOND BLOCK  -------------------------------*/
+    .block.second{
+        max-height: 400px;
+    }
+    .block.second .left{
+    /*    border:1px solid red;*/
+        height:100%;
+        width:35%;
+    }
+    .car-con{
+        height:100%;
+        width:100%;
+/*        border:1px solid black;*/
+    }
+    .val-con{
+/*        border:1px solid black;*/
+        min-height:120px;
+        width:85%;
+        margin-left:10%;
+        margin-top: -20px;
+    }
+    .val-con2{
+/*        border:1px solid black;*/
+        min-height:120px;
+        width:85%;
+        margin-left:10%;
+        margin-top:-100px;
+    }
+    .val-circle{
+        height:90px;
+        width:90px;
+/*        display:none;*/
+    }
+    .val-rectangle{
+        margin-left:-50px;
+        min-height:120px;
+        width:75%;
+/*        display:none;*/
+    }
+    .val-circle2{
+        height:90px;
+        width:90px;
+/*        display:none;*/
+    }
+    .val-title{
+/*        border:1px solid red;*/
+        height:35px;
+        padding-top:20px;
+        font-weight:700;
+        font-size:25px;
+        line-height: 0;
+        margin-left:55px;
+/*        display:none;*/
+    }
+    .val-text{
+/*        border:1px solid black;*/
+        padding-top:0px;
+        padding-bottom:1rem;
+        font-size:15px;
+        margin-left:55px;
+        line-height:20px;
+        padding-right:1rem;
+/*        display:none;*/
+    }
+    .val-title2{
+    /*    border:1px solid red;*/
+        height:35px;
+        padding-top:20px;
+        font-weight:700;
+        font-size:25px;
+        line-height: 0;
+        margin-left:55px;
+/*        display:none;*/
+    }
+    .val-text2{
+        padding-top:0px;
+        padding-bottom:1rem;
+        font-size:15px;
+        margin-left:55px;
+        line-height:20px;
+        padding-right:1rem;
+/*        display:none;*/
+    }
+/*--------------------------------  THIRD BLOCK  -----------------------------*/
+    .teams{
+        margin-top:1rem;
+        border:1px solid #dddddd;
+    /*    box-shadow:2px 2px #9b9b9b;*/
+        background-color:white;
+        border-radius:3%;
+        width:32%;
+        height:350px;
+        margin-left:0.5%;
+        margin-right:0.5%;
+/*        height:auto;*/
+    }
+    .teams .icon{
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+        width:100%;
+        height:160px;
+/*        border:1px solid black;*/
+    }
+    .teams .title{
+/*        border:1px solid black;*/
+    /*    padding-top:10px;*/
+        width:100%;
+        height:40px;
+        margin-top:0px;
+        font-size:18px;
+        text-align:center;
+    }
+    .teams .positions{
+/*        border:1px solid black;*/
+        padding-bottom:10px;
+        height:160px;
+        font-size:1rem;
+    }
+    .fa-li.fa.fa-briefcase{
+        font-size:25px;
+    }
+    .teams .positions li{
+        font-size:0.8rem;
+    }
+    
+/*------------------------------- FOURTH BLOCK  -------------------------------*/
+    .modal-title{
+    /*    border:1px solid black;*/
+        width:100%;
+        text-align:center;
+        font-size:1.5rem;
+        font-weight:600;
+    }
+    .job-desc{
+        font-size:0.9rem;
+    }
+    .form-title{
+        font-size:1.5rem;
+        padding-bottom:0.8rem;
+    }   
+    #txtPosition{
+        margin-top:0rem;
+        margin-bottom:0rem;
+        font-size:1rem;
+        width:60%;
+        border-top: none transparent;
+        border-left: none transparent;
+        border-right: none transparent;
+    }
+    #txtPosition:focus{
+        outline-width: 0;
+        border-bottom: 1px solid #8c8c8c;
+    }
+    #firstName{
+        font-size:0.8rem;
+        width:50%;
+    }
+    #lastName{
+        font-size:0.8rem;
+        width:45%;
+        margin-left:5%;
+    }
+    #emailAdd{
+        font-size:0.8rem;
+        width:55%;
+    }
+    #contactNo{
+        font-size:0.8rem;
+        width:40%;
+        margin-left:5%;
+        margin-top:1rem;
+    }
+}
+@media (min-width: 1000px) and (max-width:1199px){
+    .block.second{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        height:70%;
+        max-height: 400px;
+        width:100%;
+    /*    border:1px solid black;*/
+        padding-top:0px;
+        padding-bottom:0px;
+        -webkit-box-align:center;
+        -ms-flex-align:center;
+        align-items:center;
+    }
+    .val-circle{
+        height:100px;
+        width:100px;
+    }    
+    .val-circle2{
+        height:100px;
+        width:100px;
+    }
+    .val-rectangle{
+        margin-left:-60px;
+        min-height:120px;
+    /*    height:100%;*/
+        width:82%;
+        background-color:#d8d8d8;
+        z-index: 1;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    }
+    .val-con{
+        min-height:120px;
+        margin-top:-2rem;
+    }
+    .val-con2{
+        min-height:120px;
+    }
+    .val-title{
+        padding-top:10px;
+        font-weight:700;
+        font-size:30px;
+        height:60px;
+        margin-left:65px;
+    }
+    .val-title2{
+    /*    border:1px solid red;*/
+        padding-top:10px;
+        font-weight:700;
+        font-size:30px;
+        height:60px;
+        margin-left:65px;
+    }
+    .val-text{
+        padding-top:0px;
+        padding-bottom:0px;
+        font-size:1rem;
+        margin-left:65px;
+        padding-right:1rem;
+        margin-top:-2rem;
+    }
+    .val-text2{
+        padding-top:0px;
+        padding-bottom:0px;
+        font-size:1rem;
+        margin-left:65px;
+        padding-right:1rem;
+    }
+    .teams{
+        width:30%;
+    }
+}
+@media (min-width: 1200px) and (max-width:1366px){
+/*------------------------------  FIRST BLOCK  ----------------------------*/
+    .block .title{
+        font-size:40px;
+    }
+    .block.first .description{
+        padding-top:15px;
+        font-size:18px;
+        line-height:25px;
+        width:90%;
+        text-align:center;
+    }
+    .block.first .tagline{
+        width:85%;
+        line-height:3rem;
+        font-size:1.2rem;
+    }
+/*-------------------------------  SECOND BLOCK  -------------------------------*/
+    .val-con{
+    min-height:150px;
+    }
+    .val-con2{
+    min-height:150px;
+    }
+    .val-title{
+        padding-top:10px;
+        font-weight:700;
+        font-size:40px;
+        height:60px;
+        margin-left:65px;
+    }
+    .val-title2{
+    /*    border:1px solid red;*/
+        padding-top:10px;
+        font-weight:700;
+        font-size:40px;
+        height:60px;
+        margin-left:65px;
+    }
+    .val-text{
+        padding-top:10px;
+        padding-bottom:20px;
+        font-size:18px;
+        margin-left:65px;
+        padding-right:1rem;
+    }
+    .val-text2{
+        padding-top:10px;
+        padding-bottom:20px;
+        font-size:18px;
+        margin-left:65px;
+        padding-right:1rem;
+    }
+/*--------------------------------  THIRD BLOCK  -----------------------------*/
+    .teams{
+        margin-top:1rem;
+        border:1px solid #dddddd;
+    /*    box-shadow:2px 2px #9b9b9b;*/
+        background-color:white;
+        border-radius:3%;
+        width:25%;
+/*        height:450px;*/
+/*        height:auto;*/
+    }
+    .teams .icon{
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+        width:100%;
+        height:180px;
+/*        border:1px solid black;*/
+    }
+    .teams .title{
+/*        border:1px solid black;*/
+    /*    padding-top:10px;*/
+        width:100%;
+        height:60px;
+        margin-top:0px;
+        font-size:25px;
+        text-align:center;
+    }
+    .teams .positions{
+/*        border:1px solid black;*/
+        padding-bottom:10px;
+        height:160px;
+        font-size:1rem;
+    }
+    .fa-li.fa.fa-briefcase{
+        font-size:25px;
+    }
+
+}
+@media screen and (min-width: 1367px) {
+    .block.second{
+        height:600px;
+    }
+}
