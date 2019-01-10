@@ -6,13 +6,11 @@
         <div class="browse-category"><a href="<?php echo get_bloginfo('url'); ?>/category/events">Events</a></div>
         
 <!---------------------------------------  BROWSE BY MONTH  --------------------------------------------------->
-<!--
     <div class="browse-by"><i class="far fa-calendar-alt"></i> <strong>Archive</strong></div>
     <div class="browse-category"><a href="">Latest Posts</a></div>
     <div class="browse-category"><a href="">Older Posts</a></div>
--->
     <div class="browse-by"><i class="fab fa-twitter"></i> <strong>Tweets</strong> <font style="font-size:0.8rem;color:#777272;">by</font> <a href="https://twitter.com/ServiceITInc" style="font-size:0.8rem;">@ServiceITInc</a></div>
-    <a class="twitter-timeline" data-chrome="noheader noscrollbar" data-height="300" data-theme="light" href="https://twitter.com/ServiceITInc?ref_src=twsrc%5Etfw">Tweets by ServiceITInc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" data-chrome="noheader noscrollbar nofooter" data-height="300" data-theme="light" href="https://twitter.com/ServiceITInc?ref_src=twsrc%5Etfw">Tweets by ServiceITInc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <style>
         .timeline-Widget{
             display:none;   

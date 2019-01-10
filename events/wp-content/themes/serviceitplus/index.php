@@ -1,5 +1,10 @@
 <?php get_header(); ?>
 <?php wp_head(); ?>
+<style>
+.banner-div{
+    background:url(<?php echo get_home_url(); ?>/wp-content/uploads/2019/01/Webp.net-resizeimage.jpg);
+}
+</style>
 <div class="banner-div">
     <h1 data-aos="zoom" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="1200">News, Updates and Events</h1>
 </div>
