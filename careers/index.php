@@ -161,19 +161,53 @@ $(document).ready(function(){
         </div>
     </div>
 -->
+<?php
+$host = 'localhost';
+$db   = 'sit_db';
+$user = 'root';
+$pass = '';
+$charset = 'utf8mb4';
+$sales = 0;
+$ops = 0;
+$hr = 0;
     
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+    $options = [
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::ATTR_EMULATE_PREPARES   => false,
+];
+try {
+     $pdo = new PDO($dsn, $user, $pass, $options);
+} catch (\PDOException $e) {
+     throw new \PDOException($e->getMessage(), (int)$e->getCode());
+}
+//$stmt = $pdo->query('SELECT * FROM careers');
+//while ($row = $stmt->fetch())
+//{
+//    echo $row['job_title'] . " - " . $row['html_desc'] . "<br>";
+//}
+?>
+   
     <div class="block third">
         <div class="title">Join <FONT>Our Teams</FONT></div>
         <div class="teams">
             <img src="../images/careers/sales.jpg" alt="" class="icon">
             <div class="title">Sales</div>
             <div class="positions">
-               <ul class="fa-ul">
-                   <li data-toggle="modal" data-target="#myModal" onClick=changeTitle(1)><i class="fa-li fa fa-briefcase"></i>Account Manager</li>
-<!--                   <li data-toggle="modal" data-target="#myModal" onClick=test()><i class="fa-li fa fa-briefcase"></i>Account Manager</li>-->
-                   <li data-toggle="modal" data-target="#myModal" onClick=changeTitle(2)><i class="fa-li fa fa-briefcase"></i>Business Development Manager</li>
-                   <li data-toggle="modal" data-target="#myModal" onClick=changeTitle(3)><i class="fa-li fa fa-briefcase"></i>Sales and Marketing Manager</li>
-                   <li data-toggle="modal" data-target="#myModal" onClick=changeTitle(4)><i class="fa-li fa fa-briefcase"></i>Sales and Marketing Executive</li>
+               <ul class="fa-ul">        
+                    <?php
+                        $stmt = $pdo->query('SELECT * FROM careers where department="sales" and status="active"');
+                        while ($row = $stmt->fetch())
+                        {
+                            echo '<li data-toggle="modal" data-target="#myModal" onClick=test2("'.str_replace(" ","%",$row['job_title']).'","'.str_replace(" ","%",$row['html_desc']).'")><i class="fa-li fa fa-briefcase"></i>'.$row['job_title'].'</li>'; 
+                            $sales += 1;
+//                            echo $ops;
+                        }
+                        if($sales == 0){
+                            echo "<style>.teams:nth-of-type(2){display:none;}</style>";
+                        }
+                    ?>
                </ul>
             </div>
         </div>
@@ -183,10 +217,17 @@ $(document).ready(function(){
                 <div class="title">Technology</div>
                 <div class="positions">
                     <ul class="fa-ul">
-                       <li data-toggle="modal" data-target="#myModal" onClick=changeTitle(5)><i class="fa-li fa fa-briefcase"></i>Solutions Architect</li>
-                       <li data-toggle="modal" data-target="#myModal" onClick=changeTitle(6)><i class="fa-li fa fa-briefcase"></i>Solutions Specialist I</li>
-                       <li data-toggle="modal" data-target="#myModal" onClick=changeTitle(7)><i class="fa-li fa fa-briefcase"></i>Solutions Specialist II</li>
-                       <li data-toggle="modal" data-target="#myModal" onClick=changeTitle(8)><i class="fa-li fa fa-briefcase"></i>Support Specialist I</li>
+                    <?php
+                        $stmt = $pdo->query('SELECT * FROM careers where department="operations" and status="active"');
+                        while ($row = $stmt->fetch())
+                        {
+                            echo '<li data-toggle="modal" data-target="#myModal" onClick=test2("'.str_replace(" ","%",$row['job_title']).'","'.str_replace(" ","%",$row['html_desc']).'")><i class="fa-li fa fa-briefcase"></i>'.$row['job_title'].'</li>'; 
+                            $ops += 1;
+                        }
+                        if($ops == 0){
+                            echo "<style>.teams:nth-of-type(3){display:none;}</style>";
+                        }
+                    ?>
                    </ul>
                 </div>
             </div>
@@ -197,10 +238,21 @@ $(document).ready(function(){
             <div class="title">Human Resources</div>
             <div class="positions">
                <ul class="fa-ul">
-                   <li data-toggle="modal" data-target="#myModal" onClick=changeTitle(9)><i class="fa-li fa fa-briefcase"></i>Recruitment Staff</li>
-                   <li data-toggle="modal" data-target="#myModal" onClick=changeTitle(10)><i class="fa-li fa fa-briefcase"></i>Human Resources Manager</li>
-                   <li style="opacity:0"><i class="fa-li fa fa-briefcase"></i>asd</li>
-                   <li style="opacity:0"><i class="fa-li fa fa-briefcase"></i>asd</li>
+                   <?php
+                        $stmt = $pdo->query('SELECT * FROM careers where department="hr" and status="active"');
+                        while ($row = $stmt->fetch())
+                        {
+                            echo '<li data-toggle="modal" data-target="#myModal" onClick=test2("'.str_replace(" ","%",$row['job_title']).'","'.str_replace(" ","%",$row['html_desc']).'")><i class="fa-li fa fa-briefcase"></i>'.$row['job_title'].'</li>'; 
+                            $hr += 1;
+                        }
+                        if($hr == 0){
+                            echo "<style>.teams:nth-of-type(4){display:none;}</style>";
+                        }
+                    ?>
+<!--
+                   <li style="opacity:0;cursor:default;"><i class="fa-li fa fa-briefcase"></i>asd</li>
+                   <li style="opacity:0;cursor:default;"><i class="fa-li fa fa-briefcase"></i>asd</li>
+-->
                </ul>
             </div>
         </div>
@@ -266,13 +318,25 @@ $(document).ready(function(){
   </div>
 </div>
 <script type="text/javascript">
+    function test2(job,desc){
+        var title = job.replace(/%/g," ");
+        var content = desc.replace(/%/g," ");
+        
+        document.getElementById("application").reset();
+        document.getElementById("test").innerHTML = "Upload Your Resume";
+        document.getElementById("modal.title").innerHTML = title;
+        document.getElementById("txtPosition").value = title;
+        $.get("../careers/jobDescriptions/" + content +  ".html",function(data){
+                $(".job-desc").html(data);
+            });
+    }
     function test(){
         $.get("http://localhost/website/careers/test.html",function(data){
             $(".job-desc").html(data);
         });
     }
     function changeTitle(x){
-            document.getElementById("application").reset();
+        document.getElementById("application").reset();
         document.getElementById("test").innerHTML = "Upload Your Resume";
         if(x==0){
             document.getElementById("modal.title").innerHTML = "Intern";

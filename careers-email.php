@@ -59,5 +59,5 @@ else
     session_start();
     $_SESSION["status"] = "success";
     $_SESSION["job"] = $pos;
-    header("Location: http://sitlivechat.x10host.com/betacareer/careers/");
+    header("Location: http://desktop-5ctqqt6:8081/serviceitplus/careers/");
 }
