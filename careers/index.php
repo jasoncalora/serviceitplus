@@ -131,9 +131,7 @@
                 <div class="item"><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
                 <div class="item"><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
             </div>
-       </div>
-       
-        
+       </div>     
     </div>
 <script>
 $(document).ready(function(){
@@ -162,6 +160,15 @@ $(document).ready(function(){
     </div>
 -->
 <?php
+echo "test";
+//$host = 'sitlivechat.x10host.com';
+//$db   = 'sitlivec_serviceitplus';
+//$user = 'sitlivec_sit1';
+//$pass = 'P@ssw0rd';
+//$host = 'localhost';
+//$db   = 'events_wordpress';
+//$user = 'dev';
+//$pass = 'P@ssw0rd';
 $host = 'localhost';
 $db   = 'sit_db';
 $user = 'root';
@@ -177,6 +184,16 @@ $options = [
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     PDO::ATTR_EMULATE_PREPARES   => false,
 ];
+//try {
+//     $pdo = new PDO($dsn, $user, $pass, $options);
+//} catch (\PDOException $e) {
+//     throw new \PDOException($e->getMessage(), (int)$e->getCode());
+//}
+//$stmt = $pdo->query('SELECT job_title FROM careers;');
+//while ($row = $stmt->fetch())
+//{
+//    echo $row['job_title'] . "<br>";
+//}
 try {
      $pdo = new PDO($dsn, $user, $pass, $options);
 } catch (\PDOException $e) {
@@ -294,7 +311,7 @@ try {
             <div class="appli-form-wrapper">
                 <div class="appli-form-cont">
                    <div class="form-title">Apply Now!</div>
-                    <form id="application" action='http://sitlivechat.x10host.com/betacareer/careers-email.php' method='post' enctype='multipart/form-data'>
+                    <form id="application" action='../careers-email.php' method='post' enctype='multipart/form-data'>
                        <input type="text" style="display:none;" id="txtPosition" name="txtPosition" readonly required>
                         <input type="text" id="firstName" name="firstName" placeholder="First Name" autocomplete="off" required>                   
                         <input type="text" id="lastName" name="lastName" placeholder="Last Name" autocomplete="off" required>                    

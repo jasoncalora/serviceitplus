@@ -12,7 +12,7 @@ $phone1 = $_POST['contactNo'];
 $message = "Position : ".$pos."<br>Name : ".$fname." ".$lname."<br>Email : ".$email1."<br>Contact No. :".$phone1;
 echo $message;
 //PHPMailer Object
-$mail = new PHPMailer;
+$mail = new PHPMailer();
 
 //From email address and name
 $mail->From = $email1;//$email1;
@@ -29,14 +29,15 @@ $mail->FromName = $fname." ".$lname;
 //$mail->addBCC("bcc@example.com");
 
 //$mail = new PHPMailer();
-$mail->SMTPSecure = 'ssl';
+$mail->SMTPSecure = 'tls';
 $mail->IsSMTP();
 //$mail->Host = 'xo7.x10hosting.com:21';
-$mail->Host = 'mail.sitlivechat.x10host.com:465';
+$mail->Host = 'smtp.gmail.com:587';
 //$mail->Port = 465;
-$mail->Username = "sitlivechat@sitlivechat.x10host.com"; // your GMail user name
-$mail->Password = "passwordkoto"; 
+$mail->Username = "jason.calora@serviceitplus.com"; // your GMail user name
+$mail->Password = "alphanumericP455W0RD"; 
 $mail->AddAddress("jason.calora@serviceitplus.com"); // recipients email 
+$mail->SMTPAuth = true;
 //$mail->FromName = "username";
 //Send HTML or Plain Text email
 $mail->isHTML(true);
@@ -59,5 +60,5 @@ else
     session_start();
     $_SESSION["status"] = "success";
     $_SESSION["job"] = $pos;
-    header("Location: http://desktop-5ctqqt6:8081/serviceitplus/careers/");
+    header("Location:./careers/");
 }

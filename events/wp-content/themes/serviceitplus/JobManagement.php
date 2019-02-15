@@ -11,7 +11,7 @@ session_start();
 //echo $_SESSION['sessionOwner'];
 if ($_SESSION['sessionOwner'] == '')
 {
-    header('Location: http://desktop-5ctqqt6:8081/serviceitplus/events/login/');
+    header('Location: '.get_bloginfo('siteurl').'/login/');
 }
 ?>
 <html>
@@ -20,6 +20,14 @@ if ($_SESSION['sessionOwner'] == '')
         <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     </head>
 <?php
+//$host = 'dev.serviceitplus.com';
+//$db   = 'events_wordpress';
+//$user = 'dev';
+//$pass = 'P@ssw0rd';
+//$host = 'sitlivechat.x10host.com';
+//$db   = 'sitlivec_serviceitplus';
+//$user = 'sitlivec_sit1';
+//$pass = 'P@ssw0rd';
 $host = 'localhost';
 $db   = 'sit_db';
 $user = 'root';
@@ -43,7 +51,7 @@ try {
 ?>
 <script type="text/javascript">
     $(document).ready(function(){
-        $('#application').submit(function() {
+        $('.application').submit(function() {
          $('#page-loader').show(); 
           return true;
         });
@@ -66,7 +74,7 @@ try {
                 {
 //                    echo '<li data-toggle="modal" data-target="#myModal" onClick=test2("'.str_replace(" ","%",$row['job_title']).'","'.str_replace(" ","%",$row['html_desc']).'")><i class="fa-li fa fa-briefcase"></i>'.$row['job_title'].'</li>'; 
 //                    echo '<tr><td></td></tr>';
-                    echo '<td><form id="'.$row['ID'].'" action="'.get_bloginfo('siteurl').'/wp-content/themes/serviceitplus/deactivate.php" method="post" enctype="multipart/form-data">';
+                    echo '<td><form class="application" id="'.$row['ID'].'" action="'.get_bloginfo('siteurl').'/wp-content/themes/serviceitplus/deactivate.php" method="post" enctype="multipart/form-data">';
                     echo '<input type="text" style="display:none;" id="primarykey" name="primarykey" value="'.$row['ID'].'"">';
                     echo '</form></td>';    
                     echo '<td>'.$row['job_title'].'</td>';
@@ -86,6 +94,9 @@ try {
                     echo '</tr>';
                 }
             ?>
+            <td colspan="7" style="text-align:right;paddin-right:2rem;">
+                <a href="" class="btn btn-primary" disabled>Add Job</a>
+            </td>
           </table>
            
        </div>
@@ -128,5 +139,27 @@ try {
 /*        border:1px solid black;*/
         float:left;
         width:100%;
+    }
+    
+    #page-loader{
+        width:100%;
+        height:100%;
+        z-index:99999;
+        position:fixed;
+        display:none;
+        background-color:rgba( 0, 0, 0, 0.812 );
+    }
+    .loader-cont{
+        width:100%;
+        height:100%;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-pack:center;
+        -ms-flex-pack:center;
+        justify-content:center;
+        -webkit-box-align:center;
+        -ms-flex-align:center;
+        align-items:center;
     }
 </style>

@@ -88,3 +88,84 @@ Stack trace:
 #4 {main}
   thrown
 
+2019-01-14T09:03:17+00:00 CRITICAL Uncaught PDOException: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in C:\xampp\htdocs\serviceitplus\events\wp-content\themes\serviceitplus\login.php:87
+Stack trace:
+#0 C:\xampp\htdocs\serviceitplus\events\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\serviceitplus\events\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\serviceitplus\events\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2019-01-14T09:03:53+00:00 CRITICAL Uncaught PDOException: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in C:\xampp\htdocs\serviceitplus\events\wp-content\themes\serviceitplus\login.php:87
+Stack trace:
+#0 C:\xampp\htdocs\serviceitplus\events\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\serviceitplus\events\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\serviceitplus\events\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2019-01-14T09:15:09+00:00 CRITICAL Uncaught PDOException: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in C:\xampp\htdocs\serviceitplus\events\wp-content\themes\serviceitplus\login.php:87
+Stack trace:
+#0 C:\xampp\htdocs\serviceitplus\events\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\serviceitplus\events\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\serviceitplus\events\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2019-01-14T09:16:11+00:00 CRITICAL Uncaught PDOException: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in C:\xampp\htdocs\serviceitplus\events\wp-content\themes\serviceitplus\login.php:87
+Stack trace:
+#0 C:\xampp\htdocs\serviceitplus\events\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\serviceitplus\events\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\serviceitplus\events\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2019-01-14T09:17:44+00:00 CRITICAL Uncaught PDOException: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in C:\xampp\htdocs\serviceitplus\events\wp-content\themes\serviceitplus\login.php:87
+Stack trace:
+#0 C:\xampp\htdocs\serviceitplus\events\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\serviceitplus\events\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\serviceitplus\events\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2019-01-14T09:25:25+00:00 CRITICAL Uncaught PDOException: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in C:\xampp\htdocs\serviceitplus\events\wp-content\themes\serviceitplus\JobManagement.php:45
+Stack trace:
+#0 C:\xampp\htdocs\serviceitplus\events\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\serviceitplus\events\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\serviceitplus\events\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2019-01-14T09:26:12+00:00 CRITICAL Uncaught PDOException: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in C:\xampp\htdocs\serviceitplus\events\wp-content\themes\serviceitplus\JobManagement.php:45
+Stack trace:
+#0 C:\xampp\htdocs\serviceitplus\events\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\serviceitplus\events\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\serviceitplus\events\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2019-01-14T09:28:41+00:00 CRITICAL Uncaught PDOException: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in C:\xampp\htdocs\serviceitplus\events\wp-content\themes\serviceitplus\JobManagement.php:45
+Stack trace:
+#0 C:\xampp\htdocs\serviceitplus\events\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\serviceitplus\events\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\serviceitplus\events\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+
+2019-01-14T09:29:12+00:00 CRITICAL Uncaught PDOException: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in C:\xampp\htdocs\serviceitplus\events\wp-content\themes\serviceitplus\login.php:87
+Stack trace:
+#0 C:\xampp\htdocs\serviceitplus\events\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\serviceitplus\events\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\serviceitplus\events\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown
+

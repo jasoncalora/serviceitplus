@@ -63,6 +63,14 @@ Template Name: careerslogin
 </style>
 <?php
 if(!empty($_POST['username'])) {
+//$host = 'localhost';
+//$db   = 'events_wordpress';
+//$user = 'dev';
+//$pass = 'P@ssw0rd';
+//$host = 'sitlivechat.x10host.com';
+//$db   = 'sitlivec_serviceitplus';
+//$user = 'sitlivec_sit1';
+//$pass = 'P@ssw0rd';
     $host = 'localhost';
     $db   = 'sit_db';
     $user = 'root';
@@ -89,7 +97,7 @@ if(!empty($_POST['username'])) {
     {
         session_start();
         $_SESSION['sessionOwner'] = $un;
-        header("Location: http://desktop-5ctqqt6:8081/serviceitplus/events/careersmgt/", true);
+        header("Location: ".get_bloginfo('siteurl')."/careersmgt/", true);
         echo "user exists";
     }
     echo "<style>label{opacity:1;}</style>";
@@ -97,7 +105,7 @@ if(!empty($_POST['username'])) {
 ?>
 <body>
     <div class="container">
-        <form class="loginform" action='http://desktop-5ctqqt6:8081/serviceitplus/events/login/' method='post' accept-charset='UTF-8'>
+        <form class="loginform" action='<?php echo get_bloginfo('siteurl'); ?>/login/' method='post' accept-charset='UTF-8'>
             <div class="form-inner">
                 <img src="http://www.serviceitplus.com/events/wp-content/uploads/2018/11/SITlogo.png" alt="">
                 <input type="text" class="form-control textbox" id="username" name="username" placeholder="username" required>

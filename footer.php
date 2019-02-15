@@ -52,6 +52,12 @@
             </div>    
     </div>
     <div class="footer-bottom">
-            Copyright&nbsp; <i class="fa fa-copyright" aria-hidden="true"></i> &nbsp; 2017 ServiceIT+ Inc.  
+         <div class="wrapp">
+<!--            <div class="cont">-->
+              <div><a href="./about/SERVICEIT PLUS’ (EXTERNAL) PERSONAL DATA POLICY v1.1.pdf" download>Privacy Statement</a></div>
+              <div>|</div>
+              <div>Copyright&nbsp; <i class="fa fa-copyright" aria-hidden="true"></i> &nbsp; 2017 ServiceIT+ Inc.</div>
+<!--            </div>-->
+         </div> 
     </div>
 </div>

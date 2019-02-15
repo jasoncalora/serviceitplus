@@ -1,7 +1,15 @@
 <?php
 $key = $_POST['primarykey'];
 echo $key;
-$host = 'localhost';
+//$host = 'localhost';
+//$db   = 'events_wordpress';
+//$user = 'dev';
+//$pass = 'P@ssw0rd';
+//$host = 'sitlivechat.x10host.com';
+//$db   = 'sitlivec_serviceitplus';
+//$user = 'sitlivec_sit1';
+//$pass = 'P@ssw0rd';
+    $host = 'localhost';
     $db   = 'sit_db';
     $user = 'root';
     $pass = '';
@@ -28,5 +36,5 @@ $host = 'localhost';
         }
         $pdo->prepare($sql)->execute([$key]);
     }
-    header("Location: http://desktop-5ctqqt6:8081/serviceitplus/events/careersmgt/");
+    header("Location: events/careersmgt/");
 ?>
