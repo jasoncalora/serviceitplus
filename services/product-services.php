@@ -480,7 +480,6 @@ function hideModal(){
         padding-left:1rem;
         padding-right:1rem;
     }
-    
 </style>
 <body oncontextmenu=”return false” class="noselect" id="body">
     <div class="body-wrapper">
@@ -575,6 +574,9 @@ function hideModal(){
                     </div>
                 </div>
             </div>
+            <div class="block6">
+                
+            </div>
             <div class="block4">
                 <div class="left">Ready to get started?</div>
                 <div class="right"><button type="button" class="btn btn-success" onclick="showModal()">Contact our Sales Team</button></div>
@@ -588,23 +590,23 @@ function hideModal(){
                         <div class="forminputs-container">
                             <div class="form-border">
                                 <p>Full Name</p>
-                                <input type="text" id="fullname" class="textbox" placeholder="Enter your Full Name">
+                                <input type="text" id="fullname" class="textbox" placeholder="Enter your Full Name" autocomplete="off">
                             </div>
                             <div class="form-border">
                                 <p>Company</p>
-                                <input type="text" id="company" class="company" placeholder="Enter your Company Name">
+                                <input type="text" id="company" class="company" placeholder="Enter your Company Name" autocomplete="off">
                             </div>
                             <div class="form-border">
                                 <p>Designation</p>
-                                <input type="text" id="desig" class="desig" placeholder="Enter Position in Company">
+                                <input type="text" id="desig" class="desig" placeholder="Enter Position in Company" autocomplete="off">
                             </div>
                             <div class="form-border">
                                 <p>Email Address</p>
-                                <input type="text" id="email" class="textbox" placeholder="Enter your Email Address">
+                                <input type="text" id="email" class="textbox" placeholder="Enter your Email Address" autocomplete="off">
                             </div>
                             <div class="form-border">
                                 <p>Phone Number</p>
-                                <input type="text" id="contactno" class="contactno" placeholder="Enter your Contact Number">
+                                <input type="text" id="contactno" class="contactno" placeholder="Enter your Contact Number" autocomplete="off">
                             </div>
                             <div class="form-border">
                                <p>Message</p>

@@ -39,7 +39,7 @@
         width:100%;
         padding-left:5%;
         font-size:2rem;
-        font-weight:500;
+        font-weight:600;
         display:flex;
         -webkit-box-align:center;
         -ms-flex-align:center;
@@ -181,7 +181,7 @@
         <div class="service-text">
             <div class="servicecat-title">Consulting Services</div>
             <div class="servicecat-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit voluptatem, voluptates veritatis quam beatae, tenetur, reiciendis quisquam dolore soluta laborum, assumenda aspernatur. Dolorum ducimus architecto blanditiis magni ut adipisci distinctio.</div>
-            <div class="servicecat-btn"><button type="button"  class="btn btn-info">Learn More</button></div>
+            <div class="servicecat-btn"><button type="button"  class="btn btn-info"><a href="product-consulting.php">Learn More</a></button></div>
         </div>
         <div class="service-image"><img src="../images/services/block2.svg" alt=""></div>
     </div>
@@ -190,7 +190,7 @@
         <div class="service-text">
             <div class="servicecat-title">Managed Services</div>
             <div class="servicecat-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit voluptatem, voluptates veritatis quam beatae, tenetur, reiciendis quisquam dolore soluta laborum, assumenda aspernatur. Dolorum ducimus architecto blanditiis magni ut adipisci distinctio.</div>
-            <div class="servicecat-btn"><button type="button"  class="btn btn-info">Learn More</button></div>
+            <div class="servicecat-btn"><button type="button"  class="btn btn-info" disabled title="Under Development">Learn More</button></div>
         </div>        
     </div>
 </div>
