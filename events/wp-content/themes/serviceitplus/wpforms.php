@@ -27,7 +27,7 @@ wp_head();
     }
     .container{
         min-height:80%;
-        width:80%;
+        min-width:80%;
 /*        border:1px solid red;*/
     }
     .everest-forms .everest-forms-part-button, .everest-forms button[type=submit], .everest-forms input[type=submit]{

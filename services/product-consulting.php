@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Product Services | Service IT+</title>
+    <title>Consulting Services | Service IT+</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
     <meta name="author" content="SemiColonWeb" />
@@ -47,7 +47,7 @@ function hideModal(){
         /*    overflow-x: hidden;*/
     }
     .header{
-        background-color:rgba( 255, 255, 255, 0.056 );
+        background-color:rgba( 25, 25, 122, 0.242 );
     }
     .body-container {
 /*        border:4px solid red;*/
@@ -108,6 +108,7 @@ function hideModal(){
         float: left;
         width: 100%;
         height: 70%;
+/*        background: url(../images/services/img8.svg);*/
         background: url(../images/services/banner2.1.svg);
         background-size:cover;
         background-repeat: no-repeat;
@@ -273,10 +274,13 @@ function hideModal(){
         text-align:center;
     }
     .block4 .left img{
-        width:70%;
+/*        border:1px solid black;*/
+        width:80%;
     }
     .block4 .right{
+/*        border:1px solid black;*/
         width:55%;
+        margin:-3%;
     }
     
     .block4 .right .title{
@@ -608,7 +612,7 @@ function hideModal(){
             </div>
             <div class="block4">
                 <div class="left">
-                    <img src="../images/services/img4.svg" alt="">
+                    <img src="../images/services/img5.svg" alt="">
                 </div>
                 <div class="right">
                     <div class="title">Data Protection Authorities</div>
