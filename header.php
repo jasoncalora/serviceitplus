@@ -17,6 +17,7 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("services/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
     $url2 = str_replace("product-services.php","",$url2);
     $url2 = str_replace("product-consulting.php","",$url2);
+    $url2 = str_replace("Managed-Services.php","",$url2);
 //    $url2 = $url2.str_replace("services/","",str_replace("product-services.php","",$url2));
 //    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("services/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
 }else {

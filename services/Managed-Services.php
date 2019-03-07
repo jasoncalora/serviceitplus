@@ -25,14 +25,15 @@
     <!--    <script type="text/javascript" src="//www.serviceitplus.com/livechat2/php/app.php?widget-init.js"></script>-->
 </head>
 <script>
-    function showModal(){
-    document.getElementById("contact-modal").setAttribute("style","display:flex;");
-    document.getElementById("body").setAttribute("style","overflow:hidden;");
-}
-function hideModal(){
-        document.getElementById("contact-modal").setAttribute("style","display:none;");
-        document.getElementById("body").setAttribute("style","overflow:show;");
-}
+    function showModal() {
+        document.getElementById("contact-modal").setAttribute("style", "display:flex;");
+        document.getElementById("body").setAttribute("style", "overflow:hidden;");
+    }
+
+    function hideModal() {
+        document.getElementById("contact-modal").setAttribute("style", "display:none;");
+        document.getElementById("body").setAttribute("style", "overflow:show;");
+    }
 </script>
 <style>
     body {
@@ -46,11 +47,13 @@ function hideModal(){
         height: 100%;
         /*    overflow-x: hidden;*/
     }
-    .header{
-        background-color:rgba( 25, 25, 122, 0.242 );
+
+    .header {
+        background-color: rgba(25, 25, 122, 0.242);
     }
+
     .body-container {
-/*        border:4px solid red;*/
+        /*        border:4px solid red;*/
         display: flex;
         flex-wrap: wrap;
     }
@@ -108,15 +111,91 @@ function hideModal(){
         float: left;
         width: 100%;
         height: 70%;
-/*        background: url(../images/services/img8.svg);*/
+        /*        background: url(../images/services/img8.svg);*/
         background: url(../images/services/banner3.4.svg);
-        background-size:cover;
+        background-size: cover;
         background-repeat: no-repeat;
-/*        border:5px solid black;*/
+        /*        border:5px solid black;*/
+    }
+
+    .block1 {
+        /*        border:4px solid black;*/
+        /*        height:400px;*/
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .block1 .title {
+        /*        border:2px solid red;*/
+        width: 100%;
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .block1 .desc {
+        width: 100%;
+        font-size: 1.2rem;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+
+    .block1 .service-container {
+/*        border: 2px solid black;*/
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    .block1 .service-container .card {
+        width: 32%;
+/*        text-align: center;*/
+        margin-left:1rem;
+        margin-left:1rem;
+        margin-top:1rem;
+        
+    }
+    .card .card-title{
+        font-size:1.5rem;
+        color:#383838;
+/*        font-weight:600;*/
+    }
+    .card .card-text{
+        font-size:1rem;
+        color:#7a7a7a;
+    }
+    .block2{
+        width:100%;
+        border:2px solid black;
+        display:flex;
+        padding-top:2rem;
+        padding-bottom:2rem;
+    }
+    .block2 .left{
+        width:45%;
+        border:1px solid red;
+    }
+    
+    .block2 .left .title{
+        font-size:1.5rem;
+        font-weight:600;
+    }
+    .block2 .right{
+        width:55%;
+        border:2px solid blue;
     }
 </style>
-
-<body oncontextmenu=”return false” class="noselect" id="body">
+<body oncontextmenu=”return false” class="noselect" id="body" >
     <div class="body-wrapper">
         <div class="body-container">
             <?php include "../header.php" ?>
@@ -129,9 +208,65 @@ function hideModal(){
                     </div>
                 </div>
             </div>
+            <div class="block1">
+                <div class="title">ITSM System Administration</div>
+                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nulla, fugit illum in voluptatem consequatur molestiae, reiciendis veritatis neque, aperiam velit. Ipsam esse eaque dolorem repellendus, animi laudantium sit pariatur.</div>
+                <div class="service-container">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sub Service 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sub Service 2</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sub Service 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sub Service 4</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>                    
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sub Service 5</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>              
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sub Service 6</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block2">
+                <div class="left">
+                    <div class="title">Achieve Better Quality With ServiceIT+</div>
+                    <div class="desc">
+                        ServiceIT+ will help you provide better quality assurance 
+                    </div>
+                </div>
+                <div class="right"></div>
+            </div>
             <?php include "../footer.php" ?>
         </div>
     </div>
 </body>
 
 </html>
+SET @fname = ''
+SET @lname = ''
+SET @username = ''
+SET @loginame = ''
+SET @email = ''

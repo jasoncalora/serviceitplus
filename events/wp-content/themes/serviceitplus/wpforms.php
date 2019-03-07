@@ -2,7 +2,6 @@
 /*
 Template Name: wpforms
 */
-get_header();
 wp_head();
 ?>
 <div class='wrapper'>
@@ -15,19 +14,19 @@ wp_head();
         <?php endif; ?>
     </div>
 </div>
-<?php get_footer() ?>
 <style>
     .wrapper{
 /*        border:1px solid black;*/
 /*        height:100%;*/
         width:100%;
-        margin-top:90px;
+        margin-top:40px;
         display:flex;
         justify-content:center;
     }
     .container{
-        min-height:80%;
-        min-width:80%;
+        min-height:95%;
+        min-width:95%;
+        text-align: center;
 /*        border:1px solid red;*/
     }
     .everest-forms .everest-forms-part-button, .everest-forms button[type=submit], .everest-forms input[type=submit]{
