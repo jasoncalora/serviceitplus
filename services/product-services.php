@@ -16,15 +16,14 @@
 <!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
 
     <!-- header css & js  -->
-    <script type="text/javascript" src="../js/header2.js"></script>
-    <link rel="stylesheet" href="../css/header.css" type="text/css" />
+<!--    <script type="text/javascript" src="../js/header2.js"></script>-->
+<!--    <link rel="stylesheet" href="../css/header.css" type="text/css" />-->
     <!--	<link rel="stylesheet" href="../css/services.css" type="text/css" />-->
 <!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">-->
 
-    <link rel="stylesheet" href="../css/aos.css">
+<!--    <link rel="stylesheet" href="../css/aos.css">-->
     <!--    <script type="text/javascript" src="//www.serviceitplus.com/livechat2/php/app.php?widget-init.js"></script>-->
 </head>
-
             <?php include "bs-fa.html" ?>
 <style>
     body {

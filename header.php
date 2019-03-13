@@ -26,7 +26,7 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
 }
 ?>
 
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+<!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />-->
 <div class="header noselect animated fadeInH">
 	<div class="header-logo">
         <div class="menu-icon"><i class="fa fa-bars" aria-hidden="true" data-toggle="collapse" data-target="#dropdown-menu"></i></div>
