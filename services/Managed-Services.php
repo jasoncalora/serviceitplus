@@ -24,17 +24,6 @@
     <link rel="stylesheet" href="../css/aos.css">
     <!--    <script type="text/javascript" src="//www.serviceitplus.com/livechat2/php/app.php?widget-init.js"></script>-->
 </head>
-<script>
-    function showModal() {
-        document.getElementById("contact-modal").setAttribute("style", "display:flex;");
-        document.getElementById("body").setAttribute("style", "overflow:hidden;");
-    }
-
-    function hideModal() {
-        document.getElementById("contact-modal").setAttribute("style", "display:none;");
-        document.getElementById("body").setAttribute("style", "overflow:show;");
-    }
-</script>
 <style>
     body {
         font-family: 'Raleway', sans-serif;
@@ -122,7 +111,7 @@
         /*        border:4px solid black;*/
         /*        height:400px;*/
         width: 100%;
-        padding-top: 3rem;
+        padding-top: 2rem;
         padding-bottom: 3rem;
         display: flex;
         flex-wrap: wrap;
@@ -146,56 +135,183 @@
     }
 
     .block1 .service-container {
-/*        border: 2px solid black;*/
+        /*        border: 2px solid black;*/
         width: 100%;
         padding-top: 1rem;
         padding-bottom: 1rem;
         padding-left: 5%;
         padding-right: 5%;
-        display:flex;
-        flex-wrap:wrap;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
     .block1 .service-container .card {
         width: 32%;
-/*        text-align: center;*/
-        margin-left:1rem;
-        margin-left:1rem;
-        margin-top:1rem;
-        
+        /*        text-align: center;*/
+        margin-left: 1rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+
     }
-    .card .card-title{
-        font-size:1.5rem;
-        color:#383838;
-/*        font-weight:600;*/
+
+    .card .card-title {
+        font-size: 1.5rem;
+        color: #383838;
+        /*        font-weight:600;*/
     }
-    .card .card-text{
-        font-size:1rem;
-        color:#7a7a7a;
+
+    .card .card-text {
+        font-size: 1rem;
+        color: #7a7a7a;
     }
-    .block2{
-        width:100%;
-        border:2px solid black;
-        display:flex;
-        padding-top:2rem;
-        padding-bottom:2rem;
+
+    .block2 {
+        width: 100%;
+        /*        border:2px solid black;*/
+        display: flex;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 5%;
+        padding-right: 2%;
+        background-color: #efefef;
     }
-    .block2 .left{
-        width:45%;
-        border:1px solid red;
+
+    .block2 .left {
+        width: 55%;
+        /*        border:1px solid red;*/
     }
-    
-    .block2 .left .title{
-        font-size:1.5rem;
-        font-weight:600;
+
+    .block2 .left .title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #2d2d2d;
     }
-    .block2 .right{
-        width:55%;
-        border:2px solid blue;
+
+    .block2 .left .desc {
+        font-size: 1rem;
+        color: #494949;
+    }
+
+    .block2 .left .bullets {
+        font-size: 1rem;
+        /*        border:1px solid black;*/
+        padding-left: 5%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .block2 .left .bullets .card {
+        width: 40%;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .block2 .left .bullets .card .card-body {
+        display: flex;
+        align-items: center;
+        color: #666666;
+        /*        border:1px solid black;*/
+    }
+
+    .block2 .left .bullets .card i {
+        color: orange;
+        font-size: 1.5rem;
+        padding-right: 1rem;
+    }
+
+    .block2 .right {
+        width: 45%;
+        /*        border:2px solid blue;*/
+    }
+
+    .block2 .right img {
+        max-height: 300px;
+    }
+
+    .block3 {
+        /*        border:1px solid black;*/
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f7f7f7;
+    }
+
+    .block3 .title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 600;
+        /*        border:1px solid black;*/
+    }
+
+    .block3 .desc {
+        width: 100%;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-bottom: 2rem;
+    }
+
+    .block3 .left {
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .block3 .items-container {
+        /*        border:1px solid black;*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .block3 .item-bullet {
+        /*        border:1px solid red;*/
+        padding-top: 2rem;
+        width: 10%;
+        text-align: center;
+        font-size: 1.2rem;
+        color: limegreen;
+    }
+
+    .block3 .item {
+        /*        border:1px solid red;*/
+        padding-top: 2rem;
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .block3 .middle {
+        width: 40%;
+        /*        border:1px solid red;*/
+    }
+
+    .block3 .middle img {
+        max-height: 350px;
+        /*        border:1px solid black;*/
+    }
+
+    .block3 .right {
+        width: 30%;
+        /*        border:1px solid red;*/
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
 </style>
-<body oncontextmenu=”return false” class="noselect" id="body" >
+
+<body oncontextmenu=”return false” class="noselect" id="body">
     <div class="body-wrapper">
         <div class="body-container">
             <?php include "../header.php" ?>
@@ -235,13 +351,13 @@
                             <h5 class="card-title">Sub Service 4</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-                    </div>                    
+                    </div>
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Sub Service 5</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-                    </div>              
+                    </div>
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Sub Service 6</h5>
@@ -254,19 +370,70 @@
                 <div class="left">
                     <div class="title">Achieve Better Quality With ServiceIT+</div>
                     <div class="desc">
-                        ServiceIT+ will help you provide better quality assurance 
+                        ServiceIT+ provides logical and regression test services to validate that each of your software application’s
+                        functions operate in accordance with their behavioral requirement specifications, ensuring behavioral conformity and quality.
+                    </div>
+                    <div class="bullets">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-cogs"></i>Functional Testing
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-retweet"></i>Regression Testing
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-sitemap"></i>Compatibility Testing
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-mobile-alt"></i>Mobile Testing
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="right"></div>
+                <div class="right">
+                    <img src="../images/services/testing.svg" alt="">
+                </div>
             </div>
+            <div class="block3">
+                <div class="title">
+                    Asset Discovery
+                </div>
+                <div class="desc">
+                    We help you account for All Your IT Assets by scanning your environment to gather information about your devices. ServiceIT+ offers to determine exactly what devices and nodes are part of a network at any given time.
+                </div>
+                <div class="left">
+                    <div class="items-container">
+                        <div class="item-bullet"><i class="fas fa-check"></i></div>
+                        <div class="item">Discover all your Windows machines with a Windows domain scan, script scan, or agent-based scan.</div>
+                        <div class="item-bullet"><i class="fas fa-check"></i></div>
+                        <div class="item">Use the network scan to discover non-windows machines (Linux, Solaris, MAC, and IBM-AIX machines), VMHost machines, and IP devices such as printers, routers, switches, and access points.</div>
+                    </div>
+                </div>
+                <div class="middle">
+                    <img src="../images/services/asset.svg" alt="">
+                </div>
+                <div class="right">
+                    <div class="items-container">
+                        <div class="item-bullet"><i class="fas fa-check"></i></div>
+                        <div class="item">Manually import all asset details from various sites using a simple remote scan technique.</div>
+                        <div class="item-bullet"><i class="fas fa-check"></i></div>
+                        <div class="item">Discover all the IP-enabled devices on your network</div>
+                        <div class="item-bullet"><i class="fas fa-check"></i></div>
+                        <div class="item">Determine what software and services are installed on them, how they’re configured</div>
+                    </div>
+                </div>
+
+            </div>
+            <?php include "modal.php" ?>
             <?php include "../footer.php" ?>
         </div>
     </div>
 </body>
 
 </html>
-SET @fname = ''
-SET @lname = ''
-SET @username = ''
-SET @loginame = ''
-SET @email = ''
