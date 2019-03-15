@@ -12,6 +12,9 @@
     }elseif (strpos($_SERVER['PHP_SELF'], 'careers') > 0) {
         $url = ".././/";
         $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("careers/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+    }elseif (strpos($_SERVER['PHP_SELF'], 'learning') > 0) {
+        $url = ".././/";
+        $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("learning/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
     }elseif (strpos($_SERVER['PHP_SELF'], 'services') > 0) {
         $url = ".././/";
         $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("services/","",str_replace("index.php","",$_SERVER['PHP_SELF']));

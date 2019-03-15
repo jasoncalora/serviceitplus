@@ -94,7 +94,6 @@ header('Expires: 0');
 		animation:         zoomIn 3s;
 	}
 </style>
-
 <body onload="window.onbeforeunload = function () {window.scrollTo(0, 0);}">
 <!--<body onload = "$(document).ready(function() {  $('.modal').modal('show');});">-->
 <!--<body>-->
