@@ -1,13 +1,5 @@
 <?php
 $dir = "videos/";
-
-// Sort in ascending order - this is default
-//$a = scandir($dir);
-//$a = array_diff(scandir($dir), array('.', '..'));
-//$a = array_values($a);
-////print_r($a);
-//print_r(recursive_scandir($dir));
-
 function recursive_scandir($dir){
 	$contents = array();
 	foreach(array_diff(scandir($dir), array('.', '..')) as $file){
@@ -20,13 +12,6 @@ function recursive_scandir($dir){
 	}
 	return $contents;
 }
-//foreach(recursive_scandir($dir) as $item){
-//    echo '<video width="320" height="240">';
-//    echo '<source src="'.$item.'" type="video/mp4">';
-//    echo 'Your browser does not support the video tag.';
-//    echo '</video>';
-//}
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,23 +39,46 @@ function recursive_scandir($dir){
     <!--    <script type="text/javascript" src="//www.serviceitplus.com/livechat2/php/app.php?widget-init.js"></script>-->
 </head>
 <script>
+    $(document).keyup(function(e) {
+     if (e.key === "Escape") { // escape key maps to keycode `27`
+        hideModal();
+    }
+    });
 function getVids(str1) {
-        if (window.XMLHttpRequest) {
-        // code for IE7+, Firefox, Chrome, Opera, Safari
-        xmlhttp = new XMLHttpRequest();
-        }else{
-        // code for IE6, IE5
-        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        xmlhttp.onreadystatechange = function()
-        {
-        if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("videos-content").innerHTML = this.responseText;
-        }
-        };
-        xmlhttp.open("GET","filter.php?filter="+str1,true);
-        xmlhttp.send();
+    document.getElementById("videos-content").innerHTML = "<div style='width:100%;display:flex;justify-content:center;color:#f16a21;'><i class='fa fa-spinner fa-spin' style='font-size:4rem;'></i></div>";
+    if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp = new XMLHttpRequest();
+    }else{
+    // code for IE6, IE5
+    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange = function()
+    {
+    if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("videos-content").innerHTML = this.responseText;
+    }
+    };
+    xmlhttp.open("GET","filter2.php?filter="+str1,true);
+    xmlhttp.send();
 }
+function showModal() {
+    document.getElementById("contact-modal").setAttribute("style", "display:flex;");
+    document.getElementById("body").setAttribute("style", "overflow:hidden;");
+}
+
+function hideModal() {
+    document.getElementById("contact-modal").setAttribute("style", "display:none;");
+    document.getElementById("body").setAttribute("style", "overflow:show;");
+    document.getElementById("contact-modal").innerHTML = "<div class='modal-background' onclick='hideModal()'></div><i class='fas fa-times' onclick='hideModal()'></i>";
+}
+function loadVideo(x) {
+    alert(x);
+    document.getElementById("contact-modal").setAttribute("style", "display:flex;");
+    document.getElementById("body").setAttribute("style", "overflow:hidden;");
+    document.getElementById("contact-modal").innerHTML = "<div class='modal-background' onclick='hideModal()'></div><i class='fas fa-times' onclick='hideModal()'></i><iframe src='https://www.youtube.com/embed/"+x+"?autoplay=1'></iframe></video>";
+}
+
 </script>
 <style>
     body{
@@ -115,7 +123,7 @@ function getVids(str1) {
     }
     .dropdown{
         float:right;
-        margin-right:2%;
+        margin-right:3%;
 /*        bordeR:2px solid black;*/
         width:100px;
     }
@@ -146,6 +154,8 @@ function getVids(str1) {
     }
     .video-title{
         font-size:1rem;
+        padding-top:0.5rem;
+/*        padding-bottom:0.5rem;*/
         border-top:1px solid rgba( 214, 214, 214, 0.894 );
         width:100%;
         color:#424242;
@@ -154,6 +164,8 @@ function getVids(str1) {
 /*        border:2px solid black;*/
         display:flex;
         position:relative;
+        width:100%;
+        max-height:160px;
     }
     .video-hover{
         width:100%;
@@ -166,6 +178,11 @@ function getVids(str1) {
         align-items:center;
         color:rgba( 28, 28, 28, 0.9 );
         font-size:4rem;
+    }
+    .video-hover button{
+        background-color:rgba( 255, 255, 255, 0 );
+        border:0;
+        outline: 0; 
     }
     .video-hover i:hover{
         cursor:pointer;
@@ -186,7 +203,8 @@ $(document).ready(function () {
     });
 });
 </script>
-<body oncontextmenu=”return false” class="noselect" id="body" onload="getVids('all')">
+
+<body oncontextmenu=”return false” class="noselect" id="body" onload="getVids('all');<?php echo (isset($_GET["play"])) ? "loadVideo('".$_GET["play"]."');" : ""; ?>">
     <div class="body-wrapper">
         <div class="body-container">
             <?php include "../header.php" ?>
@@ -197,13 +215,14 @@ $(document).ready(function () {
                 <div class="videos-header">Videos
                     <div class="dropdown">
                         <a class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</a>
-
+<!--<img src="https://ytimg.googleusercontent.com/vi/u8Kt7fRa2Wc/default.jpg" alt="">-->
+<!--                       <iframe width="560" height="315" src="https://www.youtube.com/embed/u8Kt7fRa2Wc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                         <div class="dropdown-menu dropdown-primary">
                             <button class="dropdown-item" value="all" onclick="getVids(this.value)">All</button>
-                            <button class="dropdown-item" value="hornbill" onclick="getVids(this.value)">Hornbill</button>
-                            <button class="dropdown-item" value="cherwell" onclick="getVids(this.value)">Cherwell</button>
-                            <button class="dropdown-item" value="ivanti" onclick="getVids(this.value)">Ivanti</button>
-                            <button class="dropdown-item" value="microfocus" onclick="getVids(this.value)">Microfocus</button>
+                            <button class="dropdown-item" value="Hornbill" onclick="getVids(this.value)">Hornbill</button>
+                            <button class="dropdown-item" value="Cherwell" onclick="getVids(this.value)">Cherwell</button>
+                            <button class="dropdown-item" value="Ivanti" onclick="getVids(this.value)">Ivanti</button>
+                            <button class="dropdown-item" value="Microfocus" onclick="getVids(this.value)">Microfocus</button>
                         </div>
                     </div>
                     <!--/Dropdown primary-->
@@ -233,23 +252,13 @@ $(document).ready(function () {
     </div>
 </body>
 </html>
-<script>
-    function showModal() {
-        document.getElementById("contact-modal").setAttribute("style", "display:flex;");
-        document.getElementById("body").setAttribute("style", "overflow:hidden;");
-    }
-
-    function hideModal() {
-        document.getElementById("contact-modal").setAttribute("style", "display:none;");
-        document.getElementById("body").setAttribute("style", "overflow:show;");
-    }
-    function loadVideo(x) {
-        alert(x);
-        //showmodal();
-        //document.getElementById("videos-content").innerHTML = "<div class='modal-background' onclick='hideModal()'></div><i class='fas fa-times' onclick='hideModal()'></i><video controls><source src='./videos/Cherwell/001%20Course%20Introduction.mp4' type='video/mp4'></video>";
-    }
-</script>
 <style>
+    iframe{
+        z-index:1000;
+        height:100%;
+        width:100%;
+        border:0;
+    }
     .contact-modal{
         height:100%;
         width:100%;
@@ -275,11 +284,11 @@ $(document).ready(function () {
     }
     .contact-modal i{
         position:fixed;
-        top:1%;
+        top:45%;
         right:1%;
         color:rgba( 193, 193, 193, 0.607 );
         font-size:2rem;
-        z-index:1000;
+        z-index:1001;
     }
     .contact-modal i:hover{
         cursor:pointer;
@@ -287,20 +296,9 @@ $(document).ready(function () {
     }
 </style>
 <div class="contact-modal" id="contact-modal">
-<!--
     <div class="modal-background" onclick="hideModal()"></div>
+<!--
     <i class="fas fa-times" onclick="hideModal()"></i>
     <video controls><source src="./videos/Cherwell/001%20Course%20Introduction.mp4" type="video/mp4"></video>
 -->
 </div>
-
-<!--
-<div class="videomodal">
-    <div class="video-container2">
-       <div class="exit-button">
-           <i class="fas fa-times"></i>
-       </div>
-        <video controls autoplay><source src="./videos/Cherwell/001%20Course%20Introduction.mp4" type="video/mp4"></video>
-    </div>
-</div>
--->
