@@ -3,6 +3,26 @@
 /*        font-size:1.5rem;*/
     }
 </style>
+<script>
+function getTitle(str1) {
+//    document.getElementById("videos-content").innerHTML = "<div style='width:100%;display:flex;justify-content:center;color:#f16a21;'><i class='fa fa-spinner fa-spin' style='font-size:4rem;'></i></div>";
+    if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp = new XMLHttpRequest();
+    }else{
+    // code for IE6, IE5
+    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange = function()
+    {
+    if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("video-title").innerHTML = this.responseText;
+    }
+    };
+    xmlhttp.open("GET","gettitle.php?id="+str1,true);
+    xmlhttp.send();
+}
+</script>
 <?php
     $filter = $_GET["filter"];
     $csvFile = file('video listing.csv');
@@ -17,7 +37,7 @@
             <div class="video-hover"><button onclick="loadVideo(this.value)" value="'.$data[$i][1].'"><i class="fas fa-play-circle"></i></button></div>
             <img class="card-img-top" src="https://ytimg.googleusercontent.com/vi/'.$data[$i][1].'/mqdefault.jpg" alt="">
             </div>';
-            echo '<div class="video-title">'.getTitle2($data[$i][1]).'</div>';
+            echo '<div class="video-title" id="video-title" onload="getTitle('.$data[$i][1].')"></div>';
             echo '</div>';
         }elseif($data[$i][0]==$filter){
             echo '<div class="video-container">';
@@ -25,7 +45,7 @@
             <div class="video-hover"><button onclick="loadVideo(this.value)" value="'.$data[$i][1].'"><i class="fas fa-play-circle"></i></button></div>
             <img class="card-img-top" src="https://ytimg.googleusercontent.com/vi/'.$data[$i][1].'/mqdefault.jpg" alt="">
             </div>';
-            echo '<div class="video-title">'.getTitle2($data[$i][1]).'</div>';
+            echo '<div class="video-title" id="video-title">'.getTitle2($data[$i][1]).'</div>';
             echo '</div>';
         }
     }
@@ -51,5 +71,16 @@ function getTitle2($id){
     $api_url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=' . $id . '&key=' . $api_key;
     $data = json_decode(file_get_contents($api_url));
     return $data->items[0]->snippet->title;
+}
+function getTitle3($video_id){
+    $url = "http://www.youtube.com/watch?v=".$video_id;
+
+    $page = file_get_contents($url);
+    $doc = new DOMDocument();
+    $doc->loadHTML($page);
+
+    $title_div = $doc->getElementById('eow-title');
+    $title = $title_div->nodeValue;
+    return $title;  
 }
 ?>

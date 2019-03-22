@@ -49,7 +49,23 @@ header('Expires: 0');
 <!--	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>-->
 
 </head>
-<?php include "home.css.html" ?>
+<?php //include "home.css.html"; ?>
+<style>/* raleway font css */
+ @font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(fonts/raleway.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(fonts/raleway.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+    <?php echo "<style>"; include "css/bootstrap.min.css"; echo "</style>";?>
+    <?php echo "<script>"; include "js/jquery-3.2.1.min.js"; echo "</script>";?>
+    <?php echo "<script>"; include "js/bootstrap.min.js"; echo "</script>";?>
+    <?php echo "<style>"; include ".//css/home2.css"; echo "</style>";?>
+    <?php echo "<style>"; include "css/animate.css"; echo "</style>";?>
+    <?php echo "<style>"; include "css/owl.carousel.min.css"; echo "</style>";?>
+    <?php echo "<style>"; include "css/owl.theme.default.min.css"; echo "</style>";?>
+    <?php echo "<script>"; include "js/header2.js"; echo "</script>";?>
+    <?php echo "<style>"; include "css/header.css"; echo "</style>";?>
+    <?php echo "<style>"; include "css/font-awesome.min2.css"; echo "</style>";?>
+    <?php echo "<script>"; include "js/jquery-3.3.1.slim.min.js"; echo "</script>";?>
+    <?php echo "<script>"; include "js/popper1.14.3.min.js"; echo "</script>";?>
+    <?php echo "<script>"; include "js/bootstrap4.1.3.min.js"; echo "</script>";?>
 <style>
 	.fadeInH{
 		-webkit-animation: fadeIn 2s; /* Safari 4+ */
@@ -293,8 +309,11 @@ header('Expires: 0');
 <!-----------------------------------------------------OWL JS------------------------------------------------>
 <!--<script src="js/jquery-3.2.1.min.js"></script>-->
 <!--<script src="js/owl.carousel.min.js"></script>-->
+<?php echo "<script>"; include "js/aos.js"; echo "</script>";?>
+<?php echo "<script>"; include "js/jquery-3.2.1.min.js"; echo "</script>";?>
+<?php echo "<script>"; include "js/owl.carousel.min.js"; echo "</script>";?>
 
-<?php include "homeend.css.html" ?>
+<?php //include "homeend.css.html" ?>
 <script type="text/javascript">
     AOS.init({
         easing: 'ease-in-out-sine'

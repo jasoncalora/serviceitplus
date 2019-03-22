@@ -73,7 +73,7 @@ function hideModal() {
     document.getElementById("contact-modal").innerHTML = "<div class='modal-background' onclick='hideModal()'></div><i class='fas fa-times' onclick='hideModal()'></i>";
 }
 function loadVideo(x) {
-    alert(x);
+//    alert(x);
     document.getElementById("contact-modal").setAttribute("style", "display:flex;");
     document.getElementById("body").setAttribute("style", "overflow:hidden;");
     document.getElementById("contact-modal").innerHTML = "<div class='modal-background' onclick='hideModal()'></div><i class='fas fa-times' onclick='hideModal()'></i><iframe src='https://www.youtube.com/embed/"+x+"?autoplay=1'></iframe></video>";
@@ -154,10 +154,12 @@ function loadVideo(x) {
     }
     .video-title{
         font-size:1rem;
-        padding-top:0.5rem;
-/*        padding-bottom:0.5rem;*/
+        margin-top:0.5rem;
+/*        border:2px solid black;*/
+/*        padding-top:50px;*/
         border-top:1px solid rgba( 214, 214, 214, 0.894 );
         width:100%;
+        height:3rem;
         color:#424242;
     }
     .video-thumbnail{
@@ -165,7 +167,7 @@ function loadVideo(x) {
         display:flex;
         position:relative;
         width:100%;
-        max-height:160px;
+        height:180px;
     }
     .video-hover{
         width:100%;
@@ -180,7 +182,7 @@ function loadVideo(x) {
         font-size:4rem;
     }
     .video-hover button{
-        background-color:rgba( 255, 255, 255, 0 );
+        background-color:rgba( 255, 255, 255, 0 ) );
         border:0;
         outline: 0; 
     }
@@ -286,7 +288,7 @@ $(document).ready(function () {
         position:fixed;
         top:45%;
         right:1%;
-        color:rgba( 193, 193, 193, 0.607 );
+        color:rgba( 188, 188, 188, 0.243 );
         font-size:2rem;
         z-index:1001;
     }

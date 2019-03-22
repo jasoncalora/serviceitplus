@@ -17,7 +17,7 @@
     <!-- header css & js  -->
 <!--	<script type="text/javascript" src="../js/header2.js"></script>-->
 <!--	<link rel="stylesheet" href="../css/header.css" type="text/css" />-->
-	<link rel="stylesheet" href="../css/services.css" type="text/css" />
+<!--	<link rel="stylesheet" href="../css/services.css" type="text/css" />-->
 <!--  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">-->
    
 <!--    <link rel="stylesheet" href="../css/aos.css">-->
@@ -25,6 +25,8 @@
 </head>
 <?php include "bs-fa.html" ?>
 <style>
+    
+<?php include "../css/services.css" ?>
     .banner-text{
 /*        border:1px solid black;/*/
         padding-left:2%;
