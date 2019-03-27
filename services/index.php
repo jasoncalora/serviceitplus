@@ -24,6 +24,9 @@
 <!--    <script type="text/javascript" src="//www.serviceitplus.com/livechat2/php/app.php?widget-init.js"></script>-->
 </head>
 <?php include "bs-fa.html" ?>
+<style>/* raleway font css */
+ @font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(../fonts/raleway.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(../fonts/raleway.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+ </style>
 <style>
     
 <?php include "../css/services.css" ?>
@@ -178,14 +181,14 @@
         <div class="service-text">
             <div class="servicecat-title">Product Services</div>
             <div class="servicecat-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit voluptatem, voluptates veritatis quam beatae, tenetur, reiciendis quisquam dolore soluta laborum, assumenda aspernatur. Dolorum ducimus architecto blanditiis magni ut adipisci distinctio.</div>
-            <div class="servicecat-btn"><button type="button"  class="btn btn-info"><a href="product-services.php">Learn More</a></button></div>
+            <div class="servicecat-btn"><button type="button" class="btn btn-info" onclick="window.location.href = 'product-services.php';"><a href="product-services.php">Learn More</a></button></div>
         </div>
     </div>
     <div class="service-category">
         <div class="service-text">
             <div class="servicecat-title">Consulting Services</div>
             <div class="servicecat-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit voluptatem, voluptates veritatis quam beatae, tenetur, reiciendis quisquam dolore soluta laborum, assumenda aspernatur. Dolorum ducimus architecto blanditiis magni ut adipisci distinctio.</div>
-            <div class="servicecat-btn"><button type="button"  class="btn btn-info"><a href="product-consulting.php">Learn More</a></button></div>
+            <div class="servicecat-btn"><button type="button" class="btn btn-info" onclick="window.location.href = 'product-consulting.php';"><a href="product-consulting.php">Learn More</a></button></div>
         </div>
         <div class="service-image"><img src="../images/services/block2.svg" alt=""></div>
     </div>
@@ -194,7 +197,7 @@
         <div class="service-text">
             <div class="servicecat-title">Managed Services</div>
             <div class="servicecat-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit voluptatem, voluptates veritatis quam beatae, tenetur, reiciendis quisquam dolore soluta laborum, assumenda aspernatur. Dolorum ducimus architecto blanditiis magni ut adipisci distinctio.</div>
-            <div class="servicecat-btn"><button type="button"  class="btn btn-info"><a href="Managed-Services.php">Learn More</a></button></div>
+            <div class="servicecat-btn"><button type="button" class="btn btn-info" onclick="window.location.href = 'Managed-Services.php';"><a href="Managed-Services.php">Learn More</a></button></div>
         </div>        
     </div>
 </div>

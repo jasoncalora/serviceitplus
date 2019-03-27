@@ -76,7 +76,7 @@ function loadVideo(x) {
 //    alert(x);
     document.getElementById("contact-modal").setAttribute("style", "display:flex;");
     document.getElementById("body").setAttribute("style", "overflow:hidden;");
-    document.getElementById("contact-modal").innerHTML = "<div class='modal-background' onclick='hideModal()'></div><i class='fas fa-times' onclick='hideModal()'></i><iframe src='https://www.youtube.com/embed/"+x+"?autoplay=1'></iframe></video>";
+    document.getElementById("contact-modal").innerHTML = "<div class='modal-background' onclick='hideModal()'></div><i class='fas fa-times' onclick='hideModal()'></i><iframe src='https://www.youtube.com/embed/"+x+"?autoplay=1'></iframe>";
 }
 
 </script>
@@ -304,3 +304,4 @@ $(document).ready(function () {
     <video controls><source src="./videos/Cherwell/001%20Course%20Introduction.mp4" type="video/mp4"></video>
 -->
 </div>
+<?php include "../contactus/widgetv2.php" ?>

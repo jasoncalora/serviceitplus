@@ -2,26 +2,65 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
     .contact-window{
 /*        border:2px solid black;*/
         position:fixed;
-        height:30px;
-        width:250px;
+/*        height:30px;*/
+        width:300px;
         bottom:0px;
         right:5%;
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         background-color:#f16a21;
     }
-    .contact-window .title{
-        padding-top:50px;
+    .contact-window .title-container{
+/*        padding-top:50px;    */
+        border:1px solid black;
+        width:100%;
+        font-size:15px;
+        color:white;
+        padding-left:15px;
+    }
+    .contact-form{
+        width:100%;
+/*        height:200px;*/
+        background-color:white;
+        border:2px solid red;
     }
 </style>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        alert("asd");
+        $("#test").slideDown();
+    });
+});
+
+</script>
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("p").slideUp();
+  });
+  $(".btn2").click(function(){
+    $("p").slideDown();
+  });
+});
+</script>
+
+<p>This is a paragraph.</p>
+
+<button class="btn1">Slide up</button>
+<button class="btn2">Slide down</button>
 <div class="contact-window">
-    <div class="title">Contact Us</div>
-    <div class="contact-form">
-        
+    <div class="title-container">Contact Us</div>
+    <button id="btn1">asdasd</button>
+    <div class="contact-form" id="test">
+        asd
     </div>
 </div>

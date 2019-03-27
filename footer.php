@@ -62,7 +62,7 @@
             <!--            <div class="cont">-->
             <div><a href="#" onclick="preview();">Privacy Statement</a></div>
             <div>|</div>
-            <div>Copyright&nbsp; <i class="fa fa-copyright" aria-hidden="true"></i> &nbsp; 2017 ServiceIT+ Inc.</div>
+            <div>Copyright&nbsp; <i class="fa fa-copyright" aria-hidden="true"></i> &nbsp; 2019 ServiceIT+ Inc.</div>
             <!--            </div>-->
         </div>
     </div>

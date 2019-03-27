@@ -1,26 +1,28 @@
 <style>
     .videos-content{
-/*        font-size:1.5rem;*/
+        font-size:1.5rem;
     }
 </style>
 <script>
-function getTitle(str1) {
+function getTitle() {
 //    document.getElementById("videos-content").innerHTML = "<div style='width:100%;display:flex;justify-content:center;color:#f16a21;'><i class='fa fa-spinner fa-spin' style='font-size:4rem;'></i></div>";
-    if (window.XMLHttpRequest) {
-    // code for IE7+, Firefox, Chrome, Opera, Safari
-    xmlhttp = new XMLHttpRequest();
-    }else{
-    // code for IE6, IE5
-    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xmlhttp.onreadystatechange = function()
-    {
-    if (this.readyState == 4 && this.status == 200) {
-    document.getElementById("video-title").innerHTML = this.responseText;
-    }
-    };
-    xmlhttp.open("GET","gettitle.php?id="+str1,true);
-    xmlhttp.send();
+//    var x = str1.id;
+    alert("asdasd");
+//    if (window.XMLHttpRequest) {
+//    // code for IE7+, Firefox, Chrome, Opera, Safari
+//    xmlhttp = new XMLHttpRequest();
+//    }else{
+//    // code for IE6, IE5
+//    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+//    }
+//    xmlhttp.onreadystatechange = function()
+//    {
+//    if (this.readyState == 4 && this.status == 200) {
+//    document.getElementById("video-title").innerHTML = this.responseText;
+//    }
+//    };
+//    xmlhttp.open("GET","gettitle.php?id="+str1,true);
+//    xmlhttp.send();
 }
 </script>
 <?php
@@ -37,7 +39,8 @@ function getTitle(str1) {
             <div class="video-hover"><button onclick="loadVideo(this.value)" value="'.$data[$i][1].'"><i class="fas fa-play-circle"></i></button></div>
             <img class="card-img-top" src="https://ytimg.googleusercontent.com/vi/'.$data[$i][1].'/mqdefault.jpg" alt="">
             </div>';
-            echo '<div class="video-title" id="video-title" onload="getTitle('.$data[$i][1].')"></div>';
+           // echo '<div class="video-title" id="'.$data[$i][1].'" onload="getTitle()"></div>';
+            echo '<div class="video-title" id="video-title">'.getTitle2($data[$i][1]).'</div>';
             echo '</div>';
         }elseif($data[$i][0]==$filter){
             echo '<div class="video-container">';
@@ -70,6 +73,7 @@ function getTitle2($id){
     $api_key = 'AIzaSyDw5qdJJMdpj_SEldpMgLNHNCryVfJv2yk';
     $api_url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=' . $id . '&key=' . $api_key;
     $data = json_decode(file_get_contents($api_url));
+//    alert($data->items[0]->snippet->title);
     return $data->items[0]->snippet->title;
 }
 function getTitle3($video_id){
