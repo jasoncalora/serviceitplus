@@ -24,10 +24,19 @@
 <!--    <link rel="stylesheet" href="../css/aos.css">-->
     <!--    <script type="text/javascript" src="//www.serviceitplus.com/livechat2/php/app.php?widget-init.js"></script>-->
 </head>
-<?php include "bs-fa.html" ?>
+<?php //include "bs-fa.html" ?>
+
 <style>/* raleway font css */
- @font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(../fonts/raleway.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(../fonts/raleway.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
- </style>
+ @font-face{font-family:Raleway;font-display:auto;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(fonts/raleway.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(fonts/raleway.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+<?php echo "<style>"; include "../css/bootstrap4.3.1.min.css"; echo "</style>";?>
+<?php echo "<script>"; include "../js/jquery-3.3.1.slim.min.js"; echo "</script>";?>
+<?php echo "<script>"; include "../js/popper1.14.7.min.js"; echo "</script>";?>
+<?php echo "<script>"; include "../js/bootstrap4.3.1.min.js"; echo "</script>";?>
+<?php echo "<script>"; include "../js/header2.js"; echo "</script>";?>
+<?php echo "<style>"; include "../css/header.css"; echo "</style>";?>
+<?php echo "<style>"; include "../css/font-awesome5.7.2.min.css"; echo "</style>";?>
+<?php echo "<style>"; include "../css/aos.css"; echo "</style>";?>
 <style>
     body {
         font-family: 'Raleway', sans-serif;
@@ -358,7 +367,7 @@
                 </div>
             </div>
             <div class="block1">
-                <div class="title">Consultaion Services to Meet you business needs!</div>
+                <div class="title">Consultation Services to Meet you business needs!</div>
                 <div class="desc">The growing complexity of modern computer systems makes it impossible to maximize the capacity available without a deep knowledge and expertise. Focusing on the efficient use of IT by our customers, Softline employs an experienced team of qualified IT professionals and offers a wide range of consulting services and technical support. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis molestiae neque, dignissimos in quae dolores deserunt odio modi. Illum laudantium, eligendi dolor velit ipsam. Voluptatem iste aut vel perspiciatis, odit.</div>
             </div>
             <div class="block2">
@@ -436,3 +445,5 @@
 </body>
 
 </html>
+<?php echo "<script>"; include "../js/jquery-3.2.1.min.js"; echo "</script>";?>
+<?php include "../contactus/widgetv2.php" ?>

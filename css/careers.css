@@ -299,7 +299,7 @@ p#bannerTagline{
     font-weight:600;
 /*    color:#f16a21;*/
 }
-form{
+.appli-form-wrapper form{
 /*    border:1px solid black;*/
     display:-webkit-box;
     display:-ms-flexbox;
@@ -307,7 +307,7 @@ form{
     -ms-flex-wrap:wrap;
     flex-wrap:wrap;
 }
-input{
+.appli-form-wrapper input{
     margin-top:1rem;
     margin-bottom:1rem;
 }
@@ -387,6 +387,9 @@ input{
     background-color: black;
     display: inline-block;
 }
+textarea:focus, input:focus{
+		 	   outline: none;
+			}
 /*----------------------------  file upload  -------------------------*/
 .js .inputfile {
     width: 0.1px;

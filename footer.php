@@ -1,27 +1,31 @@
 <?php
-    //    $url="/Website2017v2/";
-    if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
-        $url = ".././/";
-        $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("products/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
-    }elseif (strpos($_SERVER['PHP_SELF'], 'events') > 0) {
-        $url = ".././/";
-        $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("events/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
-    }elseif (strpos($_SERVER['PHP_SELF'], 'about') > 0) {
-        $url = ".././/";
-        $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("about/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
-    }elseif (strpos($_SERVER['PHP_SELF'], 'careers') > 0) {
-        $url = ".././/";
-        $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("careers/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
-    }elseif (strpos($_SERVER['PHP_SELF'], 'learning') > 0) {
-        $url = ".././/";
-        $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("learning/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
-    }elseif (strpos($_SERVER['PHP_SELF'], 'services') > 0) {
-        $url = ".././/";
-        $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("services/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
-    }else {
-        $url = ".//";
-        $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("index.php","",$_SERVER['PHP_SELF']);
-    }
+if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("products/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'events') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("events/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'about') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("about/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'careers') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("careers/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'learning') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("learning/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'services') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("services/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+    $url2 = str_replace("product-services.php","",$url2);
+    $url2 = str_replace("product-consulting.php","",$url2);
+    $url2 = str_replace("Managed-Services.php","",$url2);
+//    $url2 = $url2.str_replace("services/","",str_replace("product-services.php","",$url2));
+//    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("services/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}else {
+    $url = ".//";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("index.php","",$_SERVER['PHP_SELF']);
+}
 ?>
 
 <div class="footer noselect">

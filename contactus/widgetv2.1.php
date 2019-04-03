@@ -28,8 +28,8 @@ elseif (strpos($_SERVER['PHP_SELF'], 'events') > 0) {
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("index.php","",$_SERVER['PHP_SELF']);
 }
 ?>
-<?php //echo "<script>"; include "../js/jquery3.3.1.min.js"; echo "</script>";?>
-<?php echo "<style>"; include "../css/fontawesome-all.css"; echo "</style>";?>
+<?php //echo "<script>"; include "js/jquery3.3.1.min.js"; echo "</script>";?>
+<?php echo "<style>"; include "css/fontawesome-all-root.css"; echo "</style>";?>
 
 <!--
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -86,7 +86,7 @@ function sendMail(){
         "<i class='fas fa-spinner fa-spin' style='color:#f16a21;font-size:3rem;padding-top:3rem;padding-bottom:3rem;'></i>"+
         "</div>";
     var http = new XMLHttpRequest();
-    var url = "<?php echo "../contactus/sendmail2.php"; ?>";
+    var url = "<?php echo "contactus/sendmail2.php"; ?>";
     // var url = "inc/preview.php";
     http.open('POST', url, true);
     //Send the proper header information along with the request
@@ -115,8 +115,8 @@ function defaultForm(){
         "</form>";
 }
 </script>
-<?php echo "<style>"; include "../css/widget.css"; echo "</style>";?>
 
+<?php echo "<style>"; include "css/widget.css"; echo "</style>";?>
 <div class="floating-icon" id="floating-icon">
     <i class="fas fa-envelope"></i>
 </div>
@@ -133,6 +133,7 @@ function defaultForm(){
    <div class="msg-exit"><i class="fas fa-times" onclick="test()"></i></div>
     <div class="greeting">Hi! We'd love to hear from you!</div>
     <form onsubmit="sendMail()" id="messageform">
+       <?php //echo $url2; ?>
         <input type="text" id="text-name" autocomplete="off" placeholder="Name" required>
         <input type="email" id="text-email" autocomplete="off" placeholder="Email Address" requried>
         <textarea rows="3" id="text-message" placeholder="Message"></textarea>

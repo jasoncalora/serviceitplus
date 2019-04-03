@@ -85,7 +85,7 @@
     </div>
     <!-------------------------------------- DIVIDER --------------------------------------------->
 <div class="divider">
-    <div class="divider-circle"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+    <div class="divider-circle"><i class="fas fa-users"></i></div>
 </div>
 <div class="divider-half"></div>
     <div class="block-wrapper section4">
@@ -173,3 +173,4 @@
         easing: 'ease-in-out-sine'
       });
     </script>
+<?php include "../contactus/widgetv2.php" ?>

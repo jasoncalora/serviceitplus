@@ -4,6 +4,9 @@
 include("../phpmailer/PHPMailerAutoload.php"); //Here magic Begen we include PHPMailer Library.
 include("../phpmailer/class.phpmailer.php"); 
 include('../phpmailer/class.smtp.php');
+//$name = "Jason Calora"; 
+//$email = "jason.calora@serviceitplus.com"; 
+//$msg = "asdasdasd asd as das dasd asd asdasdasd asdadas"; 
 $name = $_POST['name']; 
 $email = $_POST['email']; 
 $msg = $_POST['message']; 
@@ -27,13 +30,13 @@ $mail->FromName = $name;
 //$mail->addBCC("bcc@example.com");
 
 //$mail = new PHPMailer();
-$mail->SMTPSecure = 'tls';
+//$mail->SMTPSecure = 'ssl';
 $mail->IsSMTP();
 //$mail->Host = 'xo7.x10hosting.com:21';
-$mail->Host = 'smtp.gmail.com:587';
+$mail->Host = 'just56.justhost.com:26';
 //$mail->Port = 465;
-$mail->Username = "jason.calora@serviceitplus.com"; // your GMail user name
-$mail->Password = "alphanumericP455W0RD"; 
+$mail->Username = "livechat@serviceitplus.com"; // your GMail user name
+$mail->Password = "M6/]MNa1yn.f"; 
 $mail->AddAddress("inquiry@serviceitplus.com"); // recipients email 
 $mail->SMTPAuth = true;
 //$mail->FromName = "username";

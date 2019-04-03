@@ -360,6 +360,7 @@ body, html {
 @media (min-width: 320px) and (max-width:767px){
     .banner-div{
         max-height:350px;
+        background:url(../images/about/about-wallpaper768.jpg);
     }
     .banner-div-container{
         font-size:2rem;
@@ -476,6 +477,7 @@ body, html {
 @media (min-width: 768px) and (max-width:999px){
     .banner-div{
         max-height:450px;
+        background:url(../images/about/about-wallpaper1000.jpg);
     }
     .block-wrapper.section2{
         height:350px;
@@ -555,6 +557,7 @@ body, html {
 @media (min-width: 1000px) and (max-width:1299px){
     .banner-div{
         max-height:500px;
+        background:url(../images/about/about-wallpaper1366.jpg);
     }
     .block-wrapper.section2{
         padding-top:0rem;
@@ -627,6 +630,7 @@ body, html {
 @media (min-width: 1300px){
     .banner-div{
         max-height:768px;
+        background:url(../images/about/about-wallpaper1366.jpg);
     } 
     .block-container.section2 .left{
 /*        border:1px solid black;*/

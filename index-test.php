@@ -16,6 +16,7 @@ header('Expires: 0');
     <meta http-equiv="Expires" content="0" />
     <link rel="icon" href="images/header/favicons.png">
     
+    
     <!-- bootstrap & jquery css & js  -->
 <!--	<link rel="stylesheet" href="css/bootstrap.min.css">-->
 <!--	<script src="js/jquery-3.2.1.min.js"></script>-->
@@ -50,10 +51,10 @@ header('Expires: 0');
 </head>
 <?php //include "home.css.html"; ?>
 <style>/* raleway font css */
- @font-face{font-family:Raleway;font-display:auto;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(fonts/raleway.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(fonts/raleway.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+ @font-face{font-family:Raleway;font-style:normal;font-weight:400;font-display:auto;src:local('Raleway'),local('Raleway-Regular'),url(fonts/raleway.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(fonts/raleway.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 </style>
     <?php echo "<style>"; include "css/bootstrap.min.css"; echo "</style>";?>
-    <?php echo "<script>"; include "js/jquery-3.3.1.slim.min.js"; echo "</script>";?>
+    <?php echo "<script>"; include "js/jquery-3.2.1.min.js"; echo "</script>";?>
     <?php echo "<script>"; include "js/bootstrap.min.js"; echo "</script>";?>
     <?php echo "<style>"; include ".//css/home2.css"; echo "</style>";?>
     <?php echo "<style>"; include "css/animate.css"; echo "</style>";?>
@@ -62,9 +63,9 @@ header('Expires: 0');
     <?php echo "<script>"; include "js/header2.js"; echo "</script>";?>
     <?php echo "<style>"; include "css/header.css"; echo "</style>";?>
     <?php echo "<style>"; include "css/font-awesome.min2.css"; echo "</style>";?>
+    <?php echo "<script>"; include "js/jquery-3.3.1.slim.min.js"; echo "</script>";?>
     <?php echo "<script>"; include "js/popper1.14.3.min.js"; echo "</script>";?>
     <?php echo "<script>"; include "js/bootstrap4.1.3.min.js"; echo "</script>";?>
-    <?php echo "<style>"; include "css/aos.css"; echo "</style>";?>
 <style>
 	.fadeInH{
 		-webkit-animation: fadeIn 2s; /* Safari 4+ */
@@ -191,6 +192,13 @@ header('Expires: 0');
         </div>
     </div>
 </div>
+<!-------------------------------------- DIVIDER --------------------------------------------->
+<!--
+<div class="divider">
+    <div class="divider-circle"><i class="fa fa-user" aria-hidden="true"></i></div>
+</div>
+<div class="divider-half"></div>
+-->
 <!-------------------------------------- CLIENTS -------------------------------------------->
 <div class="clients-wrapper noselect">
     <div class="clients-container">
@@ -201,6 +209,22 @@ header('Expires: 0');
             <p>Our customers enjoy long-term relationships with us because they value our professionalism, diligence and commitment in helping their businesses excel. Aside from providing them with best value solutions, we also strive to give our customers a positive experience at all times.</p>
         </div>
     </div>
+    
+<!--   CLIENT LOGO CONTAINER
+    <div class="owl-containers">
+        <div class="clients-carousel-container">
+            <div class="clients-carousel" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="700" data-aos-once="true">
+                <div class="owl-one owl-carousel owl-theme">
+                    <div class="client-logo"><img id="gma-logo" src="../images/home/logos/gma_logo.jpg" alt=""></div>
+                    <div class="client-logo"><img id="globe-logo" src="../images/home/logos/abotiz_logo.jpg" alt=""></div>
+                    <div class="client-logo"><img id="abs-logo" src="../images/home/logos/abs-logo.png" alt=""></div>
+                    <div class="client-logo"><img id="lufthansa-logo" src="../images/home/logos/lufthansa_logo.png" alt=""></div>
+                    <div class="client-logo"><img id="spi-logo" src="../images/home/logos/spi_logo.jpg" alt=""></div>
+                </div>
+            </div>                
+        </div>
+    </div>
+-->
     <div class="owl-containers">
         <div class="clients-carousel-container2">
             <div class="clients-carousel2">
@@ -221,6 +245,16 @@ header('Expires: 0');
                         <div class="testi-owner text-uppercase"><p>Rannie Pagulayan & James Bautista</p></div>
                         <div class="testi-company"><p>GMA Network, Inc., ICT Service Desk</p></div>
                     </div>   
+<!--
+                    <div class="testi-wrapper">
+                        <div class="testi-container">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            <p id="testimonial">We will make full use of Execview features to help us effectively manage and track our projects. We are a fast-growing bank and having a tool that gives us a line of sight to concurrent activities is certainly a welcome development.</p>
+                        </div>
+                        <div class="testi-owner text-uppercase"><p>Gerone Jimenez</p></div>
+                        <div class="testi-company"><p>Eastwest Bank</p></div>
+                    </div>      
+-->
                     <div class="testi-wrapper">
                         <div class="testi-container">
                             <i class="fa fa-quote-left" aria-hidden="true"></i>
@@ -267,9 +301,14 @@ header('Expires: 0');
 </html>
 
 <!--   <script src="js/aos.js"></script>-->
+
+<!-----------------------------------------------------OWL JS------------------------------------------------>
+<!-----------------------------------------------------OWL JS------------------------------------------------>
+<!-----------------------------------------------------OWL JS------------------------------------------------>
+<!-----------------------------------------------------OWL JS------------------------------------------------>
+<!-----------------------------------------------------OWL JS------------------------------------------------>
 <!--<script src="js/jquery-3.2.1.min.js"></script>-->
 <!--<script src="js/owl.carousel.min.js"></script>-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <?php echo "<script>"; include "js/aos.js"; echo "</script>";?>
 <?php echo "<script>"; include "js/jquery-3.2.1.min.js"; echo "</script>";?>
 <?php echo "<script>"; include "js/owl.carousel.min.js"; echo "</script>";?>

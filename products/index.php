@@ -29,7 +29,7 @@
     <!--------  aot  --------->
 <!--    <link rel="stylesheet" href="../css/aos.css">-->
 
-<!--    <script type="text/javascript" src="//www.serviceitplus.com/livechat2/php/app.php?widget-init.js"></script>-->
+<!--    <script type="text/javascript" src="//www.serviceitplus.com/livechat2/php/app.php?widget-init.js"></script>    -->
 </head>
 <style>/* raleway font css */
  @font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(../fonts/raleway.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(../fonts/raleway.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -67,14 +67,14 @@
                 <div class="honeycomb-content-inner">
                     <div class="content-header" data-aos="flip-up" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true">We have passion for our work and on delivering successful business outcomes for our clients. Our customers work with us because we understand and help them achieve what others fail to do – aligning IT with the business. </div>
                     <div class="list-container">
-                        <div class="bullet" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true"><i class="fa fa-check-square-o" aria-hidden="true" data-aos-delay="100"></i></div>
-                        <div class="bullet-text" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true" data-aos-delay="100">We are are highly skilled individuals, with very strong ethos.</div>
-                        <div class="bullet" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true"><i class="fa fa-check-square-o" aria-hidden="true" data-aos-delay="200"></i></div>
-                        <div class="bullet-text" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true" data-aos-delay="200">We pride ourselves with many years of IT Industry knowledge and carry with us a wealth of experience backed by our track record of successful implemented projects.</div>
-                        <div class="bullet" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true"><i class="fa fa-check-square-o" aria-hidden="true" data-aos-delay="300"></i></div>
-                        <div class="bullet-text" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">We provide solutions for IT Service Management, Asset and Security, Strategic Outcomes, and Software Quality Assurance.</div>
-                        <div class="bullet" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true"><i class="fa fa-check-square-o" aria-hidden="true" data-aos-delay="400"></i></div>
-                        <div class="bullet-text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="400">These solutions can be implemented individually or together, which enable organizations to enhance their business performance both stategically and operationally.</div>
+                        <div class="bullet" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true"><i class="far fa-check-square" aria-hidden="true" data-aos-delay="100"></i></div>
+                        <div class="bullet-text" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true" data-aos-delay="100">We are are highly skilled individuals, with very strong ethos.</div>
+                        <div class="bullet" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true"><i class="far fa-check-square" aria-hidden="true" data-aos-delay="200"></i></div>
+                        <div class="bullet-text" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true" data-aos-delay="200">We pride ourselves with many years of IT Industry knowledge and carry with us a wealth of experience backed by our track record of successful implemented projects.</div>
+                        <div class="bullet" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true"><i class="far fa-check-square" aria-hidden="true" data-aos-delay="300"></i></div>
+                        <div class="bullet-text" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">We provide solutions for IT Service Management, Asset and Security, Strategic Outcomes, and Software Quality Assurance.</div>
+                        <div class="bullet" data-aos="fade-zoom-in" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true"><i class="far fa-check-square" aria-hidden="true" data-aos-delay="400"></i></div>
+                        <div class="bullet-text" data-aos="fade-zoom-in" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="400">These solutions can be implemented individually or together, which enable organizations to enhance their business performance both stategically and operationally.</div>
                     </div>
                 </div>
             </div>            
@@ -149,52 +149,18 @@
                         <div class="learn-more qa" data-toggle="modal" data-target="#sqa-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
                    </div>
                 </div>
-<!--
-                <div class="prod-col prod-category edu">
-                    <div class="prod-cat-inner">
-                      <div class="cat-logo"><img src="../images/products/train-icon.svg" alt=""></div>
-                       <div class="prod-title edu">EDUCATION</div>
-                        <div class="prod-text">Learn the best practices in IT Service Management, Project Management and Strategic Outcomes.
-                        </div>
-                        <div class="learn-more edu" data-toggle="modal" data-target="#edu-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                   </div>
-                </div>
--->
             </div>
         </div>
     </div>
 </div>
-<!-------------------------------------- DIVIDER --------------------------------------------->
-<!--
-<div class="divider">
-    <div class="divider-circle"><i class="fa fa-cubes" aria-hidden="true"></i></div>
-</div>
-<div class="divider-half"></div>
--->
-<!-------------------------------  SERVICES  ------------------------>
-<!--
-<div class="prod-wrapper noselect">
-    <div class="prod-container prod-services">
-        <div class="prod-row flex-center">
-        <div class="prod-row-inner services">
-            asd    
-        </div>
-        </div>
-    </div>
-</div>
--->
-<!-------------------------------------------------------------------------  dummy  ----------------------------------------------->
-<!--<div style="float:left;height:50px;width:100%;"></div>-->
 <!-------------------------------------- FOOTER -------------------------------------------------------------------------------------------------->
 <?php include "../footer.php" ?>
+<?php echo "<style>"; include "../css/modals.css"; echo "</style>";?>
 <?php include "modals.html" ?>
-
-    
 </div>
 </div>
 </body>
 </html>
-
 <?php echo "<script>"; include "../js/aos.js"; echo "</script>";?>
 <!--<script src="../js/aos.js"></script>-->
     <script>
@@ -202,7 +168,8 @@
         easing: 'ease-in-out-sine'
       });
     </script>
-<script src="../js/owl.carousel.min.js"></script>
+<!--<script src="../js/owl.carousel.min.js"></script>-->
+<?php echo "<script>"; include "../js/owl.carousel.min.js"; echo "</script>";?>
 <script type="text/javascript">
     $(document).ready(function() {
           var owl = $('.owl-carousel');
