@@ -47,7 +47,7 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
 
 </div>
 	
-	<div id="dropdown-menu" class="collapse">
+	<div id="dropdown-menu" class="hidden">
 	    <div class="header-avigation-small">
             <a href="<?php echo $url2 ?>">HOME</a>
             <a href="<?php echo $url2 ?>products/">SOLUTIONS</a>
@@ -57,6 +57,10 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
             <a href="<?php echo $url2 ?>about/">ABOUT US</a>
 	    </div>
 	</div>
-
+<style>
+    .hidden{
+        display:none;
+    }
+</style>
 <!----------------------   FONT JAVASCRIPT   ---------------------->
 

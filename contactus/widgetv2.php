@@ -37,7 +37,7 @@ elseif (strpos($_SERVER['PHP_SELF'], 'events') > 0) {
 -->
 
 <script>
-$(document).ready(function(){    
+$(document).ready(function(){
     $(".contact-title").click(function(){
         $(".contact-form").slideToggle();
         if ($("#disp-icon").html().indexOf('<i class="fas fa-chevron-up"></i>') > -1){

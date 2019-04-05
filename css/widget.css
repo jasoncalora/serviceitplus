@@ -139,6 +139,9 @@
             border-radius:100%;
             color:white;
             z-index:996;
+/*            border:1px solid rgba( 81, 81, 81, 0.63 );*/
+            -webkit-box-shadow: 1px 1px rgba( 43, 43, 43, 0.744 );
+            box-shadow: 1px 1px rgba( 43, 43, 43, 0.744 );    
         }
         .floating-icon:hover{
             cursor:pointer;
