@@ -176,7 +176,6 @@ $(document).ready(function(){
                    </ul>
                 </div>
             </div>
-            
         </div>
         <div class="teams">
             <img src="../images/careers/hr.jpg" alt="" class="icon">
