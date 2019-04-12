@@ -276,6 +276,11 @@ body, html {
 /*    border:1px solid black;*/
     width:80%;   
 }
+.owl-carousel .owl-item #bomgar-logo{
+/*    border:1px solid black;*/
+    width:100%;
+    margin-bottom:0.5rem;
+}
 .owl-carousel:hover{
     cursor:-webkit-grab;
     cursor:grab;
@@ -517,6 +522,9 @@ body, html {
 }
 .modal{
     font-size:0.01rem;
+}
+#bomgar-logo{
+    
 }
 @media (min-width: 320px) and (max-width:699px){
     .banner-div{

@@ -20,8 +20,8 @@
     
     
     <!-- bootstrap & jquery css & js  -->
-  <link rel="stylesheet" href="../css/bootstrap.min.css">	
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+   <link rel="stylesheet" href="../css/bootstrap.min.css">	
+    <script src="../js/jquery1.11.1.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 	<!-- header css & js  -->
@@ -30,7 +30,7 @@
 	<link rel="stylesheet" href="../css/header.css" type="text/css" />
 	<link rel="stylesheet" href="../css/careers.css" type="text/css" />
 	<link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+	<link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/owl.theme.default.min.css">
 	<script type="text/javascript" src="../js/owl.carousel.min.js"></script>
@@ -100,6 +100,9 @@
       element.classList.toggle("graytext");
 }
 </script>
+<style>/* raleway font css */
+ @font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(../fonts/raleway.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(../fonts/raleway.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+ </style>
 <body oncontextmenu=”return false” class="noselect" onload="<?php if ($status=="success"){echo "hideNotif()";}?>">
 <!--<body oncontextmenu=”return false” onload="window.onbeforeunload = function () {window.scrollTo(0, 0);}">-->
 <div id="page-loader"><div class="loader-cont"><i class="fa fa-spinner fa-spin" style="font-size:6rem;color:#f16a21;"></i></div></div>
@@ -145,7 +148,7 @@ $(document).ready(function(){
     </div>
 -->
     
-    <div class="block third">
+    <div class="block third" style="display:none">
         <div class="title">Join <FONT>Our Teams</FONT></div>
         <div class="teams">
             <img src="../images/careers/sales.jpg" alt="" class="icon">
@@ -186,6 +189,30 @@ $(document).ready(function(){
                    <li style="opacity:0"><i class="fa-li fa fa-briefcase"></i>asd</li>
                </ul>
             </div>
+        </div>
+    </div>
+    <div class="block fifth">
+        <div class="title">Career <FONT>Opportunities</FONT></div>
+        <div class="jobs-container">
+        <?php
+            $con = mysqli_connect('localhost','root','','sit_db');
+            if (!$con) {
+                die('Could not connect: ' . mysqli_error($con));
+            }
+
+            mysqli_select_db($con,"`careers`");
+            $sql="select * from careers where status = 'active'";
+            $result = mysqli_query($con,$sql);
+            while($row = mysqli_fetch_array($result)) {
+        //        echo $row['job_title']."<br>";
+                echo "<div class='card' data-toggle='modal' data-target='#myModal' onClick=changeTitle(".$row['ID'].")>";
+                echo "<div class='card-body'>";
+                echo "<h5 class='card-title'>".$row['job_title']."</h5>";
+                echo "<h6 class='card-subtitle mb-2'>".$row['department']." Department</h6>";
+                echo "</div>";
+                echo "</div>";
+            }
+        ?>
         </div>
     </div>
     <div class="block fourth">
@@ -256,7 +283,7 @@ $(document).ready(function(){
     }
     function changeTitle(x){
             document.getElementById("application").reset();
-        document.getElementById("test").innerHTML = "Upload Your Resume";
+            document.getElementById("test").innerHTML = "Upload Your Resume";
         if(x==0){
             document.getElementById("modal.title").innerHTML = "Intern";
             document.getElementById("txtPosition").value = "Intern";

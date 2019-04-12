@@ -93,11 +93,12 @@
         <div class="partners-desc" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">ServiceIT+ partners with industry-leading solution providers to deliver products that are customized to fit our clients’ business processes and requirements.</div>
     </div>
     <div class="owl-carousel" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">
-        <div class="client-logo"><img id="bomgar-logo" src="../images/products/logos/bomgar-logo.svg" alt=""></div>
+        <div class="client-logo"><img id="bomgar-logo" src="../images/products/logos/beyondtrust.svg" alt=""></div>
         <div class="client-logo"><img id="cherwell-logo" src="../images/products/logos/cehrwell.svg" alt=""></div>
         <div class="client-logo"><img id="hornbill-logo" src="../images/products/logos/hornbill-logo.png" alt=""></div>
         <div class="client-logo"><img id="ivanti-logo" src="../images/products/logos/ivanti.svg" alt=""></div>
         <div class="client-logo"><img id="microfocus-logo" src="../images/products/logos/mf.svg" alt=""></div>
+        <div class="client-logo"><img id="microfocus-logo" src="../images/products/logos/drivelock.svg" alt=""></div>
     </div>
 </div>
 <!--------------------------------  PRODUCT LINES  ----------------------------------->
@@ -187,11 +188,11 @@
                     nav:true
                 },
                 600:{
-                    items:5,
+                    items:4,
                     nav:false
                 },
                 1000:{
-                    items:5,
+                    items:6,
                     nav:true,
                     loop:false
                 }
