@@ -70,8 +70,8 @@ body, html {
     margin-left:1%;
     margin-top:2rem;
     margin-bottom:2rem;    
-    -webkit-box-shadow: -2px 2px 5px #888888;
-    box-shadow: -2px 2px 5px #888888;
+/*    -webkit-box-shadow: -2px 2px 5px #888888;*/
+/*    box-shadow: -2px 2px 5px #888888;*/
 }
 .single-post{
     border:1px solid #eaeaea;
@@ -85,8 +85,8 @@ body, html {
     display:-ms-flexbox;
     display:flex;
     background:#f7f7f7;
-    -webkit-box-shadow: 5px 5px 5px #888888;
-    box-shadow: 5px 5px 5px #888888;
+/*    -webkit-box-shadow: 5px 5px 5px #888888;*/
+/*    box-shadow: 5px 5px 5px #888888;*/
 }
 .single-left{
 /*    border:1px solid black;*/
@@ -172,7 +172,7 @@ body, html {
 /*    border:1px solid black;*/
     width:100%;
     float:left;
-    font-size:1.4rem;
+    font-size:1.8rem;
     font-weight:600;
 }
 .post-date{
@@ -187,18 +187,19 @@ body, html {
 /*    border:1px solid black;*/
     width:100%;
     float:left;
-    font-size:1rem;
+    font-size:1.2rem;
     text-align:justify;
+    margin-top:-1rem;
     padding-top:0px;
     padding-right:1rem;
 }
 .post-button{
 /*    border:1px solid black;*/
-    font-size:0.8rem;
+    font-size:1rem;
     
 }
 .mobile-btn{
-    display:hidden;    
+    display:none;    
 }
 .btn-danger{
     background-color:#f16a21;
@@ -406,8 +407,8 @@ body, html {
         display:-ms-flexbox;
         display:flex;
         background:#f7f7f7;
-        -webkit-box-shadow: 3px 3px 3px #888888;
-        box-shadow: 3px 3px 3px #888888;
+/*        -webkit-box-shadow: 3px 3px 3px #888888;*/
+/*        box-shadow: 3px 3px 3px #888888;*/
     }
     .date-container{
         display:none;
@@ -419,8 +420,8 @@ body, html {
         display:-ms-flexbox;
         display:flex;
         background:#f7f7f7;
-        -webkit-box-shadow: 5px 5px 5px #888888;
-        box-shadow: 5px 5px 5px #888888;
+/*        -webkit-box-shadow: 5px 5px 5px #888888;*/
+/*        box-shadow: 5px 5px 5px #888888;*/
         align-items:center;
     }
     .single-left img{
@@ -719,5 +720,8 @@ body, html {
 @media (min-width: 1300px){
     .post-date{
         display:none;
-    }   
+    } 
+    .mobile-btn{
+        font-size:5rem;
+    }
 }
