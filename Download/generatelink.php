@@ -1,7 +1,8 @@
 <?php
 //    echo $_GET["file"];
 //echo time() . "<br>" . gmdate('r', time()) . "<br>";
-$id = "265cc9f8a3b6194e9dc8a773f4c44bb61fd93bf6";
+//$id = "265cc9f8a3b6194e9dc8a773f4c44bb61fd93bf6";
+$id = $_GET["id"];
 //echo hash('ripemd160', time());
 $con = mysqli_connect('localhost','root','','serviceit_db');
 if (!$con) {
