@@ -3,7 +3,10 @@
 if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
     $url = ".././/";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("products/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
-}elseif (strpos($_SERVER['PHP_SELF'], 'events') > 0) {
+}elseif (strpos($_SERVER['PHP_SELF'], 'solutionsandservices') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("solutionsandservices/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'solutionsandservices') > 0) {
     $url = ".././/";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("events/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
 }elseif (strpos($_SERVER['PHP_SELF'], 'about') > 0) {
@@ -21,7 +24,7 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
     $url2 = str_replace("product-services.php","",$url2);
     $url2 = str_replace("product-consulting.php","",$url2);
     $url2 = str_replace("Managed-Services.php","",$url2);
-//    $url2 = $url2.str_replace("services/","",str_replace("product-services.php","",$url2));
+//    $url2 = $url2.str_replace("services/","",str_replace("product-services.php","",$url2)); solutionsandservices
 //    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("services/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
 }else {
     $url = ".//";
@@ -38,7 +41,7 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
 <!--	 style="display:none;"-->
 	<div class="header-navigation">
 		<div class="nav-item"><a href="<?php echo $url2 ?>" class="">HOME</a></div>
-		<div class="nav-item2"><a href="<?php echo $url2 ?>products/" class="">SOLUTIONS</a></div>
+		<div class="nav-item2"><a href="<?php echo $url2 ?>solutionsandservices/" class="">SOLUTIONS</a></div>
 		<div class="nav-item2"><a href="<?php echo $url2 ?>services/" class="">SERVICES</a></div>
 		<div class="nav-item2"><a href="<?php echo $url2 ?>careers/" class="">CAREERS</a></div>
 		<div class="nav-item2"><a href="<?php echo $url2 ?>events/" class="">NEWS</a></div>
@@ -50,7 +53,7 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
 	<div id="dropdown-menu" class="hidden">
 	    <div class="header-avigation-small">
             <a href="<?php echo $url2 ?>">HOME</a>
-            <a href="<?php echo $url2 ?>products/">SOLUTIONS</a>
+            <a href="<?php echo $url2 ?>solutionsandservices/">SOLUTIONS</a>
             <a href="<?php echo $url2 ?>services/">SERVICES</a>
             <a href="<?php echo $url2 ?>careers/">CAREERS</a>
             <a href="<?php echo $url2 ?>products/">NEWS</a>

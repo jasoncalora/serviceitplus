@@ -70,13 +70,13 @@
         }
         .years-listing a{
             color: #337ab7;
-            font-weight:600;
+/*            font-weight:600;*/
             line-height:1.5rem;
             text-decoration: none;
         }
         .years-listing a:hover{
             color: #011579;
-        font-weight:600;
+/*        font-weight:600;*/
         font-size:0.9rem;
         line-height:1.5rem;
         text-decoration: none;
@@ -90,8 +90,8 @@
 </div>
     
 <!---------------------------------------  YEARLY ARCHIVE  --------------------------------------------------->
-    <div class="browse-by"><i class="fab fa-twitter"></i> <strong>Tweets</strong> <font style="font-size:0.8rem;color:#777272;">by</font> <a href="https://twitter.com/ServiceITInc" class="twitterlink">@ServiceITInc</a></div>
-    <a class="twitter-timeline" data-chrome="noheader noscrollbar nofooter" data-height="300" data-theme="light" href="https://twitter.com/ServiceITInc?ref_src=twsrc%5Etfw">Tweets by ServiceITInc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!--    <div class="browse-by"><i class="fab fa-twitter"></i> <strong>Tweets</strong> <font style="font-size:0.8rem;color:#777272;">by</font> <a href="https://twitter.com/ServiceITInc" class="twitterlink">@ServiceITInc</a></div>-->
+<!--    <a class="twitter-timeline" data-chrome="noheader noscrollbar nofooter" data-height="300" data-theme="light" href="https://twitter.com/ServiceITInc?ref_src=twsrc%5Etfw">Tweets by ServiceITInc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
     
 <!---------------------------------------  LATEST POSTS  --------------------------------------------------->
     <div class="browse-by latest"><i class="fas fa-thumbtack"></i> Tweets by ServiceITInc <strong>Posts</strong></div>

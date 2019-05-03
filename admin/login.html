@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>Administraton Login Page</title>
+</head>
+<script>
+    function auth(){
+        var uname = document.getElementById("username").value;
+        var pwd = document.getElementById("password").value;
+        var params = "user="+uname+"&pwd="+pwd;
+        var http = new XMLHttpRequest();
+        var url = "authenticate.php";
+//        var url = "inc/preview.php";
+        http.open('POST', url, true);
+        //Send the proper header information along with the request
+        http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+        http.onreadystatechange = function() {//Call a function when the state changes.
+            if(http.readyState == 4 && http.status == 200) {
+                document.getElementById("result").innerHTML = http.responseText;
+                if(document.getElementById("result").textContent == "1"){
+                    window.location.replace("http://localhost:8081/serviceitplus/admin/");
+                }
+            }
+        }
+        http.send(params);
+//        alert("test");
+    }
+</script>
+<body>
+    <div class="wrapper">
+       <img src="../images/header/SITlogo.png" alt="">
+        <div class="login-container">
+            <p>Username</p>
+            <input type="text" id="username">
+            <p>Password</p>
+            <input type="password" id="password"><br>
+            <div class="button-container">
+                <button onclick="auth()">Login</button>
+            </div>
+        </div>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
+<style>
+    body{
+        width:100%;
+        height:100%;
+    }
+    .wrapper{
+    /*    border:2px solid black;*/
+        height:100%;
+        width:100%;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-pack:center;
+        -ms-flex-pack:center;
+        justify-content:center;
+        -webkit-box-align:center;
+        -ms-flex-align:center;
+        align-items:center;
+        flex-direction:column;
+    }
+    img{
+    /*    border:2px solid black;*/
+        width:350px;
+        padding-bottom:2rem;
+    }
+    .login-container{
+        border:1px solid #bcbcbc;
+        padding-top:2rem;
+        padding-bottom:4rem;
+        padding-left:3rem;
+        padding-right:3rem;
+        border-radius:5px;
+    }
+    .login-container p{
+        font-size:1rem;
+    /*    border:1px solid black;*/
+        margin-bottom:0.2rem;
+        color:rgba( 86, 86, 86, 0.766 );
+    }
+    .login-container input{
+        font-size:1rem;
+        padding:0.5rem;
+        border-radius:5px;
+        color:#919191;
+        width:300px;
+    }
+    .login-header{
+        width:100%;
+        height:100px;
+        background-color:rgba( 58, 58, 58, 0.438 ));
+    }
+    .button-container{
+        display:flex;
+        justify-content:center;
+        padding-top:1rem;
+    }
+    button{
+        font-size:1rem;
+        border-radius:5px;
+        padding-left:1rem;
+        padding-right:1rem;
+        padding-top:0.3rem;
+        padding-bottom:0.3rem;
+        background-color:#f16a21;
+        color:white;
+        border:0px;
+    }
+    button:hover{
+        filter:brightness(102%);
+        cursor:pointer;
+    }
+</style>

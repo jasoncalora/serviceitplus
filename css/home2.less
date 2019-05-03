@@ -1,5 +1,7 @@
 @section-title:1.5rem;
 @section-text:1rem;
+@bold:600;
+@notbold:100;
 body{
      font-family: 'Raleway', sans-serif;
      font-size:0.01rem;
@@ -30,6 +32,7 @@ body{
 /*    border:1px solid black;*/
     width:80%;
     display:flex;
+    flex-wrap:wrap;
     justify-content:center;
     align-items:center;
 }
@@ -52,7 +55,7 @@ body{
     height:4rem;
     display:flex;
     font-size:@section-text;
-    font-weight:600;
+    font-weight:@bold;
     text-align:center;
     align-items:center;
     justify-content:center;
@@ -180,7 +183,7 @@ body{
 /*border:2px solid red;
 */
  text-align: center;
- font-size:3.5rem;
+ font-size:@section-title + 1;
  line-height:0.06rem;
  color:white;
  font-weight:700;
@@ -573,24 +576,24 @@ line-height: 2rem;
  font-style:italic;
 }
 .testi-container i{
- font-size:2rem;
+ font-size:@section-title;
  font-style:italic;
 }
 .testi-owner{
 /* border:1px solid black;
 */
- font-size:1rem;
+ font-size:@section-text - 0.3;
  margin-top:1rem;
  color:black;
- line-height:0rem;
+ line-height:@section-text - 1.0;
  font-weight:800;
 }
 .testi-company{
 /* border:1px solid red;
 */
- font-size:0.8rem;
+ font-size:@section-text - 0.3;
  margin-top:0.2rem;
- line-height:0.0rem;
+ line-height:@section-text - 1.0;
 }
 .owl-dots {
 /* border:1px solid black;
@@ -603,7 +606,6 @@ line-height: 2rem;
 .dummy-content p{
  margin-top: 10px;
 }
-/*     ----------------------  BLOCK 2  ------------------------------*/
 @media (min-width: 320px) and (max-width:499px){
     .carousel-wrapper{
         /* border:1px solid black;
@@ -612,8 +614,17 @@ line-height: 2rem;
          width:100%;
          height:40%;
     }
+    
+    .block2{
+        float:left;
+//        border:2px solid black;
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:center;
+    }
     .block2 .card{
-        width:70%;
+        width:80%;
         margin-left:0.5rem;
         margin-right:0.5rem;
         margin-top:0.5rem;
@@ -650,8 +661,11 @@ line-height: 2rem;
          width:100%;
          height:300px;
     }
+    .block2 .cards-container{
+        width:90%;
+    }
     .block2 .card{
-        width:28%;
+        width:30%;
         margin-left:0.5rem;
         margin-right:0.5rem;
         margin-top:0.5rem;
@@ -817,15 +831,16 @@ line-height: 2rem;
         */
         /* border:1px solid black;
         */
-         font-size:1.2rem;
+         font-size:@section-title - 0.3;
          text-align:center;
-         font-weight:600;
+         font-weight:@notbold;
     }
      .block1-content{
         /* border:1px solid black;
         */
          width:100%;
-         font-size:0.7rem;
+         font-size:@section-text - 0.3;
+//         line-height:@section-text - 0.001rem;
          text-align: center;
          padding-right:5px;
          padding-left:5px;
@@ -1011,13 +1026,13 @@ line-height: 2rem;
      .clients-title{
         /* border:1px solid black;
         */
-         width:100%;
-         font-size:1.2rem;
+         width:95%;
+         font-size:@section-title - 0.3;
          padding-bottom:0.5rem;
         /* line-height:0.02rem;
         */
          text-align:center;
-         font-weight:800;
+         font-weight:@notbold;
     }
      .sit-orange{
          color:#f16a21;
@@ -1028,7 +1043,7 @@ line-height: 2rem;
      .clients-description{
         /* border:1px solid black;
         */
-         font-size:0.7rem;
+         font-size:@section-text - 0.3;
          line-height:1.2rem;
          display:-webkit-box;
          display:-ms-flexbox;
@@ -1176,20 +1191,21 @@ line-height: 2rem;
          cursor:-moz-grabbing;
     }
      .testi-container p#testimonial{
-         font-size:0.7rem;
+         font-size:@section-text - 0.4;
          margin-top:0.01rem;
          margin-left:10px;
          text-align: justify;
          font-style:italic;
     }
      .testi-container i{
-         font-size:1rem;
+         font-size:@section-title - 0.2;
          font-style:italic;
+         margin-top : -(@section-title - 0.9);
     }
      .testi-owner{
         /* border:1px solid black;
         */
-         font-size:0.8rem;
+         font-size:@section-text - 0.4;
          margin-top:0.005rem;
          color:black;
          line-height:0rem;
@@ -1198,7 +1214,7 @@ line-height: 2rem;
      .testi-company{
         /* border:1px solid red;
         */
-         font-size:0.7rem;
+         font-size:@section-text - 0.4;
 /*         margin-top:-10px;*/
          line-height:0.0rem;
     }
@@ -1319,7 +1335,7 @@ line-height: 2rem;
         /*border:2px solid red;
         */
          text-align: center;
-         font-size:2.5rem;
+         font-size:@section-title + 0.5;
          line-height:0.6rem;
          color:white;
          font-weight:700;
@@ -1330,7 +1346,7 @@ line-height: 2rem;
         /*border:1px solid blue;
         */
          text-align:center;
-         font-size:1rem;
+         font-size:@section-text;
          line-height:2rem;
          color:white;
          margin-top:40px;
@@ -1350,21 +1366,21 @@ line-height: 2rem;
         */
          padding-top:30px;
          padding-bottom:20px;
-         width:99%;
+         width:90%;
     }
      .block1-title{
         /* margin-top:55px;
         */
-         font-size:1.5rem;
+         font-size:@section-title;
          text-align:center;
-         font-weight:600;
+         font-weight:@notbold;
          padding-bottom:1rem;
     }
      .block1-content{
         /* border:1px solid black;
         */
          width:100%;
-         font-size:0.9rem;
+         font-size:@section-text;
          line-height:1.5rem;
          text-align: center;
          padding-right:50px;
@@ -1882,7 +1898,7 @@ line-height: 2rem;
         /*border:2px solid red;
         */
          text-align: center;
-         font-size:3.5rem;
+         font-size:@section-title + 1.0;
          line-height:0.6rem;
          color:white;
          font-weight:700;
@@ -1893,7 +1909,7 @@ line-height: 2rem;
         /*border:1px solid blue;
         */
          text-align:center;
-         font-size:1.5rem;
+         font-size:@section-text + 0.5;
          line-height:2rem;
          color:white;
          margin-top:40px;
@@ -1913,12 +1929,12 @@ line-height: 2rem;
         */
          padding-top:40px;
          padding-bottom:40px;
-         width:90%;
+         width:70%;
     }
      .block1-title{
         /* margin-top:55px;
         */
-         font-size:2.5rem;
+         font-size:@section-title;
          padding-bottom:1rem;
          text-align:center;
          font-weight:600;
@@ -1927,7 +1943,7 @@ line-height: 2rem;
         /* border:1px solid black;
         */
          width:100%;
-         font-size:1rem;
+         font-size:@section-text;
          line-height:1.8rem;
          text-align: center;
          padding-right:25px;
@@ -2096,11 +2112,14 @@ line-height: 2rem;
 /*     --------------------- BLOCK 2 ------------------------------*/
     
     .block2 .cards-container{
-        width:95%;
+        width:80%;
     }
     .block2 .card{
-        min-height:25rem;
+        width:30%;
+        min-height:18rem;
         margin-top:-1rem;
+        margin-top:0.5rem;
+        margin-bottom:0.5rem;
     }
     .block2 .card img{
         height:8rem;
@@ -2108,16 +2127,16 @@ line-height: 2rem;
     .block2 .card .title-container{
 /*        border:1px solid black;*/
         margin-top:0.2rem;
-        font-size:1.2rem;
+        font-size:@section-title - 0.5;
         margin-bottom:0.3rem;
         height:2rem;
     }
     .block2 .card .card-text{
-        font-size:1rem;
+        font-size:@section-title - 0.7;
         text-align:center;
         padding-left:1rem;
         padding-right:1rem;
-        margin-top:1rem;
+        margin-top:-0.5rem;
     }
     /*--------------------------- clients container ------------------------*/
      .clients-wrapper{
@@ -2128,21 +2147,26 @@ line-height: 2rem;
         /* height:300px;
         */
          padding-top:0.01rem;
+         display:flex;
+         flex-wrap:wrap;
+         justify-content:center;
     }
      .clients-container{
+         
          padding-top:2rem;
          padding-bottom:2rem;
+         width:80%;
     }
      .clients-title{
         /* border:1px solid black;
         */
          width:100%;
-         font-size:2.5rem;
+         font-size:@section-title;
          padding-bottom:1rem;
         /* line-height:0.02rem;
         */
          text-align:center;
-         font-weight:800;
+         font-weight:@notbold;
     }
      .sit-orange{
          color:#f16a21;
@@ -2153,7 +2177,7 @@ line-height: 2rem;
      .clients-description{
         /* border:1px solid black;
         */
-         font-size:1.2rem;
+         font-size:@section-text;
          line-height:2rem;
          display:-webkit-box;
          display:-ms-flexbox;
@@ -2289,7 +2313,7 @@ line-height: 2rem;
      .testi-container{
         /* border:1px solid black;
         */
-         width:80%;
+         width:70%;
          display:flex;
     }
      .testi-container:hover{
@@ -2301,20 +2325,20 @@ line-height: 2rem;
          cursor:-moz-grabbing;
     }
      .testi-container p#testimonial{
-         font-size:1.2rem;
+         font-size:@section-text;
          margin-top:1rem;
          margin-left:10px;
          text-align: justify;
          font-style:italic;
     }
      .testi-container i{
-         font-size:1.8rem;
+         font-size:@section-title;
          font-style:italic;
     }
      .testi-owner{
         /* border:1px solid black;
         */
-         font-size:1rem;
+         font-size:@section-text - 0.2;
          margin-top:0.5rem;
          color:black;
          line-height:0rem;
@@ -2323,7 +2347,7 @@ line-height: 2rem;
      .testi-company{
         /* border:1px solid red;
         */
-        font-size:0.8rem;
+        font-size:@section-text - 0.3;
         margin-top:0.2rem;
         line-height:0.0rem;
     }

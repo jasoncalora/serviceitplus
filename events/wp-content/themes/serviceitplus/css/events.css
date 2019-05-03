@@ -25,7 +25,7 @@ body, html {
     justify-content: center;
 }
 .banner-div h1{
-    font-size:3rem;
+    font-size:2.5rem;
     Color: White;
     font-weight:400;
     font-family: 'Raleway', sans-serif;
@@ -172,8 +172,8 @@ body, html {
 /*    border:1px solid black;*/
     width:100%;
     float:left;
-    font-size:1.8rem;
-    font-weight:600;
+    font-size:1.5rem;
+/*    font-weight:600;*/
 }
 .post-date{
 /*    border:1px solid black;*/
@@ -187,7 +187,7 @@ body, html {
 /*    border:1px solid black;*/
     width:100%;
     float:left;
-    font-size:1.2rem;
+    font-size:1rem;
     text-align:justify;
     margin-top:-1rem;
     padding-top:0px;
@@ -204,6 +204,7 @@ body, html {
 .btn-danger{
     background-color:#f16a21;
     border-color:#f16a21;
+    border:0px;
 }
 .btn-danger:hover{
     background-color:#f16a21;
@@ -308,7 +309,7 @@ body, html {
     }
     .browse-by{
         width:97%;
-        Font-size:1.2rem;
+        Font-size:1rem;
         border-bottom:2px solid black;
     }
     .browse-by i{
@@ -322,14 +323,14 @@ body, html {
     }
     .browse-category a{
         color: #337ab7;
-        font-weight:600;
-        font-size:0.9rem;
+/*        font-weight:600;*/
+        font-size:1rem;
         line-height:1.5rem;
         text-decoration: none; /* no underline */
     }
     .browse-category a:hover{
         color: #011579;
-        font-weight:600;
+/*        font-weight:600;*/
         font-size:0.9rem;
         line-height:1.5rem;
         text-decoration: none; /* no underline */

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Solutions and Services | Service IT+</title>
+	<title>Products | Service IT+</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
     <meta name="author" content="SemiColonWeb" />

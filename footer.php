@@ -2,6 +2,9 @@
 if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
     $url = ".././/";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("products/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'solutionsandservices') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("solutionsandservices/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
 }elseif (strpos($_SERVER['PHP_SELF'], 'events') > 0) {
     $url = ".././/";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("events/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
