@@ -4,7 +4,7 @@ $email = $_POST["email"];
 $d=strtotime("+3 hours");
 //echo gmdate('r', time()) . "<br>";
 //echo gmdate('r', time() + (3600*6));
-$expiry = gmdate('r', time() - (3600*6));
+$expiry = gmdate('r', time() + (3600*6));
 $expiry = strtotime($expiry);
 //echo date("Y-m-d h:i:sa", $d) . "<br>";
 //echo date("Y-m-d h:i:sa");
@@ -61,7 +61,7 @@ if(!$mail->send())
 } 
 else 
 {
-    echo "Message sent successfully";
+    echo "Link Sent to your Email Address";
 }
 
 

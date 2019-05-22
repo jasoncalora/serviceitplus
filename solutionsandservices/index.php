@@ -122,42 +122,52 @@
     <div class="prod-container prod-lines">
         <div class="prod-row flex-center">
             <div class="prod-row prod-row-inner">
-                <div class="prod-col prod-category itsm" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true">
+                <div class="prod-col prod-category" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true">
                    <div class="prod-cat-inner">
-                        <div class="cat-logo"><img src="../images/products/itsm-icon.svg" alt=""></div>
-                        <div class="prod-title itsm">IT Service Management</div>
+                      <div class="cat-logo"><img src="../images/products/gov-icon.svg" alt=""></div>
+                        <div class="prod-title itsm">Governance</div>
                         <div class="prod-text">
                             Strategic approach for designing, delivering, managing and improving the way information technology is used within the organization
                         </div>
-                        <div class="learn-more itsm" data-toggle="modal" data-target="#itsm-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        <div class="learn-more itsm" data-toggle="modal" data-target="#governance-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
                    </div>
                 </div>
-                <div class="prod-col prod-category security" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">
+                <div class="prod-col prod-category" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">
                     <div class="prod-cat-inner">
-                      <div class="cat-logo"><img src="../images/products/security-icon.svg" alt=""></div>
-                       <div class="prod-title security">Systems and Security Management</div>
+                      <div class="cat-logo"><img src="../images/products/security.svg" alt=""></div>
+                       <div class="prod-title security">Security</div>
                         <div class="prod-text">
                             Keeping systems up and running while maximizing IT and employee productivity
                         </div>
-                        <div class="learn-more security" data-toggle="modal" data-target="#security-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        <div class="learn-more" data-toggle="modal" data-target="#security-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
                    </div>
                 </div>
-                <div class="prod-col prod-category gov" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true">
+                <div class="prod-col prod-category" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true">
                     <div class="prod-cat-inner">
-                      <div class="cat-logo"><img src="../images/products/gov-icon.svg" alt=""></div>
-                       <div class="prod-title gov">IT Governance</div>
+                      <div class="cat-logo"><img class="assetmgt" src="../images/products/asset%20mgt2.svg" alt=""></div>
+                       <div class="prod-title gov">IT Asset Management</div>
                         <div class="prod-text">Align IT with the organizational goals and strategy</div>
                         <div class="learn-more gov" data-toggle="modal" data-target="#gov-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
                    </div>
                 </div>
-                <div class="prod-col prod-category qa" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">
+                <div class="prod-col prod-category" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">
                     <div class="prod-cat-inner">
-                      <div class="cat-logo"><img src="../images/products/qa-icon.svg" alt=""></div>
-                       <div class="prod-title qa">Software Quality Assurance</div>
+                        <div class="cat-logo"><img src="../images/products/itsm-icon.svg" alt=""></div>
+                       <div class="prod-title qa">IT Service Management</div>
                         <div class="prod-text">
                             Develop and deliver great software that business demands through Continuous Quality Assurance with low risk and less cost
                         </div>
-                        <div class="learn-more qa" data-toggle="modal" data-target="#sqa-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        <div class="learn-more" data-toggle="modal" data-target="#sqa-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                   </div>
+                </div>
+                <div class="prod-col prod-category" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">
+                    <div class="prod-cat-inner">
+                      <div class="cat-logo"><img src="../images/products/security-icon.svg" alt=""></div>
+                       <div class="prod-title qa">Identity & Access Management</div>
+                        <div class="prod-text">
+                            Develop and deliver great software that business demands through Continuous Quality Assurance with low risk and less cost
+                        </div>
+                        <div class="learn-more" data-toggle="modal" data-target="#sqa-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
                    </div>
                 </div>
             </div>
