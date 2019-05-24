@@ -147,7 +147,7 @@
                       <div class="cat-logo"><img class="assetmgt" src="../images/products/asset%20mgt2.svg" alt=""></div>
                        <div class="prod-title gov">IT Asset Management</div>
                         <div class="prod-text">Align IT with the organizational goals and strategy</div>
-                        <div class="learn-more gov" data-toggle="modal" data-target="#gov-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        <div class="learn-more gov" data-toggle="modal" data-target="#itam-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
                    </div>
                 </div>
                 <div class="prod-col prod-category" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">
@@ -157,7 +157,7 @@
                         <div class="prod-text">
                             Develop and deliver great software that business demands through Continuous Quality Assurance with low risk and less cost
                         </div>
-                        <div class="learn-more" data-toggle="modal" data-target="#sqa-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        <div class="learn-more" data-toggle="modal" data-target="#itsm-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
                    </div>
                 </div>
                 <div class="prod-col prod-category" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">
@@ -167,7 +167,7 @@
                         <div class="prod-text">
                             Develop and deliver great software that business demands through Continuous Quality Assurance with low risk and less cost
                         </div>
-                        <div class="learn-more" data-toggle="modal" data-target="#sqa-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        <div class="learn-more" data-toggle="modal" data-target="#iam-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
                    </div>
                 </div>
             </div>
