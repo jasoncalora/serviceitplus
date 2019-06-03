@@ -39,7 +39,7 @@
     justify-content: center;
 }
 .modal-header{
-    font-size:1.5rem;
+    font-size:@section-title;
     font-weight:800;
 /*    border:1px solid black;*/
     -webkit-box-pack: center;
@@ -60,7 +60,7 @@
 /*    color:#0289de;*/
 }
 .features-wrapper{
-/*    border:1px solid black;*/
+//    border:1px solid black;
     width:100%;
     display:-webkit-box;
     display:-ms-flexbox;
@@ -72,7 +72,7 @@
 }
 .features-container{
 //    border:1px solid red;
-    width:100%;
+    width:95%;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -87,50 +87,54 @@
 //    border:1px solid black;
 //    -ms-flex-preferred-size:20%;
 //    flex-basis:20%;
-    width:20%;
+    width:45%;
     margin-left:0.5rem;
     margin-right:0.5rem;
     margin-top:0.5rem;
     margin-bottom:0.5rem;
     display:-webkit-box;
     display:-ms-flexbox;
-    display:flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    display:block;
+//    -ms-flex-wrap: wrap;
+//    flex-wrap: wrap;
 }
 .feature-logo{
+    float:left;
+    width:30%;
 //    border:1px solid red;
-    width:100%;
-    height:130px;
+    height:100%;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
-    -webkit-box-align:center;
-    -ms-flex-align:center;
-    align-items:center;
+    align-items:flex-start;
     -webkit-box-pack:center;
     -ms-flex-pack:center;
     justify-content:center;
 }
 .feature-logo img{
-    height:90%;
+//    height:90%;
+    margin-top:10%;
+    width:50%;
+    max-height:60%;
+//    width:55px;
+//    height:55px;
 }
 .feature-title{
+    float:left;
+    width:70%;
     padding-top:10px;
     color:#515151;
 //    border:1px solid blue;
-    width:100%;
-    height:@section-text * 4;
+//    width:100%;
+    height:@section-text * 2;
 /*    height:50px;*/
-    font-size:@section-text;
+    font-size:@section-text - 0.1;
     font-weight:600;
-    text-align:center;
+    text-align:left;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
-    -webkit-box-pack:center;
-    -ms-flex-pack:center;
-    justify-content:center;
+    justify-content:flex-start;
     -webkit-box-align:center;
     -ms-flex-align:center;
     align-items:center;
@@ -142,10 +146,12 @@
 }
 .feature-desc{
 //   border:1px solid green;
-    width:100%;
-    height:@section-text * 8;
+    float:left;
+    width:70%;
+//    width:100%;
+    height:@section-text * 6;
     font-size:@section-text - 0.2;
-    text-align:center;
+    text-align:left;
     padding-top:10px;
     color:#757575;
 }

@@ -165,35 +165,35 @@ header('Expires: 0');
    <div class="block2-title" data-aos="fade" data-aos-offset="100" data-aos-duration="600" data-aos-once="true"><SPAN class="sit-orange">Solutions </SPAN>for your Business Needs</div>
     <div class="cards-container">
         <div class="card">
-            <img class="card-img-top" src="images/home/govern.svg" alt="Card image cap">
+            <img class="card-img-top" src="images/products/gov-icon.svg" alt="Card image cap">
             <div class="card-body">
                 <div class="title-container">Governance</div>
                 <p class="card-text">Align your strategies between business and IT. Define accountability and benefits</p>
             </div>
         </div>    
         <div class="card">
-            <img class="card-img-top" src="images/home/sec.svg" alt="Card image cap">
+            <img class="card-img-top" src="images/products/security.svg" alt="Card image cap">
             <div class="card-body">
                 <div class="title-container">Security</div>
                 <p class="card-text">Know threats that could compromise security of your users and endpoints.</p>
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="images/home/assetmgt.svg" alt="Card image cap">
+            <img class="card-img-top" src="images/products/asset%20mgt2.svg" alt="Card image cap">
             <div class="card-body">
                 <div class="title-container">IT Asset Management</div>
                 <p class="card-text">Continually capture your company's asset data to maximize returns, minimize risk and drive increased business value</p>
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="images/home/itsm2.svg" alt="Card image cap">
+            <img class="card-img-top" src="images/products/itsm-icon.svg" alt="Card image cap">
             <div class="card-body">
                 <div class="title-container">IT Service Management</div>
                 <p class="card-text">Leverage your processes in the enterprise IT environment. Create efficiency and introduce structure.</p>
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="images/home/iam.svg" alt="Card image cap">
+            <img class="card-img-top" src="images/products/security-icon.svg" alt="Card image cap">
             <div class="card-body">
                 <div class="title-container">Identity & Access Management</div>
                 <p class="card-text">Consistently enforce and manage access rights across your business environment</p>

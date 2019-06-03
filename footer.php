@@ -86,27 +86,24 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
         <a href="<?php echo $url ?>/about/ServiceIT+%20Privacy%20Policy%20(February%202019).pdf" download><i class="fas fa-file-download"></i></a>
     </div>
     <div id="preview-container">
-    
-<!--
-    <div class="moda-dload2">
-         <a href="<?php echo $url ?>/about/ServiceIT+%20Privacy%20Policy%20(February%202019).pdf" download><i class="fas fa-file-download"></i>&nbsp; Download here</a>
-    </div>
-        <embed src="<?php echo $url ?>/about/ServiceIT+%20Privacy%20Policy%20(February%202019).pdf" width="100%" height="100%" />
-        <iframe src="https://drive.google.com/file/d/1kg86N9Tz9DMk3KBBn6ciPNwKxg6u3zJ3/preview" width="100%" height="100%"></iframe>
--->
+
     </div>
 </div>
 <script>
+        var $html    = $('html');
     function preview() {
         ///////////     SHOW MODAL
         document.getElementById("preview-modal").setAttribute("style", "display:flex;");
-        document.getElementById("body").setAttribute("style", "overflow:hidden;");
+//        document.getElementsByTagName("body").setAttribute("style", "overflow:hidden;");
         document.getElementById("preview-container").innerHTML = '<div class="moda-dload2"><a href="<?php echo $url ?>/about/ServiceIT+%20Privacy%20Policy%20(February%202019).pdf" download><i class="fas fa-file-download"></i>&nbsp; Download here</a></div><iframe src="https://drive.google.com/file/d/1kg86N9Tz9DMk3KBBn6ciPNwKxg6u3zJ3/preview" width="100%" height="100%"></iframe>';
+//        document.getElementById("preview-container").innerHTML = "adasdasdasd";
+        $html.css('overflow-y', 'hidden');
     }
 
     function closePreview(x) {
         x.setAttribute('style', 'display:none;');
-        document.getElementById('body').setAttribute('style', 'overflow:visible;');
+//        document.getElementsByTagName('body').setAttribute('style', 'overflow:visible;');
+        $html.css('overflow-y', 'scroll');
         document.getElementById("preview-container").innerHTML = '';
         deleteFile();
     }
