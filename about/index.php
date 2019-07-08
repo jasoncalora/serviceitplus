@@ -130,7 +130,7 @@
             </div>
         </div>
     </div>
-    <div class="block-wrapper section3">
+    <div class="block-wrapper section3" style = "display:none;">
         <div class="section3-title" data-aos="zoom-in-up" data-aos-offset="100" data-aos-duration="600" data-aos-once="true">OUR <font color="f16a21">CORE VALUES</font></div>
         <div class="value-container" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800" data-aos-once="true">
             <div class="section3-text">
@@ -154,6 +154,53 @@
             <div class="section3-text">
                 <div ><span class="value-title">TEAMWORK : </span> We are proof that great work cannot be possible without great teams. Our teams consist of uniquely talented individuals that strive towards the same goal of delivering the best to our customers.</div>
             </div>
+        </div>
+    </div>
+    <div class="block-wrapper section5">
+        <div class="section3-title" data-aos="zoom-in-up" data-aos-offset="100" data-aos-duration="600" data-aos-once="true">OUR <font color="f16a21">CORE VALUES</font></div>
+        <div class="values-container">
+           <div class="value-container">
+               <div class="title"><span>Excellence</span></div>
+               <div class="text">
+                   We are not satisfied until we are sure we have given our best in order to achieve high quality results
+               </div><i class="fa fa-line-chart" aria-hidden="true"></i>
+           </div>
+           <div class="value-container">
+               <div class="title"><span>Innovative</span></div>
+               <div class="text">
+                   We are NEVER satisfied. Our creativity is our catalyst for improvement
+               </div><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+           </div>
+           <div class="value-container">
+               <div class="title"><span>Responsive</span></div>
+               <div class="text">
+                   We respond to our customers promptly and in a positive manner
+               </div><i class="fa fa-check" aria-hidden="true"></i>
+           </div>
+           <div class="value-container">
+               <div class="title"><span>Passion</span></div>
+               <div class="text">
+                   We are proud of what we do. Our passion fuels our enthusiasm and commitment to hard work
+               </div><i class="fa fa-fire" aria-hidden="true"></i>
+           </div>
+           <div class="value-container">
+               <div class="title"><span>Trust</span></div>
+               <div class="text">
+                   Professionalism and Integrity are at the heart of everything we do. We develop loyalty in all our relationships
+               </div><i class="fa fa-handshake-o" aria-hidden="true"></i>
+           </div>
+           <div class="value-container">
+               <div class="title"><span>Fun Loving</span></div>
+               <div class="text">
+                   We work hard and play hard. We believe in celebrating our joint success with our customers
+               </div><i class="fa fa-rocket" aria-hidden="true"></i>
+           </div>
+           <div class="value-container">
+               <div class="title"><span>Teamwork</span></div>
+               <div class="text">
+                   We are proof that great work cannot be possible without great teams. Our teams consist of uniquely talented individuals that strive towards the same goal of delivering the best to our customers
+               </div><i class="fa fa-users" aria-hidden="true"></i>
+           </div>
         </div>
     </div>
     <?php include "../footer.php" ?>   

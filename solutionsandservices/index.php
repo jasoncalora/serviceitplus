@@ -81,7 +81,8 @@
         </div>
         <div class="honeycomb-block">
             <div class="img-container" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1600" data-aos-once="true">
-                <img src="../images/products/honeycomb1.svg" alt="">   
+<!--                <img src="../images/products/honeycomb1.svg" alt="">   -->
+                <img src="../images/products/framework4.png" alt="">   
             </div>
         </div>
     </div>
@@ -89,7 +90,7 @@
 <!----------------------------------- PARTNERS ------------------------------------------------>
 <div class="partners-container noselect">
     <div class="partners-text">
-        <div class="partners-title" data-aos="fade" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true"><span>Our Technology</span> Partners</div>
+        <div class="partners-title" data-aos="fade" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true"><span>Our </span> Technology Partners</div>
         <div class="partners-desc" data-aos="fade" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">ServiceIT+ partners with industry-leading solution providers to deliver products that are customized to fit our clients’ business processes and requirements.</div>
     </div>
 <!--
@@ -115,7 +116,7 @@
 <div class="prod-wrapper noselect">
    
     <div class="partners-text">
-        <div class="partners-title" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300"><span>Solutions</span> & Services</div>
+        <div class="partners-title" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300"><span>Our </span>Solutions & Services</div>
         <div class="partners-desc"></div>
     </div>
     

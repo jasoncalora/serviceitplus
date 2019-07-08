@@ -171,7 +171,7 @@ html {
 .left-text {
   border-top: 2px solid #f16a21;
   text-align: justify;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: black;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -194,7 +194,7 @@ html {
   /*    border:1px solid black;*/
   border-top: 2px solid #f16a21;
   text-align: justify;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: black;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -262,7 +262,6 @@ html {
   line-height: 5rem;
 }
 .section4-desc {
-  /*    border:1px solid black;*/
   width: 80%;
   font-size: 1rem;
   text-align: center;
@@ -334,14 +333,104 @@ html {
 }
 .disc-items {
   width: 90%;
-  font-size: 0.9rem;
-  height: 8rem;
+  font-size: 1rem;
+  height: 12rem;
 }
 .disc-items i {
   color: #f16a21;
 }
 .displaynone {
   display: none;
+}
+/*----------------  SECTION 5  ----------------------*/
+.block-wrapper.section5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #f4f4f4;
+}
+.section5-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 5rem;
+}
+.values-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+.value-container {
+  box-shadow: 0.1rem 0.1rem #cccccc;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1rem;
+  height: 10rem;
+  background-color: white;
+}
+.value-container:nth-child(1) {
+  width: 28%;
+}
+.value-container:nth-child(2) {
+  width: 28%;
+}
+.value-container:nth-child(3) {
+  width: 28%;
+}
+.value-container:nth-child(4) {
+  width: 57%;
+}
+.value-container:nth-child(5) {
+  width: 28%;
+}
+.value-container:nth-child(6) {
+  width: 28%;
+}
+.value-container:nth-child(7) {
+  width: 57%;
+}
+.value-container .title {
+  width: 100%;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+.value-container span {
+  text-transform: capitalize;
+}
+.value-container i {
+  font-size: 2.5rem;
+  color: #f16a21;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -1rem;
+  right: 1%;
+  width: 97%;
+}
+.value-container:nth-child(4) i {
+  width: 99%;
+}
+.value-container:nth-child(7) i {
+  width: 99%;
+}
+.value-container .text {
+  width: 80%;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+.value-container:nth-child(4) .text {
+  width: 100%;
+}
+.value-container:nth-child(7) .text {
+  width: 100%;
 }
 @media (min-width: 320px) and (max-width: 500px) {
   .disc-items {
@@ -356,7 +445,6 @@ html {
     font-size: 1rem;
     padding-bottom: 1rem;
     width: 90%;
-    height: 10rem;
   }
   .disc-container {
     width: 60%;
@@ -545,75 +633,6 @@ html {
     font-size: 1rem;
   }
 }
-@media (min-width: 1000px) and (max-width: 1299px) {
-  .banner-div {
-    max-height: 500px;
-    background: url(../images/about/about-wallpaper1366.jpg);
-  }
-  .block-wrapper.section2 {
-    padding-top: 0rem;
-  }
-  .block-container.section2 .left {
-    /*        border:1px solid black;*/
-    margin-right: 2.5%;
-    width: 40%;
-    height: 80%;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-  }
-  .left-text {
-    /*    border:1px solid black;*/
-    border-top: 2px solid #f16a21;
-    text-align: justify;
-    color: black;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-  }
-  .block-container.section2 .right {
-    /*    border:1px solid black;*/
-    margin-left: 2.5%;
-    width: 40%;
-    height: 80%;
-  }
-  .right-title {
-    /*    border:1px solid black;*/
-    text-align: center;
-    color: black;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .right-text {
-    /*    border:1px solid black;*/
-    border-top: 2px solid #f16a21;
-    text-align: justify;
-    color: black;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-  }
-  .sect1-content {
-    font-size: 15px;
-  }
-  .disc-container {
-    width: 90%;
-  }
-  .disc-title {
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    font-size: 1rem;
-    font-weight: 900;
-  }
-  .block-wrapper.section4 {
-    padding-top: 0rem;
-  }
-  .section3-text {
-    font-size: 15px;
-  }
-  .disc-items {
-    height: 10rem;
-  }
-}
 @media (min-width: 1300px) {
   .banner-div {
     max-height: 768px;
@@ -641,17 +660,5 @@ html {
     margin-left: 2.5%;
     width: 40%;
     height: 80%;
-  }
-  .right-title {
-    /*    border:1px solid black;*/
-    text-align: center;
-    font-size: 1.5rem;
-    color: black;
-    font-weight: 700;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .disc {
-    height: 300px;
   }
 }
