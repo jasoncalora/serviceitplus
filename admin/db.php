@@ -10,7 +10,7 @@ class dbh {
         $this -> servername = "localhost";
         $this -> username = "root";
         $this -> password = "";
-        $this -> dbname = "serviceit_db";
+        $this -> dbname = "sit_db";
         $conn = new mysqli($this->servername,$this->username,$this->password,$this->dbname);
         return $conn;
     }

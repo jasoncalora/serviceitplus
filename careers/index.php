@@ -148,7 +148,7 @@ $(document).ready(function(){
     </div>
 -->
     
-    <div class="block third" style="display:none">
+    <div class="block third" style="display:none;">
         <div class="title">Join <FONT>Our Teams</FONT></div>
         <div class="teams">
             <img src="../images/careers/sales.jpg" alt="" class="icon">
@@ -190,7 +190,7 @@ $(document).ready(function(){
             </div>
         </div>
     </div>
-    <div class="block fifth">
+    <div class="block fifth" style="">
         <div class="title">Career <FONT>Opportunities</FONT></div>
         <div class="jobs-container">
         <?php

@@ -30,10 +30,12 @@ body {
   border-top: 1px dotted rgba(170, 170, 170, 0.619);
   border-bottom: 1px dotted rgba(170, 170, 170, 0.619);
   float: left;
+  display: flex;
 }
 .user-div .user-icon {
   height: 100%;
-  width: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +48,7 @@ body {
   float: left;
   align-items: center;
   padding-left: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
   display: flex;
   justify-content: center;

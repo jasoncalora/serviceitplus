@@ -43,11 +43,13 @@ if(!isset($_SESSION["username"])){
             <div class="company-logo"><img src="../images/header/SITlogo.png" alt=""></div>
             <div class="user-div">
                 <div class="user-icon"><i class="fas fa-user"></i></div>
-                <div class="user-welcome"><?php echo "Welcome ".$_SESSION["username"] . "!"; ?></div>
+                <div class="user-welcome"><?php echo "Welcome! ".$_SESSION["username"]; ?></div>
             </div>
             <div class="menu">
                 <div class="menu-item"><div class="text">Users</div></div>
+                <div class="menu-item"><div class="text">Careers</div></div>
                 <div class="menu-item" onclick="fileUploads()"><div class="text">File Uploads</div></div>
+                <div class="menu-item" onclick=""><a href="logout.php"><div class="text">Logout</div></a></div>
             </div>
         </div>
         <div class="dash-container" id="content-container"></div>

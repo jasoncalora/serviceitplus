@@ -1,7 +1,7 @@
 <?php
 $uname = $_POST["user"];
 $pass = $_POST["pwd"];
-$con = mysqli_connect('localhost','root','','serviceit_db');
+$con = mysqli_connect('localhost','root','','sit_db');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }
