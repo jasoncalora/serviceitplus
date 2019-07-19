@@ -48,8 +48,21 @@ class EVF_Install {
 		),
 		'1.4.0' => array(
 			'evf_update_140_db_multiple_email',
-			'evf_update_140_db_version'
-		)
+			'evf_update_140_db_version',
+		),
+		'1.4.4' => array(
+			'evf_update_144_delete_options',
+			'evf_update_144_db_version',
+		),
+		'1.4.9' => array(
+			'evf_update_149_db_rename_options',
+			'evf_update_149_no_payment_options',
+			'evf_update_149_db_version',
+		),
+		'1.5.0' => array(
+			'evf_update_150_field_datetime_type',
+			'evf_update_150_db_version',
+		),
 	);
 
 	/**
@@ -99,6 +112,7 @@ class EVF_Install {
 	 */
 	public static function install_actions() {
 		if ( ! empty( $_GET['do_update_everest_forms'] ) ) {
+			check_admin_referer( 'evf_db_update', 'evf_db_update_nonce' );
 			self::update();
 			EVF_Admin_Notices::add_notice( 'update' );
 		}
@@ -173,11 +187,13 @@ class EVF_Install {
 	 *
 	 * @return boolean
 	 */
-	private static function needs_db_update() {
+	public static function needs_db_update() {
 		$current_db_version = get_option( 'everest_forms_db_version', null );
 		$updates            = self::get_db_update_callbacks();
+		$update_versions    = array_keys( $updates );
+		usort( $update_versions, 'version_compare' );
 
-		return ! is_null( $current_db_version ) && version_compare( $current_db_version, max( array_keys( $updates ) ), '<' );
+		return ! is_null( $current_db_version ) && version_compare( $current_db_version, end( $update_versions ), '<' );
 	}
 
 	/**
@@ -330,7 +346,7 @@ class EVF_Install {
 			}
 		}
 
-		require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+		require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 
 		dbDelta( self::get_schema() );
 	}
@@ -525,18 +541,22 @@ CREATE TABLE {$wpdb->prefix}evf_sessions (
 			include_once dirname( __FILE__ ) . '/templates/contact.php';
 
 			// Create a form.
-			$form_id = wp_insert_post( array(
-				'post_title'   => esc_html( 'Contact Form', 'everest-forms' ),
-				'post_status'  => 'publish',
-				'post_type'    => 'everest_form',
-				'post_content' => '{}',
-			) );
+			$form_id = wp_insert_post(
+				array(
+					'post_title'   => esc_html( 'Contact Form', 'everest-forms' ),
+					'post_status'  => 'publish',
+					'post_type'    => 'everest_form',
+					'post_content' => '{}',
+				)
+			);
 
 			if ( $form_id ) {
-				wp_update_post( array(
-					'ID'           => $form_id,
-					'post_content' => evf_encode( array_merge( array( 'id' => $form_id ), $form_template['contact'] ) ),
-				) );
+				wp_update_post(
+					array(
+						'ID'           => $form_id,
+						'post_content' => evf_encode( array_merge( array( 'id' => $form_id ), $form_template['contact'] ) ),
+					)
+				);
 			}
 
 			update_option( 'everest_forms_default_form_page_id', $form_id );
@@ -602,7 +622,7 @@ CREATE TABLE {$wpdb->prefix}evf_sessions (
 		if ( EVF_PLUGIN_BASENAME == $plugin_file ) {
 			$new_plugin_meta = array(
 				'docs'    => '<a href="' . esc_url( apply_filters( 'everest_forms_docs_url', 'https://docs.wpeverest.com/documentation/plugins/everest-forms/' ) ) . '" aria-label="' . esc_attr__( 'View Everest Forms documentation', 'everest-forms' ) . '">' . esc_html__( 'Docs', 'everest-forms' ) . '</a>',
-				'support' => '<a href="' . esc_url( apply_filters( 'everest_forms_support_url', 'https://wpeverest.com/support-forum/' ) ) . '" aria-label="' . esc_attr__( 'Visit free customer support', 'everest-forms' ) . '">' . esc_html__( 'Free support', 'everest-forms' ) . '</a>',
+				'support' => '<a href="' . esc_url( apply_filters( 'everest_forms_support_url', 'https://wordpress.org/support/plugin/everest-forms/' ) ) . '" aria-label="' . esc_attr__( 'Visit free customer support', 'everest-forms' ) . '">' . esc_html__( 'Free support', 'everest-forms' ) . '</a>',
 			);
 
 			return array_merge( $plugin_meta, $new_plugin_meta );

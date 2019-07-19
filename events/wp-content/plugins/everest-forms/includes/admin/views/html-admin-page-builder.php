@@ -8,6 +8,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $form_data['form_field_id'] = isset( $form_data['form_field_id'] ) ? $form_data['form_field_id'] : 0;
+$form_data['form_enabled']  = isset( $form_data['form_enabled'] ) ? $form_data['form_enabled'] : 1;
 
 // Get tabs for the builder panel.
 $tabs = apply_filters( 'everest_forms_builder_tabs_array', array() );
@@ -20,8 +21,9 @@ $tabs = apply_filters( 'everest_forms_builder_tabs_array', array() );
 			<span class="loading"><?php esc_html_e( 'Loading&hellip;', 'everest-forms' ); ?></span>
 		</div>
 	</div>
-	<form name="everest-forms-builder" id="everest-forms-builder-form" method="post" data-id="<?php echo absint( $form_id ); ?>">
+	<form id="everest-forms-builder-form" name="everest-forms-builder" method="post" data-id="<?php echo absint( $form_id ); ?>">
 		<input type="hidden" name="id" value="<?php echo absint( $form_id ); ?>">
+		<input type="hidden" name="form_enabled" value="<?php echo absint( $form_data['form_enabled'] ); ?>">
 		<input type="hidden" value="<?php echo absint( $form_data['form_field_id'] ); ?>" name="form_field_id" id="everest-forms-field-id">
 
 		<div class="everest-forms-nav-wrapper clearfix">
@@ -41,7 +43,7 @@ $tabs = apply_filters( 'everest_forms_builder_tabs_array', array() );
 						<span class="screen-reader-text"><?php esc_html_e( 'Copy shortcode', 'everest-forms' ); ?></span>
 					</button>
 				</div>
-				<button name="save_form" class="everest-forms-btn everest-forms-save-button button-primary" type="button" value="<?php esc_attr_e( 'Save', 'everest-forms' ); ?>"><?php esc_html_e( 'Save', 'everest-forms' ); ?></button>
+				<button name="save_form" class="everest-forms-btn everest-forms-save-button" type="button" value="<?php esc_attr_e( 'Save', 'everest-forms' ); ?>"><?php esc_html_e( 'Save', 'everest-forms' ); ?></button>
 			</div>
 		</div>
 		<div class="evf-tab-content">

@@ -125,9 +125,9 @@ function evf_update_120_db_rename_options() {
  * Update email settings adding connection data.
  */
 function evf_update_140_db_multiple_email() {
-    $forms = EVF()->form->get( '', array( 'order' => 'DESC' ) );
+	$forms = EVF()->form->get( '', array( 'order' => 'DESC' ) );
 
-    // Loop through each forms.
+	// Loop through each forms.
 	foreach ( $forms as $form ) {
 		$form_id   = isset( $form->ID ) ? $form->ID : '0';
 		$form_data = ! empty( $form->post_content ) ? evf_decode( $form->post_content ) : '';
@@ -136,19 +136,19 @@ function evf_update_140_db_multiple_email() {
 			$email = (array) $form_data['settings']['email'];
 
 			// New email conn.
-			$new_email = array();
+			$new_email                    = array();
 			$new_email['connection_name'] = esc_html__( 'Admin Notification', 'everest-forms' );
-			$new_email = array_merge( $new_email, $email );
+			$new_email                    = array_merge( $new_email, $email );
 
 			// Unset previous email data structure.
-   			$email_settings = array( 'evf_send_confirmation_email', 'evf_user_to_email', 'evf_user_email_subject', 'evf_user_email_message', 'attach_pdf_to_user_email' );
-   			foreach ( $email_settings as $email_setting ) {
-   				unset( $email_setting );
-   			}
+			$email_settings = array( 'evf_send_confirmation_email', 'evf_user_to_email', 'evf_user_email_subject', 'evf_user_email_message', 'attach_pdf_to_user_email' );
+			foreach ( $email_settings as $email_setting ) {
+				unset( $email_setting );
+			}
 
-   			// Maintain the multiple-email connections data structure.
-   			if ( ! isset( $form_data['settings']['email']['connection_1'] ) ) {
-				$unique_connection_id = sprintf( 'connection_%s', uniqid() );
+			// Maintain the multiple-email connections data structure.
+			if ( ! isset( $form_data['settings']['email']['connection_1'] ) ) {
+				$unique_connection_id           = sprintf( 'connection_%s', uniqid() );
 				$form_data['settings']['email'] = array( 'connection_1' => $new_email );
 
 				if ( isset( $email['evf_send_confirmation_email'] ) && '1' === $email['evf_send_confirmation_email'] ) {
@@ -163,7 +163,7 @@ function evf_update_140_db_multiple_email() {
 					);
 				}
 
-				if ( isset( $email['attach_pdf_to_user_email'] ) && '1' === $email['attach_pdf_to_user_email'] ){
+				if ( isset( $email['attach_pdf_to_user_email'] ) && '1' === $email['attach_pdf_to_user_email'] ) {
 					$form_data['settings']['email'][ $unique_connection_id ]['attach_pdf_to_admin_email'] = '1';
 				}
 
@@ -199,4 +199,99 @@ function evf_update_130_db_version() {
  */
 function evf_update_140_db_version() {
 	EVF_Install::update_db_version( '1.4.0' );
+}
+
+/**
+ * Delete global reCAPTCHA related options.
+ */
+function evf_update_144_delete_options() {
+	delete_option( 'everest_forms_recaptcha_validation' );
+}
+
+/**
+ * Update DB Version.
+ */
+function evf_update_144_db_version() {
+	EVF_Install::update_db_version( '1.4.4' );
+}
+
+/**
+ * Update settings option to use new renamed option for 1.4.9.
+ */
+function evf_update_149_db_rename_options() {
+	$rename_options = array(
+		'everest_forms_recaptcha_site_key'    => 'everest_forms_recaptcha_v2_site_key',
+		'everest_forms_recaptcha_site_secret' => 'everest_forms_recaptcha_v2_secret_key',
+	);
+
+	foreach ( $rename_options as $old_option => $new_option ) {
+		$raw_old_option = get_option( $old_option );
+
+		if ( ! empty( $raw_old_option ) ) {
+			update_option( $new_option, $raw_old_option );
+			delete_option( $old_option );
+		}
+	}
+}
+
+/**
+ * Remove payment option field from all forms.
+ */
+function evf_update_149_no_payment_options() {
+	$forms = evf_get_all_forms();
+
+	// Loop through each forms.
+	foreach ( $forms as $form_id => $form ) {
+		$form_obj  = EVF()->form->get( $form_id );
+		$form_data = ! empty( $form_obj->post_content ) ? evf_decode( $form_obj->post_content ) : '';
+
+		if ( ! empty( $form_data['form_fields'] ) ) {
+			foreach ( $form_data['form_fields'] as $field_id => &$field ) {
+				if ( isset( $field['type'] ) && 'payment-charge-options' === $field['type'] ) {
+					unset( $form_data['form_fields'][ $field_id ] );
+				}
+			}
+		}
+
+		// Update form data.
+		EVF()->form->update( $form_id, $form_data );
+	}
+}
+
+/**
+ * Update DB Version.
+ */
+function evf_update_149_db_version() {
+	EVF_Install::update_db_version( '1.4.9' );
+}
+
+/**
+ * Update date field type for all forms.
+ */
+function evf_update_150_field_datetime_type() {
+	$forms = EVF()->form->get( '', array( 'order' => 'DESC' ) );
+
+	// Loop through each forms.
+	foreach ( $forms as $form ) {
+		$form_id   = isset( $form->ID ) ? $form->ID : '0';
+		$form_data = ! empty( $form->post_content ) ? evf_decode( $form->post_content ) : '';
+
+		if ( ! empty( $form_data['form_fields'] ) ) {
+			foreach ( $form_data['form_fields'] as &$field ) {
+				if ( isset( $field['type'] ) && 'date' === $field['type'] ) {
+					$field['type'] = 'date-time';
+				}
+			}
+		}
+
+		// Update form data.
+		EVF()->form->update( $form_id, $form_data );
+	}
+}
+
+/**
+ * Update DB Version.
+ */
+function evf_update_150_db_version() {
+	EVF_Install::update_db_version( '1.5.0' );
 }

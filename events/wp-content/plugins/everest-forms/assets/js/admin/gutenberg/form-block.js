@@ -7,6 +7,7 @@
 'use strict';
 
 /* global evf_form_block_data, wp */
+const { __ } = wp.i18n;
 const { createElement } = wp.element;
 const { registerBlockType } = wp.blocks;
 const { InspectorControls } = wp.editor;
@@ -18,16 +19,23 @@ const EverestFormIcon = createElement( 'svg', { width: 24, height: 24, viewBox: 
 
 registerBlockType( 'everest-forms/form-selector', {
 	title: evf_form_block_data.i18n.title,
-	description: evf_form_block_data.i18n.description,
 	icon: EverestFormIcon,
 	category: 'widgets',
+	keywords: evf_form_block_data.i18n.form_keywords,
+	description: evf_form_block_data.i18n.description,
 	attributes: {
 		formId: {
 			type: 'string',
 		},
+		displayTitle: {
+			type: 'boolean',
+		},
+		displayDescription: {
+			type: 'boolean',
+		},
 	},
 	edit( props ) {
-		const { attributes: { formId = '' }, setAttributes } = props;
+		const { attributes: { formId = '', displayTitle = false, displayDescription = false }, setAttributes } = props;
 		const formOptions = evf_form_block_data.forms.map( value => (
 			{ value: value.ID, label: value.post_title }
 		) );
@@ -39,6 +47,14 @@ registerBlockType( 'everest-forms/form-selector', {
 			setAttributes( { formId: value } );
 		}
 
+		function toggleDisplayTitle( value ) {
+			setAttributes( { displayTitle: value } );
+		}
+
+		function toggleDisplayDescription( value ) {
+			setAttributes( { displayDescription: value } );
+		}
+
 		jsx = [
 			<InspectorControls key="evf-gutenberg-form-selector-inspector-controls">
 				<PanelBody title={ evf_form_block_data.i18n.form_settings }>
@@ -47,6 +63,16 @@ registerBlockType( 'everest-forms/form-selector', {
 						value={ formId }
 						options={ formOptions }
 						onChange={ selectForm }
+					/>
+					<ToggleControl
+						label={ evf_form_block_data.i18n.show_title }
+						checked={ displayTitle }
+						onChange={ toggleDisplayTitle }
+					/>
+					<ToggleControl
+						label={ evf_form_block_data.i18n.show_description }
+						checked={ displayDescription }
+						onChange={ toggleDisplayDescription }
 					/>
 				</PanelBody>
 			</InspectorControls>
