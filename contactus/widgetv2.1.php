@@ -57,7 +57,7 @@ $(document).ready(function(){
         } else {
             $("#disp-icon").html('<i class="fas fa-chevron-up"></i>');
         }
-    }, 25000);
+    }, 60000);
     
 //    $(".msg-exit").click(function(){
 //        $(".chat-container").fadeToggle();

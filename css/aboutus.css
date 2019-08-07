@@ -411,7 +411,6 @@ html {
   color: #f16a21;
   display: flex;
   justify-content: flex-end;
-  margin-top: -1rem;
   right: 1%;
   width: 97%;
 }
@@ -431,6 +430,70 @@ html {
 }
 .value-container:nth-child(7) .text {
   width: 100%;
+}
+@media (min-width: 320px) and (max-width: 699px) {
+  .value-container {
+    height: 15rem;
+    margin-top: 1rem;
+  }
+  .value-container .text {
+    margin-top: -1.5rem;
+  }
+  .value-container:nth-child(1) .text {
+    width: 99%;
+  }
+  .value-container:nth-child(2) .text {
+    width: 99%;
+  }
+  .value-container:nth-child(3) .text {
+    width: 99%;
+  }
+  .value-container:nth-child(5) .text {
+    width: 99%;
+  }
+  .value-container:nth-child(6) .text {
+    width: 99%;
+  }
+  .value-container:nth-child(1) {
+    width: 95%;
+  }
+  .value-container:nth-child(2) {
+    width: 95%;
+  }
+  .value-container:nth-child(3) {
+    width: 95%;
+  }
+  .value-container:nth-child(4) {
+    width: 95%;
+  }
+  .value-container:nth-child(5) {
+    width: 95%;
+  }
+  .value-container:nth-child(6) {
+    width: 95%;
+  }
+  .value-container:nth-child(7) {
+    width: 95%;
+  }
+  .value-container .title {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .value-container .text {
+    width: 80%;
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .value-container i {
+    position: absolute;
+    margin-top: 9rem;
+    margin-right: 10%;
+  }
+  .value-container:nth-child(7) i {
+    position: absolute;
+    margin-top: 10.5rem;
+    margin-right: 10%;
+  }
 }
 @media (min-width: 320px) and (max-width: 500px) {
   .disc-items {

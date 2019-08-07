@@ -82,7 +82,8 @@
         <div class="honeycomb-block">
             <div class="img-container" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1600" data-aos-once="true">
 <!--                <img src="../images/products/honeycomb1.svg" alt="">   -->
-                <img src="../images/products/framework4.png" alt="">   
+                <img src="../images/products/framework6.svg" alt="">   
+<!--                <img src="../images/products/framework4.png" alt="">   -->
             </div>
         </div>
     </div>

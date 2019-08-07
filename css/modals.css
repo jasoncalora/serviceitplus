@@ -65,7 +65,7 @@
   /*    height:300px;*/
 }
 .features-container {
-  width: 95%;
+  width: 98%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,13 +88,9 @@
 .feature-logo {
   float: left;
   width: 30%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 .feature-logo img {
@@ -109,7 +105,6 @@
   color: #515151;
   height: 2rem;
   /*    height:50px;*/
-  font-size: 0.9rem;
   font-weight: 600;
   text-align: left;
   display: -webkit-box;
@@ -130,7 +125,6 @@
   width: 70%;
   height: 6rem;
   font-size: 0.8rem;
-  text-align: left;
   padding-top: 10px;
   color: #757575;
 }
@@ -148,4 +142,29 @@
 .modal button:hover {
   background: #f0f0f0;
   text-decoration: none;
+}
+@media (min-width: 320px) and (max-width: 699px) {
+  .feature-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .feature-logo {
+    width: 100%;
+  }
+  .feature-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .feature-desc {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 700px) {
+  .feature-title {
+    font-size: 0.9rem;
+  }
 }
