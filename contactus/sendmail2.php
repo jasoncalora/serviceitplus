@@ -36,8 +36,8 @@ $mail->IsSMTP();
 $mail->Host = 'just56.justhost.com:26';
 //$mail->Port = 465;
 $mail->Username = "livechat@serviceitplus.com"; // your GMail user name
-$mail->Password = "M6/]MNa1yn.f"; 
-$mail->AddAddress("inquiry@serviceitplus.com"); // recipients email 
+$mail->Password = "TdU]=7N,sL$.X"; 
+$mail->AddAddress("jason.calora@serviceitplus.com"); // recipients email 
 $mail->SMTPAuth = true;
 //$mail->FromName = "username";
 //Send HTML or Plain Text email

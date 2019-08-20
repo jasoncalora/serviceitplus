@@ -26,6 +26,9 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
     $url2 = str_replace("Managed-Services.php","",$url2);
 //    $url2 = $url2.str_replace("services/","",str_replace("product-services.php","",$url2)); solutionsandservices
 //    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("services/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'itsm') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("itsm/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
 }else {
     $url = ".//";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("index.php","",$_SERVER['PHP_SELF']);

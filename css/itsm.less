@@ -1,0 +1,208 @@
+@banner-text:3rem;
+html,body{
+    height: 100%;
+    width:100%;
+    padding:0;
+    margin:0;
+//    overflow-x:hidden;
+//    border:1px solid blue;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size:1rem;
+    overflow-x:hidden;
+}
+.body-wrapper{
+    width:100%;
+//    border:1px solid black;
+}
+.body-container{
+    width:100%;
+    font-family: 'Raleway', sans-serif;
+//    border:1px solid red;
+}
+
+//  **********  //
+//// banner css
+//  **********  //
+
+.banner-container{
+//    border:1px solid black;
+    height:100%;
+    width:100%;
+    background-image:url('../images/itsm/itsm.jpg');
+    background-size: cover;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    color:#efefef;
+}
+.banner-container div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.banner-container p:nth-child(1){
+    font-size:@banner-text;
+    font-weight:600;
+    text-shadow: 0.15rem 0.15rem black;
+//    border:1px solid black;
+    text-align:center;
+    margin-bottom:0px;
+}
+.banner-container p:nth-child(2){
+    font-size:@banner-text - 1.5;
+    font-weight:500;
+    text-shadow: 0.1rem 0.1rem black;
+    width:70%;
+    text-align:center;
+//    border:1px solid black;
+}
+
+//  **********  //
+//// intro css
+//  **********  //
+
+.block-two{
+//    height:100%;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    background-color:rgba( 221, 221, 221, 0.191 );
+}
+.block-two .subblock{
+    width:40%;
+//    border:1px solid black;
+    font-size:1rem;
+    margin-left:1rem;
+    margin-right:1rem;
+}
+
+//  **********  //
+//// features css
+//  **********  //
+
+.block-three{
+    width:100%;
+    display:flex;
+    align-itms:center;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    padding-left:5%;
+    padding-right:5%;
+}
+.block-three .subblock:nth-child(1){
+//    border:1px solid black;
+    width:30%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    padding-right:5%;
+}
+.block-three .subblock:nth-child(1) .title{
+//    border:1px solid black;
+//    width:90%;
+    font-size:1.5rem;
+    text-transform: uppercase;
+}
+.block-three .subblock:nth-child(1) .desc{
+//    border:1px solid black;
+//    width:90%;
+    font-size:1rem;
+    margin-top:1rem;
+    line-height:2rem;
+    text-align:justify;
+}
+.block-three .subblock:nth-child(2){
+    width:70%;
+//    border:2px solid blue;
+}
+.block-three .subblock:nth-child(2) .itsm-features-cont{
+//    border:1px solid black;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.itsm-features-cont .feature{
+//    border:1px solid black;
+    width:49%;
+    height:8rem;
+    padding:1rem;
+    display:flex;
+    
+}
+.feature .text{
+    width:70%;
+    display:flex;
+    flex-direction:column;
+//    border:2px solid blue;
+}
+.feature .text .title{
+    color:#f16a24;
+}
+.feature .text .desc{
+    font-size:0.9rem;
+    color:rgba( 68, 68, 68, 0.702 );
+}
+.feature .img{
+//    border:1px solid black;
+    height:100%;
+    width:30%;
+    text-align:center;
+}
+.feature .img img{
+    height:70%;
+}
+
+//  **********  //
+//// banner css
+//  **********  //
+.block-four{
+    width:100%;
+//    border:1px solid black;
+    display:flex;
+    flex-wrap:wrap;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    background-color:rgba( 229, 229, 229, 0.218 );
+    justify-content:center;
+}
+.block-four .title{
+    width:100%;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:2rem;
+    font-weight:600;
+    color:rgba( 2, 2, 2, 0.919 );
+}
+.block-four .sub-title{
+    margin-top:0.5rem;
+    width:80%;
+    text-align:center;
+    font-size:1rem;
+    color:rgba( 96, 96, 96, 0.69 );
+}
+.itsm-benefits{
+    width:85%;
+    display:flex;
+    flex-wrap:wrap;
+    padding-top:2rem;
+}
+.benefit-title{
+    width:100%;
+    font-size:1.2rem;
+//    font-weight:500;
+}
+.benefit-desc{
+    width:100%;
+    font-size:0.9rem;
+    line-height:1.8rem;
+    padding-top:0.2rem;
+    color:rgba( 20, 20, 20, 0.743 );
+}
+

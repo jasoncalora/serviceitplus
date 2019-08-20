@@ -57,7 +57,7 @@ $(document).ready(function(){
         } else {
             $("#disp-icon").html('<i class="fas fa-chevron-up"></i>');
         }
-    }, 60000);
+    }, 15000);
     
 //    $(".msg-exit").click(function(){
 //        $(".chat-container").fadeToggle();
@@ -86,7 +86,7 @@ function sendMail(){
         "<i class='fas fa-spinner fa-spin' style='color:#f16a21;font-size:3rem;padding-top:3rem;padding-bottom:3rem;'></i>"+
         "</div>";
     var http = new XMLHttpRequest();
-    var url = "<?php echo "../contactus/sendmail.php"; ?>";
+    var url = "<?php echo "../contactus/sendmail2.php"; ?>";
     // var url = "inc/preview.php";
     http.open('POST', url, true);
     //Send the proper header information along with the request
