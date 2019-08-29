@@ -53,67 +53,6 @@
                 <div class="subblock" data-aos="zoom" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">IT governance is a formal framework that provides a structure for organizations to ensure that IT investments support business objectives. The need for formal corporate and IT governance practices across U.S. organizations was fueled by the enactment of laws and regulations, including the Gramm–Leach–Bliley Act (GLBA) and the Sarbanes-Oxley Act, in the 1990 and early 2000s that resulted from the fallout from several high-profile corporate fraud and deception cases. </div>
                 <div class="subblock" data-aos="zoom" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="400">It provides a structure for aligning IT strategy with business strategy. By following a formal framework, organizations can produce measurable results toward achieving their strategies and goals. A formal program also takes stakeholders' interests into account, as well as the needs of staff and the processes they follow. In the big picture, IT governance is an integral part of overall enterprise governance.</div>
             </div>
-            <div class="block-three" style="display:none;">
-                <div class="subblock">
-                   <div>
-                       <div class="title" data-aos="fade-down" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="0">pave the way for better IT services and improved business operation</div>
-                        <div class="desc" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quo deleniti odio, omnis, iusto quod unde doloribus repellendus itaque recusandae velit. Velit rerum praesentium, corporis accusantium a. Exercitationem, necessitatibus consectetur.</div>
-                   </div>
-                </div>
-                <div class="subblock">
-                    <div class="itsm-features-cont">
-                        <div class="feature">
-                            <div class="img" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="0"><img src="../images/itsm/Asset%20113.svg" alt=""></div>
-                            <div class="text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">
-                                <div class="title">Enterprise Service Management</div>
-                                <div class="desc">Innovate solutions for HR, Security, PPM, and Facilities, combined with codeless configuration</div>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="img" class="img" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="500"><img src="../images/products/modalicons/self_service_portal.svg" alt=""></div>
-                            <div class="text" class="text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="800">
-                                <div class="title">Self-Service Portal</div>
-                                <div class="desc">Automate request fulfillment, empower users to resolve their own issues and provide 24/7 access to services and support</div>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="img" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="700"><img src="../images/products/modalicons/itil_process.svg" alt=""></div>
-                            <div class="text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1000">
-                                <div class="title">ITIL Process</div>
-                                <div class="desc">Leverage ITIL service operations processes such as Incident Management, Problem Management, and Request Fulfillment</div>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="img" class="img" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1200"><img src="../images/products/modalicons/business_process2.svg" alt=""></div>
-                            <div class="text" class="text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1500">
-                                <div class="title">Business Process Management</div>
-                                <div class="desc">Improve organizational performance by analyzing, designing, implementing, monitoring, controlling and modifying operational business processes</div>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="img" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1400"><img src="../images/products/modalicons/system_integration.svg" alt=""></div>
-                            <div class="text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1700">
-                                <div class="title">System Integration</div>
-                                <div class="desc">Aggregate different component systems or subsystems that cooperate to deliver a whole functionality</div>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="img" class="img" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="1900"><img src="../images/products/modalicons/multi_tenant.svg" alt=""></div>
-                            <div class="text" class="text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="2100">
-                                <div class="title">Multi-Tenant</div>
-                                <div class="desc">Maintain a common code-based application and run a common instance of the application for multiple organizations or businesses through a central administration</div>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="img" data-aos="fade-right" data-aos-offset="50" data-aos-duration="800" data-aos-once="true" data-aos-delay="2100"><img src="../images/products/modalicons/process_automation.svg" alt=""></div>
-                            <div class="text" data-aos="fade-left" data-aos-offset="50" data-aos-duration="800" data-aos-once="true" data-aos-delay="2300">
-                                <div class="title">Process Automation</div>
-                                <div class="desc">Automate business processes through technology, allowing businesses to cut costs & increase productivityssss</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="block-four gov">
                 <div class="title" data-aos="zoom" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">Benefits of efficient ITSM processes</div>
                 <div class="sub-title" data-aos="zoom" data-aos-offset="100" data-aos-duration="1500" data-aos-once="true" data-aos-delay="200">respective of the size of business, every organization is involved in IT service management in some
@@ -143,17 +82,17 @@
             </div>
             <div class="block-six gov">
                 <div class="left">
-                    <div class="title" data-aos="zoom" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">Importance of IT Governance</div>
-                    <div class="caption" data-aos="zoom" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="500">Ensuring the effective and efficient use of IT in enabling an organization to achieve its goals</div>
+                    <div id="block6anchor" class="title" data-aos="zoom" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">Importance of IT Governance</div>
+                    <div class="caption" data-aos-anchor="#block6anchor" data-aos="zoom" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="500">Ensuring the effective and efficient use of IT in enabling an organization to achieve its goals</div>
                     <hr>
-                    <div class="text" data-aos="zoom" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="800">
+                    <div class="text" data-aos-anchor="#block6anchor" data-aos="zoom" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="800">
                         <p>If an organization wants to be successful, it should allocate the tasks of both rowing and steering—both different, but equally important—to deliver the best results to the organization. Organizations today are subject to many regulations governing the protection of confidential information, financial accountability, data retention and disaster recovery, among others. They're also under pressure from shareholders, stakeholders and customers.</p>
                         <p>The importance of IT governance is that it achieves desired outcomes and behavior. The relationship between IT governance and effective value creation of IT investments has long been recognized and is cited as the reason for achieving excellence in the management of IT. It provides a focus on cost and allows effective communication between the customers and providers by establishing joint accountability for IT investments.</p>
                     </div>
                     
                 </div>
                 <div class="right">
-                    <img data-aos="zoom" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="700" src="../images/services/img4.svg" alt="">
+                    <img data-aos="zoom" data-aos-anchor="#block6anchor" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="700" src="../images/services/img4.svg" alt="">
                 </div>
             </div>
             <div class="block-seven gov">

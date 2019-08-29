@@ -274,9 +274,14 @@ body {
 .block-five .products-container .card h5 {
   margin-top: 1rem;
   color: #262626;
+  height: 3rem;
+  display: flex;
+  align-items: center;
 }
 .block-five .products-container .card p {
   color: #8c8c8c;
+  height: 8rem;
+  margin-top: -0.5rem;
 }
 .block-five .products-container .card .btn-cont {
   width: 100%;
