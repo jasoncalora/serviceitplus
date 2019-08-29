@@ -54,7 +54,7 @@
 <?php include "../header.php" ?>
 <!--------------------------- BANNER -------------------------------------------->
 <div class="banner-div noselect">
-    <div class="banner-div-container" data-aos="zoom" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="1000">
+    <div class="banner-div-container" data-aos="zoom" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="500">
         <div class="banner-text">BEST-IN-CLASS SOLUTIONS</div>
         <div class="banner-subtext">Solutions that deliver value to businesses</div>
     </div>
@@ -117,7 +117,7 @@
 <div class="prod-wrapper noselect">
    
     <div class="partners-text">
-        <div class="partners-title" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300"><span>Our </span>Solutions & Services</div>
+        <div class="partners-title" data-aos="zoom" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="300"><span>Our </span>Solutions & Services</div>
         <div class="partners-desc"></div>
     </div>
     
@@ -131,7 +131,7 @@
                         <div class="prod-text">
                             Strategic approach for designing, delivering, managing and improving the way information technology is used within the organization
                         </div>
-                        <div class="learn-more itsm" data-toggle="modal" data-target="#governance-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        <div class="learn-more itsm" onclick="window.location.href = '../governance';">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
                    </div>
                 </div>
                 <div class="prod-col prod-category" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">
@@ -141,18 +141,18 @@
                         <div class="prod-text">
                             Keeping systems up and running while maximizing IT and employee productivity
                         </div>
-                        <div class="learn-more" data-toggle="modal" data-target="#security-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        <div class="learn-more" onclick="window.location.href = '../security';">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
                    </div>
                 </div>
-                <div class="prod-col prod-category" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true">
+                <div class="prod-col prod-category" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="600">
                     <div class="prod-cat-inner">
                       <div class="cat-logo"><img class="assetmgt" src="../images/products/asset%20mgt2.svg" alt=""></div>
                        <div class="prod-title gov">IT Asset Management</div>
                         <div class="prod-text">Align IT with the organizational goals and strategy</div>
-                        <div class="learn-more gov" data-toggle="modal" data-target="#itam-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        <div class="learn-more gov" onclick="window.location.href = '../assetmanagement';">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
                    </div>
                 </div>
-                <div class="prod-col prod-category" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">
+                <div class="prod-col prod-category" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="900">
                     <div class="prod-cat-inner">
                         <div class="cat-logo"><img src="../images/products/itsm-icon.svg" alt=""></div>
                        <div class="prod-title qa">IT Service Management</div>
@@ -163,7 +163,7 @@
                         <div class="learn-more" onclick="window.location.href = '../itsm';">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
                    </div>
                 </div>
-                <div class="prod-col prod-category" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="300">
+                <div class="prod-col prod-category" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="1200">
                     <div class="prod-cat-inner">
                       <div class="cat-logo"><img src="../images/products/security-icon.svg" alt=""></div>
                        <div class="prod-title qa">Identity & Access Management</div>

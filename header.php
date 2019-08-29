@@ -29,6 +29,15 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
 }elseif (strpos($_SERVER['PHP_SELF'], 'itsm') > 0) {
     $url = ".././/";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("itsm/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'governance') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("governance/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'security') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("security/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'assetmanagement') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("assetmanagement/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
 }else {
     $url = ".//";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("index.php","",$_SERVER['PHP_SELF']);
