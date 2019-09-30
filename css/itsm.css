@@ -42,6 +42,9 @@ body {
 .banner-container.sec {
   background-image: url('../images/security/bg2.jpg');
 }
+.banner-container.iam {
+  background-image: url('../images/iam/iambg.jpg');
+}
 .banner-container div {
   display: flex;
   flex-wrap: wrap;

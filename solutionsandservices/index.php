@@ -82,7 +82,7 @@
         <div class="honeycomb-block">
             <div class="img-container" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1600" data-aos-once="true">
 <!--                <img src="../images/products/honeycomb1.svg" alt="">   -->
-                <img src="../images/products/framework.svg" alt="">   
+                <img src="../images/products/framework2.svg" alt="">   
 <!--                <img src="../images/products/framework4.png" alt="">   -->
             </div>
         </div>
@@ -170,7 +170,8 @@
                         <div class="prod-text">
                             Develop and deliver great software that business demands through Continuous Quality Assurance with low risk and less cost
                         </div>
-                        <div class="learn-more" data-toggle="modal" data-target="#iam-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        <div class="learn-more" onclick="window.location.href = '../iam';">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+<!--                        <div class="learn-more" data-toggle="modal" data-target="#iam-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>-->
                     </div>
                 </div>
             </div>

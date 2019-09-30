@@ -38,6 +38,9 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
 }elseif (strpos($_SERVER['PHP_SELF'], 'assetmanagement') > 0) {
     $url = ".././/";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("assetmanagement/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'iam') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("iam/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
 }else {
     $url = ".//";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("index.php","",$_SERVER['PHP_SELF']);
