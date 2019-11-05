@@ -72,7 +72,7 @@
 }
 .features-container{
 //    border:1px solid red;
-    width:98%;
+    width:95%;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -102,12 +102,13 @@
     float:left;
     width:30%;
 //    border:1px solid red;
+    height:100%;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
-//    align-items:flex-start;
-//    -webkit-box-pack:center;
-//    -ms-flex-pack:center;
+    align-items:flex-start;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
     justify-content:center;
 }
 .feature-logo img{
@@ -127,7 +128,7 @@
 //    width:100%;
     height:@section-text * 2;
 /*    height:50px;*/
-//    font-size:@section-text - 0.1;
+    font-size:@section-text - 0.1;
     font-weight:600;
     text-align:left;
     display:-webkit-box;
@@ -150,6 +151,7 @@
 //    width:100%;
     height:@section-text * 6;
     font-size:@section-text - 0.2;
+    text-align:left;
     padding-top:10px;
     color:#757575;
 }
@@ -168,33 +170,44 @@
     background: #f0f0f0;
   text-decoration: none;
 }
-@media (min-width: 320px) and (max-width:699px){
+@media (min-width: 320px) and (max-width:499px){
+    .features-container{
+        width:99%;
+    }
     .feature-container{
-//        border:1px solid blue;
+//        border:1px solid black;
         width:100%;
-        display:flex;
-        flex-wrap:wrap; 
-    }
-    .feature-logo{
-//        border:1px solid red;
-        width:100%;
-    }
-    .feature-title{
-//        border:1px solid yellow;
-        width:100%;
-        display:flex;
-        justify-content: center;
-        font-size:@section-text;
+        height:auto;
+        margin-left:0rem;
+        margin-right:0rem;
     }
     .feature-desc{
-        width:100%;
-        
-    text-align:center;
+        font-size:@section-text - 0.4;
+        height:auto;
     }
 }
-@media (min-width:700px){
-    .feature-title{
-        font-size:@section-text - 0.1;
+@media (min-width: 500px) and (max-width:699px){
+    .features-container{
+        width:99%;
+    }
+    .feature-container{
+        width:50%;
+        margin-left:0rem;
+        margin-right:0rem;
+    }
+    .feature-desc{
+        font-size:@section-text - 0.4;
+        height:auto;
+    }
+}
+@media (min-width: 700px) and (max-width:999px){
+    .feature-container{
+        width:50%;
+        margin-left:0rem;
+        margin-right:0rem;
+    }
+    .feature-desc{
+        font-size:@section-text - 0.3;
     }
 }
 //@media (min-width: 320px) and (max-width:699px){

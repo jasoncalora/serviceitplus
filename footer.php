@@ -8,9 +8,9 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
 }elseif (strpos($_SERVER['PHP_SELF'], 'events') > 0) {
     $url = ".././/";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("events/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
-}elseif (strpos($_SERVER['PHP_SELF'], 'itsm') > 0) {
+}elseif (strpos($_SERVER['PHP_SELF'], 'it-service-management') > 0) {
     $url = ".././/";
-    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("itsm/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("it-service-management/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
 }elseif (strpos($_SERVER['PHP_SELF'], 'about') > 0) {
     $url = ".././/";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("about/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
@@ -26,6 +26,15 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
 }elseif (strpos($_SERVER['PHP_SELF'], 'security') > 0) {
     $url = ".././/";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("security/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'assetmanagement') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("assetmanagement/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'endpoint-security') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("endpoint-security/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'identity-access-management') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("identity-access-management/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
 }elseif (strpos($_SERVER['PHP_SELF'], 'assetmanagement') > 0) {
     $url = ".././/";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("assetmanagement/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
@@ -62,7 +71,7 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
             </div>
             <div class="contact-container">
                 <img src="<?php echo $url ?>images/header/phone.svg" alt="">
-                <div>+632 949 8109 / +632 949 8108</div>
+                <div>+632 7949 8109 / +632 7949 8108</div>
             </div>
             <div class="contact-container left">
                 <img src="<?php echo $url ?>images/header/mail.svg" alt="">
@@ -70,7 +79,7 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
             </div>
             <div class="contact-container">
                 <img src="<?php echo $url ?>images/header/fax.svg" alt="">
-                <div>+632 621 6323</div>
+                <div>+632 7621 6323</div>
             </div>
             <div class="contact-container2">
                 <a href="https://www.facebook.com/ServiceITplus" target="_blank"><img src="<?php echo $url ?>images/header/fb.svg" alt=""></a>
@@ -196,7 +205,7 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
         background-color: rgba(0, 0, 0, 0.825);
         position: fixed;
         top: 0px;
-        z-index: 999;
+        z-index: 999999;
         display: none;
         -webkit-box-pack: center;
         -ms-flex-pack: center;

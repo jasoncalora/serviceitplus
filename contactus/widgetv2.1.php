@@ -57,7 +57,7 @@ $(document).ready(function(){
         } else {
             $("#disp-icon").html('<i class="fas fa-chevron-up"></i>');
         }
-    }, 15000);
+    }, 25000);
     
 //    $(".msg-exit").click(function(){
 //        $(".chat-container").fadeToggle();
@@ -96,8 +96,8 @@ function sendMail(){
         if(http.readyState == 4 && http.status == 200) {
 //             document.getElementById("contact-form").innerHTML = http.responseText;
             document.getElementById("contact-form").innerHTML = "<div style='font-size:1rem;display:flex;flex-wrap:wrap;height:100%;width:100%;padding-right:1rem;padding-left:1rem;padding-top:1rem;'>" + 
-                "<div style='width:100%;display:flex;text-align:justify;'><i style='color:#f16a21; margin-right:0.5rem;' class='fas fa-envelope-open'></i>" + http.responseText + 
-                "</div><div style='width:100%;text-align:center;'><button onclick='defaultForm()' class='widget-button' style='width:60%;'>Back</button></div>" +
+                "<div style='width:100%;display:flex;text-align:justify;'><i style='color:#f16a21; margin-right:0.5rem;' class='fas fa-envelope-open'></i><div style='width:90%;word-wrap:break-word;'>" + http.responseText + 
+                "</div></div><div style='width:100%;text-align:center;'><button onclick='defaultForm()' class='widget-button' style='width:60%;'>Back</button></div>" +
                 "</div>";
             // alert(http.responseText);
         }

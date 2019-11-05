@@ -50,7 +50,7 @@ header('Expires: 0');
 </head>
 <?php //include "home.css.html"; ?>
 <style>/* raleway font css */
- @font-face{font-family:Raleway;font-display:auto;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(fonts/raleway.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(fonts/raleway.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+ @font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(fonts/raleway.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(fonts/raleway.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 </style>
     <?php echo "<style>"; include "css/bootstrap4.3.1.min.css"; echo "</style>";?>
     <?php echo "<script>"; include "js/jquery-3.3.1.slim.min.js"; echo "</script>";?>
@@ -61,10 +61,20 @@ header('Expires: 0');
     <?php echo "<style>"; include "css/owl.theme.default.min.css"; echo "</style>";?>
     <?php echo "<script>"; include "js/header2.js"; echo "</script>";?>
     <?php echo "<style>"; include "css/header.css"; echo "</style>";?>
-    <?php echo "<style>"; include "css/font-awesome.min2.css"; echo "</style>";?>
+    <?php echo "<style>"; include "css/font-awesome.min2.css"; echo "</stylve>";?>
     <?php echo "<script>"; include "js/popper1.14.3.min.js"; echo "</script>";?>
     <?php echo "<script>"; include "js/bootstrap4.1.3.min.js"; echo "</script>";?>
     <?php echo "<style>"; include "css/aos.css"; echo "</style>";?>
+<script type="text/javascript">
+    const ralewayFont = new FontFaceObserver('Raleway');
+    const awesomeFont = new FontFaceObserver('FontAwesome');
+    Promise.all([
+    ralewayFont.load(),
+    awesomeFont.load()
+  ]).then(function(){
+    document.documentElement.className += " fonts-loaded";
+  });
+</script>
 <style>
 	.fadeInH{
 		-webkit-animation: fadeIn 2s; /* Safari 4+ */
@@ -139,6 +149,12 @@ header('Expires: 0');
         			<div class="carousel-subtag animated zoomIn2">We deliver high value IT Excellence in Proactive Service Management, Systems and Security, Portfolio Management, and Corporate Governance</div>
         		</div>
 		    </div>
+		    <div class="carousel-item slide4">
+		    	<div class="item-container">
+        			<div class="carousel-tagline animated zoomIn">Improve Service Desk Productivity & Customer Experience</div>
+        			<div class="carousel-subtag animated zoomIn2">Get a solid understanding of what your organization requires from an ITSM Solution</div>
+        		</div>
+		    </div>
     	</div>
 		<!----------- carousel controls  ---------------------->
 		  <a class="carousel-control-prev" href="#banner-carousel" role="button" data-slide="prev">
@@ -165,24 +181,17 @@ header('Expires: 0');
    <div class="block2-title" data-aos="fade" data-aos-offset="100" data-aos-duration="600" data-aos-once="true"><SPAN class="sit-orange">Solutions </SPAN>for your Business Needs</div>
     <div class="cards-container">
         <div class="card">
-            <img class="card-img-top" src="images/products/gov-icon.svg" alt="Card image cap">
+            <img class="card-img-top" src="images/products/asset%20mgt2.svg" alt="Card image cap">
             <div class="card-body">
-                <div class="title-container">Governance</div>
-                <p class="card-text">Align your strategies between business and IT. Define accountability and benefits</p>
+                <div class="title-container">IT Asset Management</div>
+                <p class="card-text">Continually capture your company's asset data to maximize returns, minimize risk and drive increased business value</p>
             </div>
-        </div>    
+        </div>  
         <div class="card">
             <img class="card-img-top" src="images/products/security.svg" alt="Card image cap">
             <div class="card-body">
                 <div class="title-container">Security</div>
                 <p class="card-text">Know threats that could compromise security of your users and endpoints.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="images/products/asset%20mgt2.svg" alt="Card image cap">
-            <div class="card-body">
-                <div class="title-container">IT Asset Management</div>
-                <p class="card-text">Continually capture your company's asset data to maximize returns, minimize risk and drive increased business value</p>
             </div>
         </div>
         <div class="card">
@@ -198,7 +207,14 @@ header('Expires: 0');
                 <div class="title-container">Identity & Access Management</div>
                 <p class="card-text">Consistently enforce and manage access rights across your business environment</p>
             </div>
-        </div>    
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="images/products/gov-icon.svg" alt="Card image cap">
+            <div class="card-body">
+                <div class="title-container">Governance</div>
+                <p class="card-text">Align your strategies between business and IT. Define accountability and benefits</p>
+            </div>
+        </div>      
     </div>
 </div>
 <!------------------------------------------- 4 icons ---------------------------------------->
@@ -310,7 +326,7 @@ header('Expires: 0');
 <!--   <script src="js/aos.js"></script>-->
 <!--<script src="js/jquery-3.2.1.min.js"></script>-->
 <!--<script src="js/owl.carousel.min.js"></script>-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
 <?php echo "<script>"; include "js/aos.js"; echo "</script>";?>
 <?php echo "<script>"; include "js/jquery-3.2.1.min.js"; echo "</script>";?>
 <?php echo "<script>"; include "js/owl.carousel.min.js"; echo "</script>";?>

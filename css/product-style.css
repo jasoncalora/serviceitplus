@@ -327,17 +327,43 @@ html {
   -ms-flex-align: center;
   align-items: center;
 }
+.partner-logos {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.partner-logos .logo-container {
+  width: 30%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 .partner-logos .logo-container:nth-child(1) img {
-  width: 80%;
+  width: 70%;
 }
 .partner-logos .logo-container:nth-child(2) img {
-  width: 60%;
+  width: 90%;
 }
 .partner-logos .logo-container:nth-child(3) img {
-  width: 80%;
+  width: 70%;
 }
 .partner-logos .logo-container:nth-child(4) img {
-  width: 50%;
+  width: 90%;
+  height: 40%;
 }
 .partner-logos .logo-container:nth-child(5) img {
   width: 50%;
@@ -514,13 +540,17 @@ html {
   color: black;
   padding-bottom: 1.5rem;
 }
+.learn-more a {
+  text-decoration: none;
+  color: black;
+}
+.learn-more a:hover {
+  cursor: pointer;
+  color: #f16a21;
+}
 .learn-more:hover {
   cursor: pointer;
   color: #f16a21;
-  /*
-    -webkit-filter: brightness(50%);
-    filter: brightness(50%);
-*/
 }
 /*
 .learn-more.itsm{
@@ -556,10 +586,6 @@ html {
 }
 /*----------------------- MODAL STYLES -----------------------------*/
 @media (min-width: 320px) and (max-width: 499px) {
-  .honeycomb-block img {
-    height: 80%;
-    width: 80%;
-  }
   .prod-col {
     width: 80%;
   }
@@ -580,26 +606,12 @@ html {
   .partner-logos {
     width: 100%;
   }
+  .partner-logos {
+    margin-right: 1rem;
+  }
   .partner-logos .logo-container {
     width: 50%;
-  }
-  .partner-logos .logo-container:nth-child(1) img {
-    width: 90%;
-  }
-  .partner-logos .logo-container:nth-child(2) img {
-    width: 65%;
-  }
-  .partner-logos .logo-container:nth-child(3) img {
-    width: 90%;
-  }
-  .partner-logos .logo-container:nth-child(4) img {
-    width: 50%;
-  }
-  .partner-logos .logo-container:nth-child(5) img {
-    width: 70%;
-  }
-  .partner-logos .logo-container:nth-child(6) img {
-    width: 65%;
+    height: 4rem;
   }
 }
 @media (min-width: 500px) and (max-width: 699px) {
