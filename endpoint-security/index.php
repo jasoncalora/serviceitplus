@@ -52,7 +52,7 @@
                 <div>
                     <p data-aos="zoom" data-aos-offset="100" data-aos-duration="2000" data-aos-once="true">Smart and Adaptive Endpoint Protection
                     </p>
-                    <p data-aos="zoom" data-aos-offset="100" data-aos-duration="1800" data-aos-once="true" data-aos-delay="500">Prevent today's most sophisticated threats before they impact your business, and respond quickly to malware infections with Endpoint Security Solutions.</p>
+                    <p data-aos="zoom" data-aos-offset="100" data-aos-duration="1800" data-aos-once="true" data-aos-delay="500">Prevent today's most sophisticated threat before they impact your business.</p>
                     <button data-toggle="modal" data-target="#contactmodal2" data-aos="zoom" data-aos-offset="100" data-aos-duration="1800" data-aos-once="true" data-aos-delay="1000">Request Demo</button>
                 </div>
             </div>

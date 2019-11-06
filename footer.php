@@ -32,9 +32,15 @@ if (strpos($_SERVER['PHP_SELF'], 'products') > 0) {
 }elseif (strpos($_SERVER['PHP_SELF'], 'endpoint-security') > 0) {
     $url = ".././/";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("endpoint-security/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'endpoint-management') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("endpoint-management/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
 }elseif (strpos($_SERVER['PHP_SELF'], 'identity-access-management') > 0) {
     $url = ".././/";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("identity-access-management/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
+}elseif (strpos($_SERVER['PHP_SELF'], 'it-governance') > 0) {
+    $url = ".././/";
+    $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("it-governance/","",str_replace("index.php","",$_SERVER['PHP_SELF']));
 }elseif (strpos($_SERVER['PHP_SELF'], 'assetmanagement') > 0) {
     $url = ".././/";
     $url2 = "http://".$_SERVER['HTTP_HOST'].str_replace("assetmanagement/","",str_replace("index.php","",$_SERVER['PHP_SELF']));

@@ -9,7 +9,7 @@ $lname = $_POST['lname'];
 $company = $_POST['company']; 
 $email = $_POST['email']; 
 $contact = $_POST['contact']; 
-$message = "Name : ".$fname." ".$lname."<br>Company : ".$company."<br>Email : ".$email."<br>Contact No. :".$contact."<br>Page Source : Endpoint Management";
+$message = "Name : ".$fname." ".$lname."<br>Company : ".$company."<br>Email : ".$email."<br>Contact No. :".$contact."<br>Page Source : Endpoint Security";
 //echo $message;
 //PHPMailer Object
 $mail = new PHPMailer();

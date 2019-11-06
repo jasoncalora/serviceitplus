@@ -150,7 +150,8 @@
                       <div class="cat-logo"><img class="assetmgt" src="../images/products/asset%20mgt2.svg" alt=""></div>
                        <div class="prod-title gov">Endpoint Management</div>
                         <div class="prod-text">Empower IT through quick and efficient visibility to hardware and software in your environment</div>
-                        <div class="learn-more gov" data-toggle="modal" data-target="#itam-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        <div class="learn-more"><a href="../endpoint-management/">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+<!--                        <div class="learn-more gov" data-toggle="modal" data-target="#itam-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>-->
                    </div>
                 </div>
                 <div class="prod-col prod-category" data-aos="fade-up" data-aos-anchor="#partners-title" data-aos-offset="100" data-aos-duration="1200" data-aos-once="true" data-aos-delay="600">
@@ -171,7 +172,8 @@
                         <div class="prod-text">
                             Strategic approach for designing, delivering, managing and improving the way information technology is used within the organization
                         </div>
-                        <div class="learn-more itsm" data-toggle="modal" data-target="#governance-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        <div class="learn-more"><a href="../it-governance/">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+<!--                        <div class="learn-more itsm" data-toggle="modal" data-target="#governance-modal">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></div>-->
                    </div>
                 </div>
             </div>

@@ -68,81 +68,74 @@
                 <div class="subblock">
                     <div class="itsm-features-cont">
                         <div class="feature">
-                            <div class="img" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="0"><img src="../images/products/modalicons/session_monitoring.svg" alt=""></div>
-                            <div class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">
+                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="200"><img src="../images/products/modalicons/automated_provi.svg" alt=""></div>
+                            <div class="text" class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="400">
+                                <div class="title">Automated Identity Provisioning</div>
+                                <div class="desc">Centralize access administration and ensure every user has one identity from your physical and virtual networks to the cloud</div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="img" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="400"><img src="../images/products/modalicons/session_monitoring.svg" alt=""></div>
+                            <div class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="600">
                                 <div class="title">Privileged Session Monitoring</div>
                                 <div class="desc">Control, monitor and record administrative access to servers, databases and network devices</div>
                             </div>
                         </div>
                         <div class="feature">
-                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200"><img src="../images/products/modalicons/self_serv_pass.svg" alt=""></div>
-                            <div class="text" data-aos-anchor="#block3anchor" class="text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="400">
-                                <div class="title">Self-service Password administration</div>
-                                <div class="desc">Eliminate the users' dependency on administrators to change their passwords</div>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="400"><img src="../images/products/modalicons/sso.svg" alt=""></div>
-                            <div class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="600">
+                            <div class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="600"><img src="../images/products/modalicons/sso.svg" alt=""></div>
+                            <div class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="800">
                                 <div class="title">Single Sign-on</div>
                                 <div class="desc">Deliver a single sign-on and access control across the enterprise</div>
                             </div>
                         </div>
                         <div class="feature">
-                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="600">
+                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="800"><img src="../images/products/modalicons/self_serv_pass.svg" alt=""></div>
+                            <div class="text" data-aos-anchor="#block3anchor" class="text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1000">
+                                <div class="title">Self-service Password administration</div>
+                                <div class="desc">Eliminate the users' dependency on administrators to change their passwords</div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1000">
                                 <img src="../images/products/modalicons/mobile_access.svg" alt=""></div>
-                            <div class="text" data-aos-anchor="#block3anchor" class="text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="800">
+                            <div class="text" data-aos-anchor="#block3anchor" class="text" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1200">
                                 <div class="title">Mobile Access</div>
                                 <div class="desc">Access resources from any device without compromising security</div>
                             </div>
                         </div>
                         <div class="feature">
-                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="800"><img src="../images/products/modalicons/discovery.svg" alt=""></div>
-                            <div class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="50" data-aos-duration="800" data-aos-once="true" data-aos-delay="1000">
+                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1200"><img src="../images/products/modalicons/discovery.svg" alt=""></div>
+                            <div class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="50" data-aos-duration="800" data-aos-once="true" data-aos-delay="1400">
                                 <div class="title">Asset and Account Discovery</div>
                                 <div class="desc">Scan, identify and profile all assets and applications with auto-onboarding of privileged accounts</div>
                             </div>
                         </div>
                         <div class="feature">
-                            <div class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1000"><img src="../images/products/modalicons/3rd_party_pam.svg" alt=""></div>
-                            <div class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1200">
+                            <div class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1400"><img src="../images/products/modalicons/3rd_party_pam.svg" alt=""></div>
+                            <div class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1600">
                                 <div class="title">PAM for 3rd Party Provider</div>
                                 <div class="desc">Secure the connection and automatically check out privileged credentials with full session recording for secure third-party vendor access</div>
                             </div>
                         </div>
                         <div class="feature">
-                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="1200"><img src="../images/products/modalicons/standard_based.svg" alt=""></div>
-                            <div class="text" class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="1400">
+                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="1600"><img src="../images/products/modalicons/standard_based.svg" alt=""></div>
+                            <div class="text" class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="1800">
                                 <div class="title">Standard-based federation</div>
                                 <div class="desc">Secure access to externally hosted applications, and Present a single view of applications, information, and services delivered from multiple partners to your customers</div>
                             </div>
                         </div>
                         <div class="feature">
-                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="1400"><img src="../images/products/modalicons/pass_protect.svg" alt=""></div>
-                            <div class="text" class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="1600">
-                                <div class="title">Password Protection</div>
-                                <div class="desc">Protect passwords and credentials, reducing risk across your organization</div>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="1600"><img src="../images/products/modalicons/app_pass_mgt.svg" alt=""></div>
-                            <div class="text" class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="1800">
+                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="1800"><img src="../images/products/modalicons/app_pass_mgt.svg" alt=""></div>
+                            <div class="text" class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="2000">
                                 <div class="title">Application Password Management</div>
                                 <div class="desc">Control scripts, files, code and embedded keys to close back doors to your critical systems</div>
                             </div>
                         </div>
                         <div class="feature">
-                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="1800"><img src="../images/products/modalicons/mfa.svg" alt=""></div>
-                            <div class="text" class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="2000">
+                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="2000"><img src="../images/products/modalicons/mfa.svg" alt=""></div>
+                            <div class="text" class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="2200">
                                 <div class="title">Multi Factor Authentication</div>
                                 <div class="desc">Combine multiple types of identity sources as a means of access</div>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="img" class="img" data-aos-anchor="#block3anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="2000"><img src="../images/products/modalicons/automated_provi.svg" alt=""></div>
-                            <div class="text" class="text" data-aos-anchor="#block3anchor" data-aos="fade-left" data-aos-offset="100" data-aos-duration="800" data-aos-once="true" data-aos-delay="2200">
-                                <div class="title">Automated Identity Provisioning</div>
-                                <div class="desc">Centralize access administration and ensure every user has one identity from your physical and virtual networks to the cloud</div>
                             </div>
                         </div>
                     </div>
