@@ -141,6 +141,7 @@
                     <img data-aos="zoom-in" data-aos-offset="100" data-aos-duration="500" data-aos-once="true" data-aos-delay="400" src="../images/products//logos/ivanti.svg" alt="">
                     <img data-aos="zoom-in" data-aos-offset="100" data-aos-duration="500" data-aos-once="true" data-aos-delay="400" src="../images/products//logos/mf.svg" alt="">
                     <img data-aos="zoom-in" data-aos-offset="100" data-aos-duration="500" data-aos-once="true" data-aos-delay="400" src="../images/products//logos/beyondtrust.svg" alt="">
+                    <img data-aos="zoom-in" data-aos-offset="100" data-aos-duration="500" data-aos-once="true" data-aos-delay="400" src="../images/products//logos/cehrwell.svg" alt="">
                 </div>
 
             </div>
@@ -202,11 +203,11 @@
         <div class="modal-content">
             <div class="content-container">
                 <div class="left noselect">
-                    <img src="../images/security/modal.png" alt="">
+                    <img src="../images/itsm/modalbg.png" alt="">
                     <div class="title">
-                        SECURE YOUR ENDPOINTS
+                        GOVERNANCE
                     </div>
-                    <div class="desc">Learn more about the benefits of managed endpoint detection.</div>
+                    <div class="desc gov">Learn how to get more visibility of your business performance.</div>
                 </div>
                 <div class="right">
                     <div class="title">SECURE YOUR ENDPOINTS</div>

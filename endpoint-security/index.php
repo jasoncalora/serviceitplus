@@ -9,6 +9,8 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <link rel="icon" href="../images/header/favicons.png">
+    <meta name="title" content="Endpoint Management &amp; Security | Unified Endpoint Philippines | Patch Management Philippines">
+    <meta name="description" content="Looking for reliable endpoint security solutions to protect your business from online threats? Service IT+ can help you with our unified endpoint management and patch management services. ☎ +63279498109.">
     <!--    <link rel="stylesheet" href="../css/itsm.css" type="text/css" />-->
 </head>
 <style>

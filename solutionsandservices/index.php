@@ -7,6 +7,8 @@
     <meta name="author" content="SemiColonWeb" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="../images/header/favicons.png">
+    <meta name="title" content="Endpoint Management &amp; Security | Unified Endpoint Philippines | Patch Management Philippines">
+    <meta name="description" content="Service IT+ offers best IT service management, systems management and security to businesses of all kinds for improving their performance and efficiency. ☎ +63279498109.">
     
     
     <!-- bootstrap & jquery css & js  -->

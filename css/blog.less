@@ -1,0 +1,487 @@
+@section-title:1.5rem;
+@section-text:1rem;
+@bold:600;
+@notbold:100;
+@sitorange:#f16a21;
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size:0.01rem;
+}
+body, html {
+    height: 100%;
+/*    overflow-x: hidden;*/
+}
+/*-----------------------  DIVIDER  -------------------------------*/
+    .divider{
+/*        border:1px solid blue;*/
+        float:left;
+        width:100%;
+        height:100px;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-pack:center;
+        -ms-flex-pack:center;
+        justify-content:center;
+        -webkit-box-align:center;
+        -ms-flex-align:center;
+        align-items:center;
+/*        margin-top:50px;*/
+    }
+    .divider-half{
+        float:left;
+        margin-top:-50px;
+        border-top:1px solid #e5e5e5;
+        height:50px;
+        width:100%;
+        z-index:1;
+    }
+    .divider-circle{
+        background-color:#e5e5e5;
+        height:40px;
+        width:40px;
+        border-radius:100%;
+        z-index:2;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-pack:center;
+        -ms-flex-pack:center;
+        justify-content:center;
+        -webkit-box-align:center;
+        -ms-flex-align:center;
+        align-items:center;
+    }
+    .divider-circle i{
+        font-size:1rem;
+        color:#494949;
+    }
+
+
+.banner-div{
+    border:1px solid red;
+    float:left;
+    width:100%;
+    height:80%;
+    background:url(../images/blog/bg3.jpg);
+    background-size:cover;
+}
+.banner-div-container{
+    height:100%;
+    width:100;
+    font-size:@section-title + 1;
+    font-weight: 800;
+    text-shadow: 1px 4px #000000;
+    color:white;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+}
+.blog-container{
+    width:100%;
+    border:1px solid black;
+    display:flex;
+    justify-content:center;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+//
+//@media (min-width: 320px) and (max-width:699px){
+//    .value-container{
+//        height:15rem;
+//        margin-top:1rem;
+//    }
+//    .value-container .text{
+//        margin-top:-1.5rem;
+//    }
+//    .value-container:nth-child(1) .text{
+//        width:99%;
+//    }
+//    .value-container:nth-child(2) .text{
+//        width:99%;
+//    }
+//    .value-container:nth-child(3) .text{
+//        width:99%;
+//    }
+//    .value-container:nth-child(5) .text{
+//        width:99%;
+//    }
+//    .value-container:nth-child(6) .text{
+//        width:99%;
+//    }
+//    .value-container:nth-child(1){
+//        width:95%;
+//    }
+//    .value-container:nth-child(2){
+//        width:95%;
+//    }
+//    .value-container:nth-child(3){
+//        width:95%;
+//    }
+//    .value-container:nth-child(4){
+//        width:95%;
+//    }
+//    .value-container:nth-child(5){
+//        width:95%;
+//    }
+//    .value-container:nth-child(6){
+//        width:95%;
+//    }
+//    .value-container:nth-child(7){
+//        width:95%;
+//    }
+//    .value-container .title{
+//        font-size:@section-title - 0.2;
+//        font-weight:600;
+//    }
+//    
+//    .value-container .text{
+//    //    border:1px solid black;
+//        width:80%;
+//        font-size:@section-text;
+//        text-align:justify;
+//    }
+//    .value-container i{
+//        position:absolute;
+//        margin-top:9rem;
+//        margin-right:10%;
+//    }
+//    .value-container:nth-child(7) i{
+//        position:absolute;
+//        margin-top:10.5rem;
+//        margin-right:10%;
+//    }
+//}
+//@media (min-width: 320px) and (max-width:500px){
+//    
+//    .disc-items{
+//        height:auto;
+//        padding-top:1rem;
+//        padding-bottom:1rem;
+//    }
+//}
+//@media (min-width: 501px) and (max-width:767px){
+//    .disc-items{
+////        border:1px solid black;
+//        margin-top:1rem;
+//        font-size:@section-text;
+//        padding-bottom:1rem;
+//        width:90%;
+////        height:10rem;
+//    }
+//    
+//    .disc-container{
+//        width:60%;
+//    }
+//}
+//@media (min-width: 320px) and (max-width:767px){
+//    .banner-div{
+//        max-height:350px;
+//        background:url(../images/about/about-wallpaper768.jpg);
+//    }
+//    .banner-div-container{
+//        font-size:2rem;
+//    }
+//    .block-wrapper.section2{
+///*        height:450px;*/
+//    }
+//    .vision-title{
+//        font-size:1.5rem;
+//        line-height:2rem;
+//        padding-top:1rem;
+//        padding-bottom:1rem;
+//    }
+//    .block-wrapper.section2{
+//        padding-top:0rem;
+//    }
+//    .block-container.section2 .left{
+///*        border:1px solid black;*/
+//        margin-right:1%;
+//        width:90%;
+//    }
+//    .left-title{
+//        font-size:1.2rem;
+//    }
+//    .left-text{
+//    /*    border:1px solid black;*/
+//        font-size:0.8rem;
+//        color:black;
+//        padding-left:1rem;;
+//        padding-right:1rem;;
+//        padding-top:0.5rem;
+//        padding-bottom:1rem;
+//    }
+//    .block-container.section2 .right{
+///*        border:1px solid black;*/
+//        margin-left:1%;
+//        width: 90%;
+//    }
+//    .right-title{
+//    /*    border:1px solid black;*/
+//        font-size:1.2rem;
+//    }
+//    .right-text{
+//    /*    border:1px solid black;*/
+//        font-size:0.8rem;
+//        padding-left:1rem;;
+//        padding-right:1rem;;
+//        padding-top:0.5rem;
+//        padding-bottom:1.5rem;
+//    }
+//    .sect1-title{
+//        font-size:1.5rem;
+//        padding-top:1.5rem;
+//        padding-bottom:0rem;
+//    }
+//    .sect1-content{
+//        border-top:3px solid #f16a21;
+//        width:90%;
+//        font-size:0.8rem;
+//        text-align:justify;
+//        padding-top:1.5rem;
+//    }
+//    .block-wrapper.section4{
+//        padding-top:0rem;
+//        padding-bottom:3rem;
+//    }
+//    .section4-title{
+//        font-size:1.5rem;
+//        line-height:3rem;
+//        font-weight:700;
+//    }
+//    .section4-desc{
+//        font-size:0.8rem;
+//    }
+//    .disc-title{
+//        font-size:1.2rem;
+//        padding-top:0.5rem;
+//        padding-bottom:0rem;
+//        font-weight:900;
+//    }
+//    .disc-container{
+//        -ms-flex-wrap: wrap;
+//        flex-wrap: wrap;
+//    }
+//    .disc{
+//        border-radius:2%;
+//        width:100%;
+//        margin-bottom:100px;
+//    }
+//    .disc.last{
+//        margin-bottom:0px;
+//    }
+//    .block-wrapper.section3{
+//        padding-top:2rem;
+//        padding-bottom:3rem;
+//    }
+//    .section3-title{
+//        font-size:@section-title;
+////        font-weight:700;
+//        padding-bottom:1rem;
+//    }
+//    .section3-text{
+//        min-width:51%;
+//        max-width:90%;
+//        font-size:@section-text - 0.2;
+//        line-height:1.5rem;
+//        text-align:center;
+//    }
+//}
+//@media (min-width: 768px) and (max-width:999px){
+//    .banner-div{
+//        max-height:450px;
+//        background:url(../images/about/about-wallpaper1000.jpg);
+//    }
+//    .block-wrapper.section2{
+//        height:350px;
+//    }
+//    .block-wrapper.section2{
+//        padding-top:0rem;
+//    }
+//    .block-container.section2 .left{
+///*        border:1px solid black;*/
+//        margin-right:2.5%;
+//        width:40%;
+//        height:80%;
+//    }
+//    .left-text{
+//        font-size:@section-text - 0.3;
+//    }
+//    .block-container.section2 .right{
+//    /*    border:1px solid black;*/
+//        margin-left:2.5%;
+//        width: 40%;
+//        height:80%;
+//    }
+//    .right-title{
+//    /*    border:1px solid black;*/
+//        text-align:center;
+////        font-size:1.5rem;
+//        color:black;
+////        font-weight:700;
+//        padding-left:40px;
+//        padding-right:40px;
+//    }
+//    .right-text{
+//        font-size:@section-text - 0.3;
+//    }
+//    .disc-container{
+//        width:95%;
+//    }
+//    .disc{
+//        width:32%;
+//        height:330px;
+//    }
+//    .disc-icon{
+//        height:140px;
+//        width:140px;
+//    }
+//    .disc-title{
+//        padding-top:0rem;
+//        padding-bottom:0rem;
+//        font-size:@section-text;
+//        height:50px;
+//        font-weight:900;
+//    }
+//    .disc-items{
+//        height:200px;
+//        font-size:@section-text - 0.2;
+//    }
+//    .block-wrapper.section4{
+//        padding-top:0rem;
+//    }
+//    .section3-text{
+//        font-size:15px;
+//    } 
+//    .sect1-title{
+//        font-size:@section-title;
+//    }
+//    .sect1-content{
+//        font-size:@section-text;
+//    }
+//}
+//@media (min-width: 1000px) and (max-width:1299px){
+////    .banner-div{
+////        max-height:500px;
+////        background:url(../images/about/about-wallpaper1366.jpg);
+////    }
+////    .block-wrapper.section2{
+////        padding-top:0rem;
+////    }
+////    .block-container.section2 .left{
+/////*        border:1px solid black;*/
+////        margin-right:2.5%;
+////        width:40%;
+////        height:80%;
+////        -ms-flex-item-align:start;
+////        align-self:flex-start;
+////    }
+////    .left-text{
+////    /*    border:1px solid black;*/
+////        border-top:2px solid #f16a21;
+////        text-align:justify;
+//////        font-size:15px;
+////        color:black;
+////        padding-left:1rem;;
+////        padding-right:1rem;;
+////        padding-top:1rem;
+////    }
+////    .block-container.section2 .right{
+////    /*    border:1px solid black;*/
+////        margin-left:2.5%;
+////        width: 40%;
+////        height:80%;
+////    }
+////    .right-title{
+////    /*    border:1px solid black;*/
+////        text-align:center;
+//////        font-size:1.5rem;
+////        color:black;
+//////        font-weight:700;
+////        padding-left:40px;
+////        padding-right:40px;
+////    }
+////    .right-text{
+////    /*    border:1px solid black;*/
+////        border-top:2px solid #f16a21;
+////        text-align:justify;
+//////        font-size:15px;
+////        color:black;
+////        padding-left:1rem;;
+////        padding-right:1rem;;
+////        padding-top:1rem;
+////    }
+////    .sect1-content{
+////        font-size:15px;
+////    }
+////    .disc-container{
+//////        width:90%;
+////    }
+////    .disc{
+//////        height:330px;
+//////        height:12rem;
+////    }
+////    .disc-title{
+////        padding-top:0rem;
+////        padding-bottom:0rem;
+////        font-size:@section-text;
+////        font-weight:900;
+////    }
+////    .block-wrapper.section4{
+////        padding-top:0rem;
+////    }
+////    .section3-text{
+////        font-size:15px;
+////    }
+////    .disc-items{
+////        height:10rem;
+////    }
+//}
+//@media (min-width: 1300px){
+//    .banner-div{
+//        max-height:768px;
+//        background:url(../images/about/about-wallpaper1366.jpg);
+//    } 
+//    .block-container.section2 .left{
+///*        border:1px solid black;*/
+//        margin-right:2.5%;
+//        width:40%;
+//        height:80%;
+//        -ms-flex-item-align:start;
+//        align-self:flex-start;
+//    }
+//    .left-text{
+//    /*    border:1px solid black;*/
+//        border-top:2px solid #f16a21;
+//        text-align:justify;
+////        font-size:15px;
+//        color:black;
+//        padding-left:1rem;;
+//        padding-right:1rem;;
+//        padding-top:1rem;
+//    }
+//    .block-container.section2 .right{
+///*        border:1px solid black;*/
+//        margin-left:2.5%;
+//        width: 40%;
+//        height:80%;
+//    }
+////    .right-title{
+////        text-align:center;
+////        font-size:1.5rem;
+////        color:black;
+////        font-weight:700;
+////        padding-left:40px;
+////        padding-right:40px;
+////    }
+////    .disc{
+//////        height:300px;
+////    }
+//}

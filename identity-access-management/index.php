@@ -150,7 +150,7 @@
                         <div class="benefit-title" data-aos-anchor="#block4anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="false" data-aos-delay="200">Automated Provisioning and Easier Administration</div>
                         <div class="benefit-desc" data-aos-anchor="#block4anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="false" data-aos-delay="200">Delivers instant and secure access that eliminates those time-consuming, manual back-end processes</div>
                         <div class="benefit-title" data-aos-anchor="#block4anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="false" data-aos-delay="600">Less Complex & More Friendly Audit Environment</div>
-                        <div class="benefit-desc" data-aos-anchor="#block4anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="false" data-aos-delay="600">Easier to achieve, and prove, compliance through constraining the activities that can possibly be performed, least privilege enforcement</div>
+                        <div class="benefit-desc" data-aos-anchor="#block4anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="false" data-aos-delay="600">Easier to achieve, and prove, compliance through constraining the activities that can possibly be performed</div>
                     </div>
                 </div>
                 <div class="middle"><img src="../images/iam/framework.png" alt="" data-aos-anchor="#block4anchor" data-aos="zoom" data-aos-offset="100" data-aos-duration="1000" data-aos-once="false" data-aos-delay="200"></div>
@@ -231,19 +231,19 @@
         <div class="modal-content">
             <div class="content-container">
                 <div class="left noselect">
-                    <img src="../images/iam/modalbg.png" alt="">
+                    <img src="../images/itsm/modalbg.png" alt="">
                     <div class="title">
-                        SECURE YOUR ENDPOINTS
+                        GOVERN PRIVILEGES
                     </div>
-                    <div class="desc">Learn more about the benefits of managed endpoint detection.</div>
+                    <div class="desc"> Integrate and access management policies quickly and cost-effectively.</div>
                 </div>
                 <div class="right">
-                    <div class="title">SECURE YOUR ENDPOINTS</div>
+                    <div class="title">GOVERN PRIVILEGES</div>
                   <div id="loader2"><div class="load-container"><i class="fas fa-spinner fa-pulse"></i></div></div>
                   <div id="loader2">asdasdasdasd</div>
                    <div class="exit"><i class="fas fa-times" onclick="clears();$('#contactmodal2').modal('hide');"></i></div>
                     <div class="desc noselect">
-                        <p><span>Learn more about the benefits of managed endpoint detection.</span> Fill out the form below and we will be in touch with you shortly.</p>
+                        <p><span>Learn more about the benefits of Identity Access Management.</span> Fill out the form below and we will be in touch with you shortly.</p>
                     </div>
                     <div class="form">
                        <div id="fnamerequired" class="label">a</div>

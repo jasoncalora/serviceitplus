@@ -32,15 +32,15 @@ $mail->FromName = $fname." ".$lname;
 //$mail->SMTPSecure = 'tls';
 $mail->IsSMTP();
 //$mail->Host = 'xo7.x10hosting.com:21';
-$mail->Host = 'smtp.gmail.com:587';
-//$mail->Port = 465;
-$mail->Username = "jason.calora@serviceitplus.com"; // your GMail user name
-$mail->Password = "alphanumericP455W0RD"; 
-$mail->AddAddress("jason.calora@serviceitplus.com"); // recipients email 
-//$mail->Host = 'just56.justhost.com:26';
-//$mail->Username = "livechat@serviceitplus.com"; // your GMail user name
-//$mail->Password = "TdU]=7N,sL$.X"; 
-//$mail->AddAddress("inquiry@serviceitplus.com"); // recipients email 
+//$mail->Host = 'smtp.gmail.com:587';
+////$mail->Port = 465;
+//$mail->Username = "jason.calora@serviceitplus.com"; // your GMail user name
+//$mail->Password = "alphanumericP455W0RD"; 
+//$mail->AddAddress("jason.calora@serviceitplus.com"); // recipients email 
+$mail->Host = 'just56.justhost.com:26';
+$mail->Username = "livechat@serviceitplus.com"; // your GMail user name
+$mail->Password = "TdU]=7N,sL$.X"; 
+$mail->AddAddress("inquiry@serviceitplus.com"); // recipients email 
 $mail->SMTPAuth = true;
 //$mail->FromName = "username";
 //Send HTML or Plain Text email

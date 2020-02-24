@@ -834,9 +834,12 @@ body {
     }
 }
 .block-twelve.gov{
+    .title{
+//        border:1px solid black;
+    }
     .logos-container {
 //            border:1px solid black;
-        width: 50%;
+        width: 60%;
         display: flex;
         //        justify-content:center;
         //        border:1px solid black;
@@ -844,20 +847,26 @@ body {
         height: 5rem;
         justify-content: space-between;
         align-items: center;
+        margin-bottom:0.5rem;
         //        padding-left:4rem;
         img {
 //            border:1px solid black;
-            height: 50%;
+            height: 40%;
         }
 
         img:nth-child(2) {
 //            border:1px solid black;
-            height: 45%;
+            height: 35%;
             margin-top:0.5rem;
         }
         img:nth-child(3) {
 //            border:1px solid black;
-            height: 55%;
+            height: 45%;
+//            margin-bottom:1rem;
+        }
+        img:nth-child(4) {
+//            border:1px solid black;
+            height: 30%;
 //            margin-bottom:1rem;
         }
     }
@@ -1056,6 +1065,18 @@ body {
                     text-align:center;
                     color:#cecece;
                     z-index:4;
+//                    padding-left:12%;
+//                    padding-right:12%;
+                }
+                .desc.epm{
+                    padding-left:12%;
+                    padding-right:12%;
+//                    border:1px solid black;
+                }
+                .desc.gov{
+                    padding-left:5%;
+                    padding-right:5%;
+//                    border:1px solid black;
                 }
             }
             .right{
@@ -1597,19 +1618,21 @@ body {
             img {
                 height: 3rem;
             }
-
             img:nth-child(2) {
                 height: 3rem;
                 margin-bottom:0rem;
                 margin-top:2.5rem;
                 
             }
-
             img:nth-child(3) {
                 height: 3rem;
                 margin-bottom:0rem;
-                margin-top:2rem;
-                
+                margin-top:2rem;  
+            }
+            img:nth-child(4) {
+                height: 2rem;
+                margin-bottom:0rem;
+                margin-top:2rem;  
             }
         }
     }
@@ -2178,33 +2201,33 @@ body {
         }
     }
     .block-twelve.gov{
-    .logos-container {
-//            border:1px solid black;
-        width: 100%;
-        display: flex;
-        //        justify-content:center;
-        //        border:1px solid black;
-        display: flex;
-        height: 5rem;
-        justify-content: space-between;
-        align-items: center;
-        //        padding-left:4rem;
-        img {
-//            border:1px solid black;
-            height: 40%;
-        }
+        .logos-container {
+//                border:1px solid black;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            //        padding-left:4rem;
+            img {
+    //            border:1px solid black;
+                height: 30%;
+            }
 
-        img:nth-child(2) {
-//            border:1px solid black;
-            height: 35%;
-            margin-top:0.5rem;
+            img:nth-child(2) {
+    //            border:1px solid black;
+                height: 25%;
+                margin-top:0.5rem;
+            }
+            img:nth-child(3) {
+    //            border:1px solid black;
+                height: 35%;
+    //            margin-bottom:1rem;
+            }
+            img:nth-child(4) {
+    //            border:1px solid black;
+                height: 30%;
+    //            margin-bottom:1rem;
+            }
         }
-        img:nth-child(3) {
-//            border:1px solid black;
-            height: 45%;
-//            margin-bottom:1rem;
-        }
-    }
 }
     .contact-block {
         button {
@@ -2618,35 +2641,48 @@ body {
             }
         }
     }
-.block-twelve.gov{
-    .logos-container {
-//            border:1px solid black;
-        width: 60%;
-        display: flex;
-        //        justify-content:center;
-        //        border:1px solid black;
-        display: flex;
-        height: 5rem;
-        justify-content: space-between;
-        align-items: center;
-        //        padding-left:4rem;
-        img {
-//            border:1px solid black;
-            height: 40%;
+    .block-twelve.gov{
+        .title {
+            width:100%;
+            display:flex;
+            justify-content: center;
         }
+        .logos-container {
+    //            border:1px solid black;
+            width: 90%;
+            display: flex;
+            padding-left:5%;
+            padding-right:5%;
+            //        justify-content:center;
+            //        border:1px solid black;
+            display: flex;
+            height: 5rem;
+            justify-content: space-between;
+            align-items: center;
+            //        padding-left:4rem;
+            img {
+    //            border:1px solid black;
+                height: 40%;
+            }
 
-        img:nth-child(2) {
-//            border:1px solid black;
-            height: 35%;
-            margin-top:0.5rem;
-        }
-        img:nth-child(3) {
-//            border:1px solid black;
-            height: 45%;
-//            margin-bottom:1rem;
+            img:nth-child(2) {
+    //            border:1px solid black;
+                height: 35%;
+                margin-top:0.5rem;
+            }
+            img:nth-child(3) {
+    //            border:1px solid black;
+                height: 45%;
+    //            margin-bottom:1rem;
+            }
+            img:nth-child(4) {
+    //            border:1px solid black;
+                height: 35%;
+    //            margin-bottom:1rem;
+            }
+
         }
     }
-}
     #contactmodal2{
         .modal-dialog{
     //        border:2px solid blue;
@@ -2880,6 +2916,23 @@ body {
             }
         }
     }
+.block-twelve.gov{
+    .logos-container {
+        img {
+            height: 40%;
+        }
+        img:nth-child(2) {
+            height: 35%;
+            margin-top:0.5rem;
+        }
+        img:nth-child(3) {
+            height: 45%;
+        }
+        img:nth-child(4) {
+            height: 30%;
+        }
+    }
+}
 }
 @media (min-width: 1200px) and (max-width:1299px) {
     .banner-container {

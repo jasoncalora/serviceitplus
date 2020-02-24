@@ -124,7 +124,7 @@
             <div class="block-four block" style="overflow-x:hidden;">
                 <!--                <div class="title" data-aos="zoom" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">Benefits of <span>Efficient ITSM Process</span></div>-->
                 <div class="title" data-aos="zoom" data-aos-offset="100" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">Benefits of <span>Unified Endpoint Management</span></div>
-                <div id="block4anchor" class="sub-title" data-aos="zoom" data-aos-offset="100" data-aos-duration="1500" data-aos-once="true" data-aos-delay="200">Do it all at once. Do more that keep your business up and running. Aim for a reliable endpoint and user profile management software.</div>
+                <div id="block4anchor" class="sub-title" data-aos="zoom" data-aos-offset="100" data-aos-duration="1500" data-aos-once="true" data-aos-delay="200">Do it all at once. Do more that keep your business up and running. ServiceIT+ provides solutions with reliable endpoint and user profile management software to satisfy growing user expectation and simplify management processes.</div>
                 <div class="sides">
                     <div class="benefites-container">
                         <div class="benefit-title" data-aos-anchor="#block4anchor" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" data-aos-once="false" data-aos-delay="200">Experiences that Deliver User Productivity</div>
@@ -144,7 +144,7 @@
                 </div>
             </div>
             <div class="block-twelve block epm" style="overflow-x:hidden;">
-                <div class="title">Our &nbsp;<span> Technology Partners</span></div>
+                <div class="title">Our &nbsp;<span> Technology Partner</span></div>
                 <div class="logos-container">
                     <img data-aos="zoom-in" data-aos-offset="100" data-aos-duration="500" data-aos-once="true" data-aos-delay="400" src="../images/products//logos/ivanti.svg" alt="">
                 </div>
@@ -208,19 +208,19 @@
         <div class="modal-content">
             <div class="content-container">
                 <div class="left noselect">
-                    <img src="../images/security/modal.png" alt="">
+                    <img src="../images/itsm/modalbg.png" alt="">
                     <div class="title">
-                        SECURE YOUR ENDPOINTS
+                        ENDPOINT MANAGEMENT
                     </div>
-                    <div class="desc">Learn more about the benefits of managed endpoint detection.</div>
+                    <div class="desc epm">Learn how to simplify your endpoint management processes.</div>
                 </div>
                 <div class="right">
-                    <div class="title">SECURE YOUR ENDPOINTS</div>
+                    <div class="title">ENDPOINT MANAGEMENT</div>
                   <div id="loader2"><div class="load-container"><i class="fas fa-spinner fa-pulse"></i></div></div>
                   <div id="loader2">asdasdasdasd</div>
                    <div class="exit"><i class="fas fa-times" onclick="clears();$('#contactmodal2').modal('hide');"></i></div>
                     <div class="desc noselect">
-                        <p><span>Learn more about the benefits of managed endpoint detection.</span> Fill out the form below and we will be in touch with you shortly.</p>
+                        <p><span>Learn more about the benefits of endpoint management.</span> Fill out the form below and we will be in touch with you shortly.</p>
                     </div>
                     <div class="form">
                        <div id="fnamerequired" class="label">a</div>

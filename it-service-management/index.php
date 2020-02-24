@@ -9,6 +9,8 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <link rel="icon" href="../images/header/favicons.png">
+    <meta name="title" content="Enterprise Service Management Philippines | IT Help Desk Software Philippines">
+    <meta name="description" content="Service IT+ offers best IT service management software for improving service desk productivity. Our services will help you to run your daily business operations more smoothly. ☎ +63279498109.">
 <!--    <link rel="stylesheet" href="../css/itsm.css" type="text/css" />-->
 </head>
 <style>
@@ -143,7 +145,7 @@
             </div>
             </div>
             <div class="block-twelve block itsm" style="overflow-x:hidden;">
-                <div class="title">Our &nbsp;<span> ITSM Partners</span></div>
+                <div class="title">Our &nbsp;<span> Technology Partners</span></div>
                 <div class="logos-container">
                     <img data-aos="zoom-in" data-aos-offset="100" data-aos-duration="500" data-aos-once="true" data-aos-delay="0" src="../images/products//logos/cehrwell.png" alt="">
                     <img data-aos="zoom-in" data-aos-offset="100" data-aos-duration="500" data-aos-once="true" data-aos-delay="400" src="../images/products//logos/hornbill-logo.png" alt="">

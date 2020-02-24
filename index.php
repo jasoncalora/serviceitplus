@@ -15,6 +15,8 @@ header('Expires: 0');
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <link rel="icon" href="images/header/favicons.png">
+    <meta name="title" content="IT Solutions Provider Philippines | IT Service Desk Providers Near Me">
+    <meta name="description" content="Service IT+ is a highly reputed and trustworthy IT Solutions Provider in Philippines offering IT services related to Service management, Systems and Security Management. ☎ +63279498109.">
     
     <!-- bootstrap & jquery css & js  -->
 <!--	<link rel="stylesheet" href="css/bootstrap.min.css">-->
